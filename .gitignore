@@ -10,5 +10,5 @@ fastqc_data.txt
 summary.txt
 fastqc_report.html
 *_fastqc.html
-data/02_assemblies/Spondianthus_preussii__captus-asm/01_assembly/assembly_graph.*.fastg
+*.fastg
 *.fasta
