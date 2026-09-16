@@ -40,3 +40,4 @@ data/03_extractions/*__captus-ext/02_coding_PTD/00_initial_scipio_PTD/PTD_scipio
 data/03_extractions/*__captus-ext/03_coding_MIT/MIT_contigs.list.txt
 data/03_extractions/*__captus-ext/03_coding_MIT/MIT_scipio_final.log
 data/03_extractions/*__captus-ext/03_coding_MIT/00_initial_scipio_MIT/MIT_scipio_initial.log
+data/04_alignments/02_untrimmed/01_unfiltered_w_refs/*/*/*.mafft.log
