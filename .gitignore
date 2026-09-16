@@ -12,3 +12,4 @@ fastqc_report.html
 *_fastqc.html
 *.fastg
 *.fasta
+megahit_full.log
