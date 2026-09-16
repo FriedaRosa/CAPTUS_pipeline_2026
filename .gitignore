@@ -1,2 +1,12 @@
 *.fastq.gz
 *.qmd
+data/01_cleaned_reads/02_qc_stats_after/*.qc_stats.log
+data/01_cleaned_reads/01_qc_stats_before/*.qc_stats.log
+*.svg
+*.png
+*.zip
+fastqc.fo
+fastqc_data.txt
+summary.txt
+fastqc_report.html
+*_fastqc.html
