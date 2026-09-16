@@ -1,0 +1,5 @@
+#Captus v1.6.6
+#Command: /home/frieda/miniconda3/envs/captus/bin/captus clean -r ./data/input/input_sequences -o ./data/01_cleaned_reads --qc_program fastqc --threads 10
+contaminant	total_reads	Spondianthus_preussii	U_acuminata	U_ambanjensis	U_amplifolia	U_bojeri_1	U_bojeri_2	U_densifolia	U_ferruginea	U_guineensis	U_heudelotii	U_kirkiana	U_lissopyrena	U_littoralis	U_louvelii	U_mole	U_nitida	U_pilosa	U_pilosa_var_petiolata	U_pynaertii	U_robynsii	U_rufopilosa	U_sansibarica	U_staudtii	U_teusczii_f_pilosa	U_teusczii_f_teusczii	U_togoensis	U_vanhouttei
+contam_48	82	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	62	4	11	1	NA	NA	NA	NA	NA	4	NA	NA
+contam_64	1	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1	NA	NA	NA	NA	NA	NA

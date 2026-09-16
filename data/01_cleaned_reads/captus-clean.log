@@ -1,0 +1,953 @@
+
+
+Starting Captus-assembly: CLEAN (2026-09-16 07:38:28)
+-----------------------------------------------------
+    Welcome to the read cleaning step of Captus-assembly. In this step, Captus will perform adaptor trimming and quality filtering/trimming on your input reads using bbduk.sh from BBTools.
+    Since you provided a directory name, Captus will look in that location for all the FASTQ files that contain the string _R1 in their names and match them with their respective _R2 pairs. If the _R2 can not be found, the sample is treated as single-end. Sample names are derived from the text found before the _R1 string.
+    Since you provided a directory name, Captus will look in that location for all the FASTQ files that contain the string _R1 in their names and match them with their respective _R2 pairs. If the _R2 can not be found, the sample is treated as single-end. Sample names are derived from the text found before the _R1 string.
+    For more information, please see https://github.com/edgardomortiz/Captus
+
+       Captus version: v1.6.6
+              Command: /home/frieda/miniconda3/envs/captus/bin/captus clean -r ./data/input/input_sequences -o ./data/01_cleaned_reads --qc_program falco --threads 10
+                   OS: Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39
+                 Host: emb-lap-frwo
+             Max. RAM: 10.7GB (out of 10.8GB)
+         Max. Threads: 10 (out of 14)
+
+         Dependencies:
+              BBTools: v40.02 OK
+                Falco: v2.0.2 OK
+               FastQC: not used
+
+     Python libraries:
+                numpy: v2.5.3 OK
+               pandas: v3.0.5 OK
+               plotly: v7.0.0 OK
+
+     Output directory: /home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads
+                       Output directory successfully created
+
+
+
+Adaptor Trimming with bbduk.sh (2026-09-16 07:38:29)
+----------------------------------------------------
+    Now Captus will perform two simultaneous rounds of adaptor removal using the specified set of adaptors. Most of the parameters are hard-coded but can be modified directly in the file: '/home/frieda/miniconda3/envs/captus/lib/python3.14/site-packages/captus/settings.py'
+
+          Adaptor set: ALL /home/frieda/miniconda3/envs/captus/lib/python3.14/site-packages/data/adaptors_combined.fasta
+    Trim poly-A tails: False
+     Min. read length: 25
+      Overwrite files: False
+       Keep all files: False
+      Samples to trim: 27
+
+     Output directory: /home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/00_adaptors_trimmed
+                       Output directory successfully created
+
+Trimming adaptors:
+'Spondianthus_preussii': adaptors trimmed [4m 28.9s (268.917s)]
+'U_acuminata': adaptors trimmed [6m 35.2s (395.208s)]
+'U_ambanjensis': adaptors trimmed [2m 0.1s (120.066s)]
+'U_amplifolia': adaptors trimmed [1m 52.2s (112.179s)]
+'U_bojeri_1': adaptors trimmed [3m 18.3s (198.259s)]
+'U_bojeri_2': adaptors trimmed [2m 1.5s (121.453s)]
+'U_densifolia': adaptors trimmed [3m 4.7s (184.670s)]
+'U_ferruginea': adaptors trimmed [5m 1.5s (301.500s)]
+'U_guineensis': adaptors trimmed [3m 45.2s (225.237s)]
+'U_heudelotii': adaptors trimmed [7m 42.0s (461.967s)]
+'U_kirkiana': adaptors trimmed [3m 26.1s (206.057s)]
+'U_lissopyrena': adaptors trimmed [8m 44.6s (524.557s)]
+'U_littoralis': adaptors trimmed [2m 39.7s (159.733s)]
+'U_louvelii': adaptors trimmed [4m 58.0s (298.000s)]
+'U_mole': adaptors trimmed [4m 20.2s (260.170s)]
+'U_nitida': adaptors trimmed [12m 17.6s (737.607s)]
+'U_pilosa': adaptors trimmed [8m 0.3s (480.278s)]
+'U_pilosa_var_petiolata': adaptors trimmed [4m 25.5s (265.475s)]
+'U_pynaertii': adaptors trimmed [25.499s]
+'U_robynsii': adaptors trimmed [3m 57.8s (237.794s)]
+'U_rufopilosa': adaptors trimmed [58.791s]
+'U_sansibarica': adaptors trimmed [4m 5.5s (245.507s)]
+'U_staudtii': adaptors trimmed [1m 58.0s (118.011s)]
+'U_teusczii_f_pilosa': adaptors trimmed [1m 7.1s (67.065s)]
+'U_teusczii_f_teusczii': adaptors trimmed [1m 15.0s (75.041s)]
+'U_togoensis': adaptors trimmed [5m 13.5s (313.514s)]
+'U_vanhouttei': adaptors trimmed [3m 13.5s (193.477s)]
+ └─→ Adaptor trimming completed for 27 sample(s) [1h 50m 56.1s (6656.060s)]
+
+
+
+Quality Trimming and Filtering with bbduk.sh (2026-09-16 09:29:26)
+------------------------------------------------------------------
+    Now Captus will trim the regions of reads with PHRED quality score lower than '--trimq' and afterwards will remove reads with mean PHRED quality lower than '--maq'. Common sequencing artifacts and reads belonging to the viral genome phiX174 will also be filtered out. Other parameters are hard-coded but can be modified directly in the file: '/home/frieda/miniconda3/envs/captus/lib/python3.14/site-packages/captus/settings.py'
+
+                trimq: 13
+                  maq: 16
+                  ftl: 0
+                  ftr: 0
+     Min. read length: 25
+      Overwrite files: False
+       Keep all files: False
+     Samples to clean: 27
+
+     Output directory: /home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads
+
+Trimming/filtering quality:
+'Spondianthus_preussii': quality filtered [1m 22.4s (82.356s)]
+'U_acuminata': quality filtered [1m 57.9s (117.875s)]
+'U_ambanjensis': quality filtered [32.280s]
+'U_amplifolia': quality filtered [26.551s]
+'U_bojeri_1': quality filtered [52.492s]
+'U_bojeri_2': quality filtered [33.990s]
+'U_densifolia': quality filtered [59.567s]
+'U_ferruginea': quality filtered [1m 19.3s (79.314s)]
+'U_guineensis': quality filtered [1m 0.9s (60.938s)]
+'U_heudelotii': quality filtered [1m 48.9s (108.864s)]
+'U_kirkiana': quality filtered [54.605s]
+'U_lissopyrena': quality filtered [2m 16.2s (136.220s)]
+'U_littoralis': quality filtered [32.679s]
+'U_louvelii': quality filtered [58.673s]
+'U_mole': quality filtered [1m 0.0s (60.003s)]
+'U_nitida': quality filtered [2m 30.7s (150.692s)]
+'U_pilosa': quality filtered [1m 40.8s (100.782s)]
+'U_pilosa_var_petiolata': quality filtered [51.167s]
+'U_pynaertii': quality filtered [5.890s]
+'U_robynsii': quality filtered [43.269s]
+'U_rufopilosa': quality filtered [9.793s]
+'U_sansibarica': quality filtered [38.590s]
+'U_staudtii': quality filtered [24.698s]
+'U_teusczii_f_pilosa': quality filtered [14.861s]
+'U_teusczii_f_teusczii': quality filtered [15.318s]
+'U_togoensis': quality filtered [59.166s]
+'U_vanhouttei': quality filtered [36.057s]
+ └─→ Quality trimming/filtering completed for 27 sample(s) [25m 46.7s (1546.719s)]
+
+
+
+Quality Control Statistics: Raw and Clean Reads (2026-09-16 09:55:13)
+---------------------------------------------------------------------
+    Now Captus will run falco on the raw reads as well as on the clean reads to obtain QC statistics.
+
+           QC program: falco
+   Concurrent samples: 4
+
+      Overwrite files: False
+       Keep all files: False
+     Files to analyze: 108
+
+      BEFORE cleaning: /home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/01_qc_stats_before
+                       Output directory successfully created
+       AFTER cleaning: /home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/02_qc_stats_after
+                       Output directory successfully created
+
+Running falco:
+'U_acuminata_R1.fastq.gz' (BEFORE cleaning): falco finished [0.802s]
+'U_acuminata_R2.fastq.gz' (BEFORE cleaning): falco finished [0.802s]
+'Spondianthus_preussii_R1.fastq.gz' (BEFORE cleaning): falco finished [0.815s]
+'Spondianthus_preussii_R2.fastq.gz' (BEFORE cleaning): falco finished [0.862s]
+'U_ambanjensis_R2.fastq.gz' (BEFORE cleaning): falco finished [0.904s]
+'U_ambanjensis_R1.fastq.gz' (BEFORE cleaning): falco finished [0.939s]
+'U_amplifolia_R1.fastq.gz' (BEFORE cleaning): falco finished [0.974s]
+'U_amplifolia_R2.fastq.gz' (BEFORE cleaning): falco finished [0.943s]
+'U_bojeri_1_R2.fastq.gz' (BEFORE cleaning): falco finished [0.686s]
+'U_bojeri_1_R1.fastq.gz' (BEFORE cleaning): falco finished [0.747s]
+'U_bojeri_2_R1.fastq.gz' (BEFORE cleaning): falco finished [0.821s]
+'U_bojeri_2_R2.fastq.gz' (BEFORE cleaning): falco finished [0.810s]
+'U_densifolia_R1.fastq.gz' (BEFORE cleaning): falco finished [0.772s]
+'U_densifolia_R2.fastq.gz' (BEFORE cleaning): falco finished [0.769s]
+'U_ferruginea_R2.fastq.gz' (BEFORE cleaning): falco finished [0.719s]
+'U_ferruginea_R1.fastq.gz' (BEFORE cleaning): falco finished [0.749s]
+'U_guineensis_R1.fastq.gz' (BEFORE cleaning): falco finished [0.779s]
+'U_guineensis_R2.fastq.gz' (BEFORE cleaning): falco finished [0.828s]
+'U_heudelotii_R2.fastq.gz' (BEFORE cleaning): falco finished [0.919s]
+'U_heudelotii_R1.fastq.gz' (BEFORE cleaning): falco finished [0.964s]
+'U_kirkiana_R1.fastq.gz' (BEFORE cleaning): falco finished [1.096s]
+'U_kirkiana_R2.fastq.gz' (BEFORE cleaning): falco finished [1.064s]
+'U_lissopyrena_R2.fastq.gz' (BEFORE cleaning): falco finished [1.063s]
+'U_lissopyrena_R1.fastq.gz' (BEFORE cleaning): falco finished [1.110s]
+'U_littoralis_R1.fastq.gz' (BEFORE cleaning): falco finished [0.846s]
+'U_littoralis_R2.fastq.gz' (BEFORE cleaning): falco finished [0.869s]
+'U_louvelii_R2.fastq.gz' (BEFORE cleaning): falco finished [1.191s]
+'U_louvelii_R1.fastq.gz' (BEFORE cleaning): falco finished [1.245s]
+'U_mole_R1.fastq.gz' (BEFORE cleaning): falco finished [1.232s]
+'U_mole_R2.fastq.gz' (BEFORE cleaning): falco finished [1.193s]
+'U_nitida_R1.fastq.gz' (BEFORE cleaning): falco finished [0.849s]
+'U_nitida_R2.fastq.gz' (BEFORE cleaning): falco finished [0.869s]
+'U_pilosa_R2.fastq.gz' (BEFORE cleaning): falco finished [1.012s]
+'U_pilosa_R1.fastq.gz' (BEFORE cleaning): falco finished [1.075s]
+'U_pilosa_var_petiolata_R1.fastq.gz' (BEFORE cleaning): falco finished [1.062s]
+'U_pilosa_var_petiolata_R2.fastq.gz' (BEFORE cleaning): falco finished [1.099s]
+'U_pynaertii_R2.fastq.gz' (BEFORE cleaning): falco finished [0.978s]
+'U_pynaertii_R1.fastq.gz' (BEFORE cleaning): falco finished [1.160s]
+'U_robynsii_R1.fastq.gz' (BEFORE cleaning): falco finished [0.977s]
+'U_robynsii_R2.fastq.gz' (BEFORE cleaning): falco finished [1.026s]
+'U_rufopilosa_R1.fastq.gz' (BEFORE cleaning): falco finished [0.822s]
+'U_rufopilosa_R2.fastq.gz' (BEFORE cleaning): falco finished [0.786s]
+'U_sansibarica_R1.fastq.gz' (BEFORE cleaning): falco finished [0.766s]
+'U_sansibarica_R2.fastq.gz' (BEFORE cleaning): falco finished [0.790s]
+'U_staudtii_R1.fastq.gz' (BEFORE cleaning): falco finished [0.741s]
+'U_staudtii_R2.fastq.gz' (BEFORE cleaning): falco finished [0.756s]
+'U_teusczii_f_pilosa_R1.fastq.gz' (BEFORE cleaning): falco finished [0.748s]
+'U_teusczii_f_pilosa_R2.fastq.gz' (BEFORE cleaning): falco finished [0.785s]
+'U_teusczii_f_teusczii_R1.fastq.gz' (BEFORE cleaning): falco finished [0.862s]
+'U_teusczii_f_teusczii_R2.fastq.gz' (BEFORE cleaning): falco finished [0.817s]
+'U_togoensis_R1.fastq.gz' (BEFORE cleaning): falco finished [0.845s]
+'U_togoensis_R2.fastq.gz' (BEFORE cleaning): falco finished [0.746s]
+'Spondianthus_preussii_R1.fastq.gz' (AFTER cleaning): falco finished [0.482s]
+'U_vanhouttei_R1.fastq.gz' (BEFORE cleaning): falco finished [0.685s]
+'U_vanhouttei_R2.fastq.gz' (BEFORE cleaning): falco finished [0.692s]
+'Spondianthus_preussii_R2.fastq.gz' (AFTER cleaning): falco finished [0.519s]
+'U_acuminata_R2.fastq.gz' (AFTER cleaning): falco finished [0.426s]
+'U_acuminata_R1.fastq.gz' (AFTER cleaning): falco finished [0.476s]
+'U_ambanjensis_R1.fastq.gz' (AFTER cleaning): falco finished [0.488s]
+'U_ambanjensis_R2.fastq.gz' (AFTER cleaning): falco finished [0.524s]
+'U_amplifolia_R1.fastq.gz' (AFTER cleaning): falco finished [0.448s]
+'U_amplifolia_R2.fastq.gz' (AFTER cleaning): falco finished [0.427s]
+'U_bojeri_1_R1.fastq.gz' (AFTER cleaning): falco finished [0.496s]
+'U_bojeri_1_R2.fastq.gz' (AFTER cleaning): falco finished [0.540s]
+'U_bojeri_2_R1.fastq.gz' (AFTER cleaning): falco finished [0.542s]
+'U_bojeri_2_R2.fastq.gz' (AFTER cleaning): falco finished [0.557s]
+'U_densifolia_R1.fastq.gz' (AFTER cleaning): falco finished [0.594s]
+'U_densifolia_R2.fastq.gz' (AFTER cleaning): falco finished [0.643s]
+'U_ferruginea_R1.fastq.gz' (AFTER cleaning): falco finished [0.477s]
+'U_ferruginea_R2.fastq.gz' (AFTER cleaning): falco finished [0.545s]
+'U_guineensis_R1.fastq.gz' (AFTER cleaning): falco finished [0.497s]
+'U_guineensis_R2.fastq.gz' (AFTER cleaning): falco finished [0.464s]
+'U_heudelotii_R1.fastq.gz' (AFTER cleaning): falco finished [0.521s]
+'U_heudelotii_R2.fastq.gz' (AFTER cleaning): falco finished [0.495s]
+'U_kirkiana_R1.fastq.gz' (AFTER cleaning): falco finished [0.557s]
+'U_kirkiana_R2.fastq.gz' (AFTER cleaning): falco finished [0.593s]
+'U_lissopyrena_R1.fastq.gz' (AFTER cleaning): falco finished [0.579s]
+'U_lissopyrena_R2.fastq.gz' (AFTER cleaning): falco finished [0.510s]
+'U_littoralis_R1.fastq.gz' (AFTER cleaning): falco finished [0.443s]
+'U_littoralis_R2.fastq.gz' (AFTER cleaning): falco finished [0.440s]
+'U_louvelii_R1.fastq.gz' (AFTER cleaning): falco finished [0.494s]
+'U_louvelii_R2.fastq.gz' (AFTER cleaning): falco finished [0.527s]
+'U_mole_R1.fastq.gz' (AFTER cleaning): falco finished [0.541s]
+'U_mole_R2.fastq.gz' (AFTER cleaning): falco finished [0.543s]
+'U_nitida_R1.fastq.gz' (AFTER cleaning): falco finished [0.552s]
+'U_nitida_R2.fastq.gz' (AFTER cleaning): falco finished [0.517s]
+'U_pilosa_R1.fastq.gz' (AFTER cleaning): falco finished [0.493s]
+'U_pilosa_R2.fastq.gz' (AFTER cleaning): falco finished [0.459s]
+'U_pilosa_var_petiolata_R2.fastq.gz' (AFTER cleaning): falco finished [0.405s]
+'U_pilosa_var_petiolata_R1.fastq.gz' (AFTER cleaning): falco finished [0.451s]
+'U_pynaertii_R1.fastq.gz' (AFTER cleaning): falco finished [0.546s]
+'U_pynaertii_R2.fastq.gz' (AFTER cleaning): falco finished [0.598s]
+'U_robynsii_R1.fastq.gz' (AFTER cleaning): falco finished [0.488s]
+'U_robynsii_R2.fastq.gz' (AFTER cleaning): falco finished [0.508s]
+'U_rufopilosa_R1.fastq.gz' (AFTER cleaning): falco finished [0.362s]
+'U_rufopilosa_R2.fastq.gz' (AFTER cleaning): falco finished [0.359s]
+'U_sansibarica_R1.fastq.gz' (AFTER cleaning): falco finished [0.375s]
+'U_sansibarica_R2.fastq.gz' (AFTER cleaning): falco finished [0.397s]
+'U_staudtii_R1.fastq.gz' (AFTER cleaning): falco finished [0.492s]
+'U_teusczii_f_pilosa_R1.fastq.gz' (AFTER cleaning): falco finished [0.406s]
+'U_staudtii_R2.fastq.gz' (AFTER cleaning): falco finished [0.502s]
+'U_teusczii_f_pilosa_R2.fastq.gz' (AFTER cleaning): falco finished [0.448s]
+'U_teusczii_f_teusczii_R1.fastq.gz' (AFTER cleaning): falco finished [0.400s]
+'U_teusczii_f_teusczii_R2.fastq.gz' (AFTER cleaning): falco finished [0.354s]
+'U_togoensis_R1.fastq.gz' (AFTER cleaning): falco finished [0.499s]
+'U_togoensis_R2.fastq.gz' (AFTER cleaning): falco finished [0.498s]
+'U_vanhouttei_R1.fastq.gz' (AFTER cleaning): falco finished [0.408s]
+'U_vanhouttei_R2.fastq.gz' (AFTER cleaning): falco finished [0.378s]
+ └─→ falco analysis completed for 108 file(s) [19.037s]
+
+
+
+Logs Summarization and File Cleanup (2026-09-16 09:55:32)
+---------------------------------------------------------
+    Now Captus will summarize the logs from 'bbduk.sh' and 'FastQC' or 'Falco' to produce a final report in HTML format. The data tables and individual graphs associated with the HTML report will be placed in a subdirectory  called '03_qc_extras'.
+
+
+       Keep all files: False
+  QC extras directory: /home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/03_qc_extras
+                       Output directory successfully created
+
+    Reads/Bases stats: /home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/03_qc_extras/reads_bases.tsv
+   Adaptors 1st round: /home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/03_qc_extras/adaptors_round1.tsv
+   Adaptors 2nd round: /home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/03_qc_extras/adaptors_round2.tsv
+         Contaminants: /home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/03_qc_extras/contaminants.tsv
+  Per base seq. qual.: /home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/03_qc_extras/per_base_seq_qual.tsv
+Per seq. qual. scores: /home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/03_qc_extras/per_seq_qual_scores.tsv
+Per base seq. content: /home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/03_qc_extras/per_base_seq_content.tsv
+  Per seq. GC content: /home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/03_qc_extras/per_seq_gc_content.tsv
+   Seq. length distr.: /home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/03_qc_extras/seq_len_dist.tsv
+     Seq. duplication: /home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/03_qc_extras/seq_dup_levels.tsv
+      Adaptor content: /home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/03_qc_extras/adaptor_content.tsv
+
+    Generating Sequence Quality Control report...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Starting Captus-assembly: CLEAN (2026-09-16 09:58:03)
+-----------------------------------------------------
+    Welcome to the read cleaning step of Captus-assembly. In this step, Captus will perform adaptor trimming and quality filtering/trimming on your input reads using bbduk.sh from BBTools.
+    Since you provided a directory name, Captus will look in that location for all the FASTQ files that contain the string _R1 in their names and match them with their respective _R2 pairs. If the _R2 can not be found, the sample is treated as single-end. Sample names are derived from the text found before the _R1 string.
+    Since you provided a directory name, Captus will look in that location for all the FASTQ files that contain the string _R1 in their names and match them with their respective _R2 pairs. If the _R2 can not be found, the sample is treated as single-end. Sample names are derived from the text found before the _R1 string.
+    For more information, please see https://github.com/edgardomortiz/Captus
+
+       Captus version: v1.6.6
+              Command: /home/frieda/miniconda3/envs/captus/bin/captus clean -r ./data/input/input_sequences -o ./data/01_cleaned_reads --qc_program fastqc --threads 10 --overwrite
+                   OS: Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39
+                 Host: emb-lap-frwo
+             Max. RAM: 10.7GB (out of 10.8GB)
+         Max. Threads: 10 (out of 14)
+
+         Dependencies:
+              BBTools: v40.02 OK
+                Falco: not used
+               FastQC: v0.12.1 OK
+
+     Python libraries:
+                numpy: v2.5.3 OK
+               pandas: v3.0.5 OK
+               plotly: v7.0.0 OK
+
+     Output directory: /home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads
+                       Output directory already exists and files may be overwritten
+
+
+
+Adaptor Trimming with bbduk.sh (2026-09-16 09:58:04)
+----------------------------------------------------
+    Now Captus will perform two simultaneous rounds of adaptor removal using the specified set of adaptors. Most of the parameters are hard-coded but can be modified directly in the file: '/home/frieda/miniconda3/envs/captus/lib/python3.14/site-packages/captus/settings.py'
+
+          Adaptor set: ALL /home/frieda/miniconda3/envs/captus/lib/python3.14/site-packages/data/adaptors_combined.fasta
+    Trim poly-A tails: False
+     Min. read length: 25
+      Overwrite files: True
+       Keep all files: False
+      Samples to trim: 27
+
+     Output directory: /home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/00_adaptors_trimmed
+                       Output directory already exists and files may be overwritten
+
+Trimming adaptors:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Starting Captus-assembly: CLEAN (2026-09-16 09:59:14)
+-----------------------------------------------------
+    Welcome to the read cleaning step of Captus-assembly. In this step, Captus will perform adaptor trimming and quality filtering/trimming on your input reads using bbduk.sh from BBTools.
+    Since you provided a directory name, Captus will look in that location for all the FASTQ files that contain the string _R1 in their names and match them with their respective _R2 pairs. If the _R2 can not be found, the sample is treated as single-end. Sample names are derived from the text found before the _R1 string.
+    Since you provided a directory name, Captus will look in that location for all the FASTQ files that contain the string _R1 in their names and match them with their respective _R2 pairs. If the _R2 can not be found, the sample is treated as single-end. Sample names are derived from the text found before the _R1 string.
+    For more information, please see https://github.com/edgardomortiz/Captus
+
+       Captus version: v1.6.6
+              Command: /home/frieda/miniconda3/envs/captus/bin/captus clean -r ./data/input/input_sequences -o ./data/01_cleaned_reads --qc_program fastqc --threads 10 --overwrite --debug
+                   OS: Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39
+                 Host: emb-lap-frwo
+             Max. RAM: 10.7GB (out of 10.8GB)
+         Max. Threads: 10 (out of 14)
+
+         Dependencies:
+              BBTools: v40.02 OK
+                Falco: not used
+               FastQC: v0.12.1 OK
+
+     Python libraries:
+                numpy: v2.5.3 OK
+               pandas: v3.0.5 OK
+               plotly: v7.0.0 OK
+
+     Output directory: /home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads
+                       Output directory already exists and files may be overwritten
+
+
+
+Adaptor Trimming with bbduk.sh (2026-09-16 09:59:15)
+----------------------------------------------------
+    Now Captus will perform two simultaneous rounds of adaptor removal using the specified set of adaptors. Most of the parameters are hard-coded but can be modified directly in the file: '/home/frieda/miniconda3/envs/captus/lib/python3.14/site-packages/captus/settings.py'
+
+          Adaptor set: ALL /home/frieda/miniconda3/envs/captus/lib/python3.14/site-packages/data/adaptors_combined.fasta
+    Trim poly-A tails: False
+     Min. read length: 25
+      Overwrite files: True
+       Keep all files: False
+      Samples to trim: 27
+
+     Output directory: /home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/00_adaptors_trimmed
+                       Output directory already exists and files may be overwritten
+
+Trimming adaptors:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Starting Captus-assembly: CLEAN (2026-09-16 10:02:44)
+-----------------------------------------------------
+    Welcome to the read cleaning step of Captus-assembly. In this step, Captus will perform adaptor trimming and quality filtering/trimming on your input reads using bbduk.sh from BBTools.
+    Since you provided a directory name, Captus will look in that location for all the FASTQ files that contain the string _R1 in their names and match them with their respective _R2 pairs. If the _R2 can not be found, the sample is treated as single-end. Sample names are derived from the text found before the _R1 string.
+    Since you provided a directory name, Captus will look in that location for all the FASTQ files that contain the string _R1 in their names and match them with their respective _R2 pairs. If the _R2 can not be found, the sample is treated as single-end. Sample names are derived from the text found before the _R1 string.
+    For more information, please see https://github.com/edgardomortiz/Captus
+
+       Captus version: v1.6.6
+              Command: /home/frieda/miniconda3/envs/captus/bin/captus clean -r ./data/input/input_sequences -o ./data/01_cleaned_reads --qc_program fastqc --threads 10 --overwrite
+                   OS: Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39
+                 Host: emb-lap-frwo
+             Max. RAM: 10.7GB (out of 10.8GB)
+         Max. Threads: 10 (out of 14)
+
+         Dependencies:
+              BBTools: v40.02 OK
+                Falco: not used
+               FastQC: v0.12.1 OK
+
+     Python libraries:
+                numpy: v2.5.3 OK
+               pandas: v3.0.5 OK
+               plotly: v7.0.0 OK
+
+     Output directory: /home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads
+                       Output directory already exists and files may be overwritten
+
+
+
+Adaptor Trimming with bbduk.sh (2026-09-16 10:02:46)
+----------------------------------------------------
+    Now Captus will perform two simultaneous rounds of adaptor removal using the specified set of adaptors. Most of the parameters are hard-coded but can be modified directly in the file: '/home/frieda/miniconda3/envs/captus/lib/python3.14/site-packages/captus/settings.py'
+
+          Adaptor set: ALL /home/frieda/miniconda3/envs/captus/lib/python3.14/site-packages/data/adaptors_combined.fasta
+    Trim poly-A tails: False
+     Min. read length: 25
+      Overwrite files: True
+       Keep all files: False
+      Samples to trim: 27
+
+     Output directory: /home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/00_adaptors_trimmed
+                       Output directory already exists and files may be overwritten
+
+Trimming adaptors:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Starting Captus-assembly: CLEAN (2026-09-16 10:05:16)
+-----------------------------------------------------
+    Welcome to the read cleaning step of Captus-assembly. In this step, Captus will perform adaptor trimming and quality filtering/trimming on your input reads using bbduk.sh from BBTools.
+    Since you provided a directory name, Captus will look in that location for all the FASTQ files that contain the string _R1 in their names and match them with their respective _R2 pairs. If the _R2 can not be found, the sample is treated as single-end. Sample names are derived from the text found before the _R1 string.
+    Since you provided a directory name, Captus will look in that location for all the FASTQ files that contain the string _R1 in their names and match them with their respective _R2 pairs. If the _R2 can not be found, the sample is treated as single-end. Sample names are derived from the text found before the _R1 string.
+    For more information, please see https://github.com/edgardomortiz/Captus
+
+       Captus version: v1.6.6
+              Command: /home/frieda/miniconda3/envs/captus/bin/captus clean -r ./data/input/input_sequences -o ./data/01_cleaned_reads --qc_program fastqc --threads 10 --overwrite
+                   OS: Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39
+                 Host: emb-lap-frwo
+             Max. RAM: 10.7GB (out of 10.8GB)
+         Max. Threads: 10 (out of 14)
+
+         Dependencies:
+              BBTools: v40.02 OK
+                Falco: not used
+               FastQC: v0.12.1 OK
+
+     Python libraries:
+                numpy: v2.5.3 OK
+               pandas: v3.0.5 OK
+               plotly: v7.0.0 OK
+
+     Output directory: /home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads
+                       Output directory already exists and files may be overwritten
+
+
+
+Adaptor Trimming with bbduk.sh (2026-09-16 10:05:18)
+----------------------------------------------------
+    Now Captus will perform two simultaneous rounds of adaptor removal using the specified set of adaptors. Most of the parameters are hard-coded but can be modified directly in the file: '/home/frieda/miniconda3/envs/captus/lib/python3.14/site-packages/captus/settings.py'
+
+          Adaptor set: ALL /home/frieda/miniconda3/envs/captus/lib/python3.14/site-packages/data/adaptors_combined.fasta
+    Trim poly-A tails: False
+     Min. read length: 25
+      Overwrite files: True
+       Keep all files: False
+      Samples to trim: 27
+
+     Output directory: /home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/00_adaptors_trimmed
+                       Output directory already exists and files may be overwritten
+
+Trimming adaptors:
+'Spondianthus_preussii': adaptors trimmed [5m 35.9s (335.916s)]
+'U_acuminata': adaptors trimmed [7m 13.9s (433.880s)]
+'U_ambanjensis': adaptors trimmed [2m 17.2s (137.202s)]
+'U_amplifolia': adaptors trimmed [2m 10.0s (130.007s)]
+'U_bojeri_1': adaptors trimmed [3m 30.7s (210.742s)]
+'U_bojeri_2': adaptors trimmed [2m 8.7s (128.720s)]
+'U_densifolia': adaptors trimmed [3m 26.0s (205.957s)]
+'U_ferruginea': adaptors trimmed [5m 8.9s (308.915s)]
+'U_guineensis': adaptors trimmed [3m 27.5s (207.525s)]
+'U_heudelotii': adaptors trimmed [5m 57.5s (357.465s)]
+'U_kirkiana': adaptors trimmed [3m 9.6s (189.628s)]
+'U_lissopyrena': adaptors trimmed [8m 15.9s (495.856s)]
+'U_littoralis': adaptors trimmed [1m 50.8s (110.809s)]
+'U_louvelii': adaptors trimmed [3m 33.1s (213.134s)]
+'U_mole': adaptors trimmed [3m 47.7s (227.676s)]
+'U_nitida': adaptors trimmed [9m 45.5s (585.458s)]
+'U_pilosa': adaptors trimmed [5m 19.4s (319.396s)]
+'U_pilosa_var_petiolata': adaptors trimmed [3m 5.5s (185.465s)]
+'U_pynaertii': adaptors trimmed [19.347s]
+'U_robynsii': adaptors trimmed [2m 35.6s (155.550s)]
+'U_rufopilosa': adaptors trimmed [39.608s]
+'U_sansibarica': adaptors trimmed [2m 15.2s (135.182s)]
+'U_staudtii': adaptors trimmed [1m 12.2s (72.233s)]
+'U_teusczii_f_pilosa': adaptors trimmed [39.030s]
+'U_teusczii_f_teusczii': adaptors trimmed [48.457s]
+'U_togoensis': adaptors trimmed [3m 29.4s (209.447s)]
+'U_vanhouttei': adaptors trimmed [2m 0.0s (120.044s)]
+ └─→ Adaptor trimming completed for 27 sample(s) [1h 33m 42.7s (5622.675s)]
+
+
+
+Quality Trimming and Filtering with bbduk.sh (2026-09-16 11:39:01)
+------------------------------------------------------------------
+    Now Captus will trim the regions of reads with PHRED quality score lower than '--trimq' and afterwards will remove reads with mean PHRED quality lower than '--maq'. Common sequencing artifacts and reads belonging to the viral genome phiX174 will also be filtered out. Other parameters are hard-coded but can be modified directly in the file: '/home/frieda/miniconda3/envs/captus/lib/python3.14/site-packages/captus/settings.py'
+
+                trimq: 13
+                  maq: 16
+                  ftl: 0
+                  ftr: 0
+     Min. read length: 25
+      Overwrite files: True
+       Keep all files: False
+     Samples to clean: 27
+
+     Output directory: /home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads
+
+Trimming/filtering quality:
+'Spondianthus_preussii': quality filtered [1m 3.6s (63.607s)]
+'U_acuminata': quality filtered [1m 22.3s (82.350s)]
+'U_ambanjensis': quality filtered [28.095s]
+'U_amplifolia': quality filtered [21.405s]
+'U_bojeri_1': quality filtered [39.546s]
+'U_bojeri_2': quality filtered [27.696s]
+'U_densifolia': quality filtered [45.384s]
+'U_ferruginea': quality filtered [1m 2.3s (62.304s)]
+'U_guineensis': quality filtered [42.561s]
+'U_heudelotii': quality filtered [1m 17.6s (77.645s)]
+'U_kirkiana': quality filtered [36.585s]
+'U_lissopyrena': quality filtered [1m 46.9s (106.892s)]
+'U_littoralis': quality filtered [24.520s]
+'U_louvelii': quality filtered [45.749s]
+'U_mole': quality filtered [50.363s]
+'U_nitida': quality filtered [2m 49.5s (169.548s)]
+'U_pilosa': quality filtered [1m 42.7s (102.735s)]
+'U_pilosa_var_petiolata': quality filtered [1m 1.4s (61.411s)]
+'U_pynaertii': quality filtered [6.947s]
+'U_robynsii': quality filtered [50.061s]
+'U_rufopilosa': quality filtered [11.322s]
+'U_sansibarica': quality filtered [39.982s]
+'U_staudtii': quality filtered [20.300s]
+'U_teusczii_f_pilosa': quality filtered [11.277s]
+'U_teusczii_f_teusczii': quality filtered [15.461s]
+'U_togoensis': quality filtered [1m 1.7s (61.716s)]
+'U_vanhouttei': quality filtered [39.091s]
+ └─→ Quality trimming/filtering completed for 27 sample(s) [22m 24.6s (1344.581s)]
+
+
+
+Quality Control Statistics: Raw and Clean Reads (2026-09-16 12:01:26)
+---------------------------------------------------------------------
+    Now Captus will run fastqc on the raw reads as well as on the clean reads to obtain QC statistics.
+
+           QC program: fastqc
+   Concurrent samples: 4
+
+      Overwrite files: True
+       Keep all files: False
+     Files to analyze: 108
+
+      BEFORE cleaning: /home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/01_qc_stats_before
+                       Output directory already exists and files may be overwritten
+       AFTER cleaning: /home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/02_qc_stats_after
+                       Output directory already exists and files may be overwritten
+
+Running fastqc:
+'Spondianthus_preussii_R1.fastq.gz' (BEFORE cleaning): fastqc finished [7m 57.0s (477.038s)]
+'Spondianthus_preussii_R2.fastq.gz' (BEFORE cleaning): fastqc finished [8m 11.5s (491.483s)]
+'U_ambanjensis_R1.fastq.gz' (BEFORE cleaning): fastqc finished [4m 21.1s (261.060s)]
+'U_ambanjensis_R2.fastq.gz' (BEFORE cleaning): fastqc finished [4m 17.0s (257.026s)]
+'U_acuminata_R2.fastq.gz' (BEFORE cleaning): fastqc finished [14m 51.3s (891.327s)]
+'U_acuminata_R1.fastq.gz' (BEFORE cleaning): fastqc finished [15m 17.9s (917.919s)]
+'U_amplifolia_R2.fastq.gz' (BEFORE cleaning): fastqc finished [5m 8.7s (308.704s)]
+'U_amplifolia_R1.fastq.gz' (BEFORE cleaning): fastqc finished [5m 40.0s (340.008s)]
+'U_bojeri_2_R1.fastq.gz' (BEFORE cleaning): fastqc finished [3m 27.9s (207.900s)]
+'U_bojeri_2_R2.fastq.gz' (BEFORE cleaning): fastqc finished [3m 26.3s (206.292s)]
+'U_bojeri_1_R1.fastq.gz' (BEFORE cleaning): fastqc finished [7m 13.7s (433.678s)]
+'U_bojeri_1_R2.fastq.gz' (BEFORE cleaning): fastqc finished [6m 56.9s (416.874s)]
+'U_densifolia_R1.fastq.gz' (BEFORE cleaning): fastqc finished [5m 0.1s (300.131s)]
+'U_densifolia_R2.fastq.gz' (BEFORE cleaning): fastqc finished [5m 12.1s (312.129s)]
+'U_ferruginea_R1.fastq.gz' (BEFORE cleaning): fastqc finished [8m 24.1s (504.124s)]
+'U_ferruginea_R2.fastq.gz' (BEFORE cleaning): fastqc finished [8m 30.7s (510.680s)]
+'U_guineensis_R1.fastq.gz' (BEFORE cleaning): fastqc finished [6m 0.3s (360.320s)]
+'U_guineensis_R2.fastq.gz' (BEFORE cleaning): fastqc finished [5m 54.4s (354.386s)]
+'U_kirkiana_R1.fastq.gz' (BEFORE cleaning): fastqc finished [3m 58.7s (238.688s)]
+'U_kirkiana_R2.fastq.gz' (BEFORE cleaning): fastqc finished [3m 59.0s (239.022s)]
+'U_heudelotii_R1.fastq.gz' (BEFORE cleaning): fastqc finished [9m 42.3s (582.327s)]
+'U_heudelotii_R2.fastq.gz' (BEFORE cleaning): fastqc finished [9m 41.5s (581.508s)]
+'U_littoralis_R1.fastq.gz' (BEFORE cleaning): fastqc finished [3m 44.3s (224.281s)]
+'U_littoralis_R2.fastq.gz' (BEFORE cleaning): fastqc finished [3m 30.6s (210.608s)]
+'U_lissopyrena_R1.fastq.gz' (BEFORE cleaning): fastqc finished [11m 42.0s (701.961s)]
+'U_lissopyrena_R2.fastq.gz' (BEFORE cleaning): fastqc finished [12m 9.3s (729.295s)]
+'U_louvelii_R2.fastq.gz' (BEFORE cleaning): fastqc finished [6m 47.8s (407.823s)]
+'U_louvelii_R1.fastq.gz' (BEFORE cleaning): fastqc finished [7m 1.8s (421.827s)]
+'U_mole_R1.fastq.gz' (BEFORE cleaning): fastqc finished [7m 19.9s (439.923s)]
+'U_mole_R2.fastq.gz' (BEFORE cleaning): fastqc finished [6m 53.7s (413.693s)]
+'U_pilosa_R1.fastq.gz' (BEFORE cleaning): fastqc finished [10m 58.8s (658.837s)]
+'U_nitida_R1.fastq.gz' (BEFORE cleaning): fastqc finished [15m 27.1s (927.091s)]
+'U_pilosa_R2.fastq.gz' (BEFORE cleaning): fastqc finished [10m 54.7s (654.672s)]
+'U_nitida_R2.fastq.gz' (BEFORE cleaning): fastqc finished [15m 34.3s (934.293s)]
+'U_pynaertii_R1.fastq.gz' (BEFORE cleaning): fastqc finished [35.583s]
+'U_pynaertii_R2.fastq.gz' (BEFORE cleaning): fastqc finished [34.036s]
+'U_robynsii_R1.fastq.gz' (BEFORE cleaning): fastqc finished [4m 51.3s (291.273s)]
+'U_robynsii_R2.fastq.gz' (BEFORE cleaning): fastqc finished [5m 0.0s (300.033s)]
+'U_rufopilosa_R2.fastq.gz' (BEFORE cleaning): fastqc finished [1m 57.2s (117.235s)]
+'U_rufopilosa_R1.fastq.gz' (BEFORE cleaning): fastqc finished [2m 16.5s (136.532s)]
+'U_pilosa_var_petiolata_R2.fastq.gz' (BEFORE cleaning): fastqc finished [8m 42.1s (522.094s)]
+'U_pilosa_var_petiolata_R1.fastq.gz' (BEFORE cleaning): fastqc finished [9m 39.5s (579.534s)]
+'U_staudtii_R1.fastq.gz' (BEFORE cleaning): fastqc finished [3m 13.2s (193.194s)]
+'U_staudtii_R2.fastq.gz' (BEFORE cleaning): fastqc finished [2m 59.3s (179.341s)]
+'U_sansibarica_R2.fastq.gz' (BEFORE cleaning): fastqc finished [6m 10.8s (370.845s)]
+'U_sansibarica_R1.fastq.gz' (BEFORE cleaning): fastqc finished [6m 37.1s (397.147s)]
+'U_teusczii_f_pilosa_R1.fastq.gz' (BEFORE cleaning): fastqc finished [2m 43.9s (163.877s)]
+'U_teusczii_f_pilosa_R2.fastq.gz' (BEFORE cleaning): fastqc finished [2m 25.5s (145.525s)]
+'U_teusczii_f_teusczii_R2.fastq.gz' (BEFORE cleaning): fastqc finished [2m 35.0s (154.976s)]
+'U_teusczii_f_teusczii_R1.fastq.gz' (BEFORE cleaning): fastqc finished [2m 59.0s (178.987s)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Starting Captus-assembly: CLEAN (2026-09-16 13:27:57)
+-----------------------------------------------------
+    Welcome to the read cleaning step of Captus-assembly. In this step, Captus will perform adaptor trimming and quality filtering/trimming on your input reads using bbduk.sh from BBTools.
+    Since you provided a directory name, Captus will look in that location for all the FASTQ files that contain the string _R1 in their names and match them with their respective _R2 pairs. If the _R2 can not be found, the sample is treated as single-end. Sample names are derived from the text found before the _R1 string.
+    Since you provided a directory name, Captus will look in that location for all the FASTQ files that contain the string _R1 in their names and match them with their respective _R2 pairs. If the _R2 can not be found, the sample is treated as single-end. Sample names are derived from the text found before the _R1 string.
+    For more information, please see https://github.com/edgardomortiz/Captus
+
+       Captus version: v1.6.6
+              Command: /home/frieda/miniconda3/envs/captus/bin/captus clean -r ./data/input/input_sequences -o ./data/01_cleaned_reads --qc_program fastqc --threads 10
+                   OS: Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39
+                 Host: emb-lap-frwo
+             Max. RAM: 10.7GB (out of 10.8GB)
+         Max. Threads: 10 (out of 14)
+
+         Dependencies:
+              BBTools: v39.52 OK
+                Falco: not used
+               FastQC: v0.12.1 OK
+
+     Python libraries:
+                numpy: v2.5.3 OK
+               pandas: v3.0.5 OK
+               plotly: v7.0.0 OK
+
+     Output directory: /home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads
+                       Output directory already exists and files may be overwritten
+
+
+
+Adaptor Trimming with bbduk.sh (2026-09-16 13:27:59)
+----------------------------------------------------
+    Now Captus will perform two simultaneous rounds of adaptor removal using the specified set of adaptors. Most of the parameters are hard-coded but can be modified directly in the file: '/home/frieda/miniconda3/envs/captus/lib/python3.14/site-packages/captus/settings.py'
+
+          Adaptor set: ALL /home/frieda/miniconda3/envs/captus/lib/python3.14/site-packages/data/adaptors_combined.fasta
+    Trim poly-A tails: False
+     Min. read length: 25
+      Overwrite files: False
+       Keep all files: False
+      Samples to trim: 27
+
+     Output directory: /home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/00_adaptors_trimmed
+                       Output directory already exists and files may be overwritten
+
+Trimming adaptors:
+'Spondianthus_preussii': SKIPPED (output files already exist)
+'U_acuminata': SKIPPED (output files already exist)
+'U_ambanjensis': SKIPPED (output files already exist)
+'U_amplifolia': SKIPPED (output files already exist)
+'U_bojeri_1': SKIPPED (output files already exist)
+'U_bojeri_2': SKIPPED (output files already exist)
+'U_densifolia': SKIPPED (output files already exist)
+'U_ferruginea': SKIPPED (output files already exist)
+'U_guineensis': SKIPPED (output files already exist)
+'U_heudelotii': SKIPPED (output files already exist)
+'U_kirkiana': SKIPPED (output files already exist)
+'U_lissopyrena': SKIPPED (output files already exist)
+'U_littoralis': SKIPPED (output files already exist)
+'U_louvelii': SKIPPED (output files already exist)
+'U_mole': SKIPPED (output files already exist)
+'U_nitida': SKIPPED (output files already exist)
+'U_pilosa': SKIPPED (output files already exist)
+'U_pilosa_var_petiolata': SKIPPED (output files already exist)
+'U_pynaertii': SKIPPED (output files already exist)
+'U_robynsii': SKIPPED (output files already exist)
+'U_rufopilosa': SKIPPED (output files already exist)
+'U_sansibarica': SKIPPED (output files already exist)
+'U_staudtii': SKIPPED (output files already exist)
+'U_teusczii_f_pilosa': SKIPPED (output files already exist)
+'U_teusczii_f_teusczii': SKIPPED (output files already exist)
+'U_togoensis': SKIPPED (output files already exist)
+'U_vanhouttei': SKIPPED (output files already exist)
+ └─→ Adaptor trimming completed for 27 sample(s) [0.018s]
+
+
+
+Quality Trimming and Filtering with bbduk.sh (2026-09-16 13:28:00)
+------------------------------------------------------------------
+    Now Captus will trim the regions of reads with PHRED quality score lower than '--trimq' and afterwards will remove reads with mean PHRED quality lower than '--maq'. Common sequencing artifacts and reads belonging to the viral genome phiX174 will also be filtered out. Other parameters are hard-coded but can be modified directly in the file: '/home/frieda/miniconda3/envs/captus/lib/python3.14/site-packages/captus/settings.py'
+
+                trimq: 13
+                  maq: 16
+                  ftl: 0
+                  ftr: 0
+     Min. read length: 25
+      Overwrite files: False
+       Keep all files: False
+     Samples to clean: 27
+
+     Output directory: /home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads
+
+Trimming/filtering quality:
+'Spondianthus_preussii': SKIPPED (output files already exist)
+'U_acuminata': SKIPPED (output files already exist)
+'U_ambanjensis': SKIPPED (output files already exist)
+'U_amplifolia': SKIPPED (output files already exist)
+'U_bojeri_1': SKIPPED (output files already exist)
+'U_bojeri_2': SKIPPED (output files already exist)
+'U_densifolia': SKIPPED (output files already exist)
+'U_ferruginea': SKIPPED (output files already exist)
+'U_guineensis': SKIPPED (output files already exist)
+'U_heudelotii': SKIPPED (output files already exist)
+'U_kirkiana': SKIPPED (output files already exist)
+'U_lissopyrena': SKIPPED (output files already exist)
+'U_littoralis': SKIPPED (output files already exist)
+'U_louvelii': SKIPPED (output files already exist)
+'U_mole': SKIPPED (output files already exist)
+'U_nitida': SKIPPED (output files already exist)
+'U_pilosa': SKIPPED (output files already exist)
+'U_pilosa_var_petiolata': SKIPPED (output files already exist)
+'U_pynaertii': SKIPPED (output files already exist)
+'U_robynsii': SKIPPED (output files already exist)
+'U_rufopilosa': SKIPPED (output files already exist)
+'U_sansibarica': SKIPPED (output files already exist)
+'U_staudtii': SKIPPED (output files already exist)
+'U_teusczii_f_pilosa': SKIPPED (output files already exist)
+'U_teusczii_f_teusczii': SKIPPED (output files already exist)
+'U_togoensis': SKIPPED (output files already exist)
+'U_vanhouttei': SKIPPED (output files already exist)
+ └─→ Quality trimming/filtering completed for 27 sample(s) [0.009s]
+
+
+
+Quality Control Statistics: Raw and Clean Reads (2026-09-16 13:28:00)
+---------------------------------------------------------------------
+    Now Captus will run fastqc on the raw reads as well as on the clean reads to obtain QC statistics.
+
+           QC program: fastqc
+   Concurrent samples: 4
+
+      Overwrite files: False
+       Keep all files: False
+     Files to analyze: 108
+
+      BEFORE cleaning: /home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/01_qc_stats_before
+                       Output directory already exists and files may be overwritten
+       AFTER cleaning: /home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/02_qc_stats_after
+                       Output directory already exists
+
+Running fastqc:
+'Spondianthus_preussii_R1.fastq.gz' (BEFORE cleaning): SKIPPED (fastqc report already exists)
+'U_acuminata_R1.fastq.gz' (BEFORE cleaning): SKIPPED (fastqc report already exists)
+'U_acuminata_R2.fastq.gz' (BEFORE cleaning): SKIPPED (fastqc report already exists)
+'U_ambanjensis_R2.fastq.gz' (BEFORE cleaning): SKIPPED (fastqc report already exists)
+'U_amplifolia_R1.fastq.gz' (BEFORE cleaning): SKIPPED (fastqc report already exists)
+'U_amplifolia_R2.fastq.gz' (BEFORE cleaning): SKIPPED (fastqc report already exists)
+'U_bojeri_1_R1.fastq.gz' (BEFORE cleaning): SKIPPED (fastqc report already exists)
+'U_bojeri_1_R2.fastq.gz' (BEFORE cleaning): SKIPPED (fastqc report already exists)
+'U_ambanjensis_R1.fastq.gz' (BEFORE cleaning): SKIPPED (fastqc report already exists)
+'Spondianthus_preussii_R2.fastq.gz' (BEFORE cleaning): SKIPPED (fastqc report already exists)
+'U_bojeri_2_R1.fastq.gz' (BEFORE cleaning): SKIPPED (fastqc report already exists)
+'U_bojeri_2_R2.fastq.gz' (BEFORE cleaning): SKIPPED (fastqc report already exists)
+'U_densifolia_R1.fastq.gz' (BEFORE cleaning): SKIPPED (fastqc report already exists)
+'U_densifolia_R2.fastq.gz' (BEFORE cleaning): SKIPPED (fastqc report already exists)
+'U_ferruginea_R1.fastq.gz' (BEFORE cleaning): SKIPPED (fastqc report already exists)
+'U_ferruginea_R2.fastq.gz' (BEFORE cleaning): SKIPPED (fastqc report already exists)
+'U_guineensis_R1.fastq.gz' (BEFORE cleaning): SKIPPED (fastqc report already exists)
+'U_heudelotii_R1.fastq.gz' (BEFORE cleaning): SKIPPED (fastqc report already exists)
+'U_heudelotii_R2.fastq.gz' (BEFORE cleaning): SKIPPED (fastqc report already exists)
+'U_guineensis_R2.fastq.gz' (BEFORE cleaning): SKIPPED (fastqc report already exists)
+'U_kirkiana_R1.fastq.gz' (BEFORE cleaning): SKIPPED (fastqc report already exists)
+'U_lissopyrena_R1.fastq.gz' (BEFORE cleaning): SKIPPED (fastqc report already exists)
+'U_kirkiana_R2.fastq.gz' (BEFORE cleaning): SKIPPED (fastqc report already exists)
+'U_lissopyrena_R2.fastq.gz' (BEFORE cleaning): SKIPPED (fastqc report already exists)
+'U_littoralis_R1.fastq.gz' (BEFORE cleaning): SKIPPED (fastqc report already exists)
+'U_littoralis_R2.fastq.gz' (BEFORE cleaning): SKIPPED (fastqc report already exists)
+'U_louvelii_R1.fastq.gz' (BEFORE cleaning): SKIPPED (fastqc report already exists)
+'U_louvelii_R2.fastq.gz' (BEFORE cleaning): SKIPPED (fastqc report already exists)
+'U_mole_R1.fastq.gz' (BEFORE cleaning): SKIPPED (fastqc report already exists)
+'U_mole_R2.fastq.gz' (BEFORE cleaning): SKIPPED (fastqc report already exists)
+'U_nitida_R1.fastq.gz' (BEFORE cleaning): SKIPPED (fastqc report already exists)
+'U_pilosa_R1.fastq.gz' (BEFORE cleaning): SKIPPED (fastqc report already exists)
+'U_nitida_R2.fastq.gz' (BEFORE cleaning): SKIPPED (fastqc report already exists)
+'U_pilosa_var_petiolata_R1.fastq.gz' (BEFORE cleaning): SKIPPED (fastqc report already exists)
+'U_pilosa_R2.fastq.gz' (BEFORE cleaning): SKIPPED (fastqc report already exists)
+'U_pynaertii_R1.fastq.gz' (BEFORE cleaning): SKIPPED (fastqc report already exists)
+'U_pynaertii_R2.fastq.gz' (BEFORE cleaning): SKIPPED (fastqc report already exists)
+'U_pilosa_var_petiolata_R2.fastq.gz' (BEFORE cleaning): SKIPPED (fastqc report already exists)
+'U_robynsii_R2.fastq.gz' (BEFORE cleaning): SKIPPED (fastqc report already exists)
+'U_rufopilosa_R1.fastq.gz' (BEFORE cleaning): SKIPPED (fastqc report already exists)
+'U_robynsii_R1.fastq.gz' (BEFORE cleaning): SKIPPED (fastqc report already exists)
+'U_sansibarica_R1.fastq.gz' (BEFORE cleaning): SKIPPED (fastqc report already exists)
+'U_rufopilosa_R2.fastq.gz' (BEFORE cleaning): SKIPPED (fastqc report already exists)
+'U_sansibarica_R2.fastq.gz' (BEFORE cleaning): SKIPPED (fastqc report already exists)
+'U_staudtii_R1.fastq.gz' (BEFORE cleaning): SKIPPED (fastqc report already exists)
+'U_staudtii_R2.fastq.gz' (BEFORE cleaning): SKIPPED (fastqc report already exists)
+'U_teusczii_f_pilosa_R1.fastq.gz' (BEFORE cleaning): SKIPPED (fastqc report already exists)
+'U_teusczii_f_pilosa_R2.fastq.gz' (BEFORE cleaning): SKIPPED (fastqc report already exists)
+'U_teusczii_f_teusczii_R1.fastq.gz' (BEFORE cleaning): SKIPPED (fastqc report already exists)
+'U_teusczii_f_teusczii_R2.fastq.gz' (BEFORE cleaning): SKIPPED (fastqc report already exists)
+'U_vanhouttei_R2.fastq.gz' (BEFORE cleaning): fastqc finished [5m 25.5s (325.539s)]
+'U_vanhouttei_R1.fastq.gz' (BEFORE cleaning): fastqc finished [5m 33.3s (333.271s)]
+'Spondianthus_preussii_R1.fastq.gz' (AFTER cleaning): fastqc finished [1m 35.9s (95.857s)]
+'Spondianthus_preussii_R2.fastq.gz' (AFTER cleaning): fastqc finished [1m 35.7s (95.704s)]
+'U_togoensis_R2.fastq.gz' (BEFORE cleaning): fastqc finished [9m 4.9s (544.906s)]
+'U_togoensis_R1.fastq.gz' (BEFORE cleaning): fastqc finished [9m 12.1s (552.055s)]
+'U_acuminata_R1.fastq.gz' (AFTER cleaning): fastqc finished [2m 12.3s (132.250s)]
+'U_acuminata_R2.fastq.gz' (AFTER cleaning): fastqc finished [2m 12.3s (132.309s)]
+'U_ambanjensis_R1.fastq.gz' (AFTER cleaning): fastqc finished [44.673s]
+'U_amplifolia_R1.fastq.gz' (AFTER cleaning): fastqc finished [39.267s]
+'U_ambanjensis_R2.fastq.gz' (AFTER cleaning): fastqc finished [42.467s]
+'U_amplifolia_R2.fastq.gz' (AFTER cleaning): fastqc finished [39.784s]
+'U_bojeri_2_R1.fastq.gz' (AFTER cleaning): fastqc finished [41.247s]
+'U_bojeri_2_R2.fastq.gz' (AFTER cleaning): fastqc finished [38.007s]
+'U_bojeri_1_R1.fastq.gz' (AFTER cleaning): fastqc finished [1m 7.2s (67.174s)]
+'U_bojeri_1_R2.fastq.gz' (AFTER cleaning): fastqc finished [1m 7.2s (67.192s)]
+'U_densifolia_R1.fastq.gz' (AFTER cleaning): fastqc finished [55.303s]
+'U_densifolia_R2.fastq.gz' (AFTER cleaning): fastqc finished [56.593s]
+'U_ferruginea_R1.fastq.gz' (AFTER cleaning): fastqc finished [1m 18.6s (78.647s)]
+'U_ferruginea_R2.fastq.gz' (AFTER cleaning): fastqc finished [1m 17.5s (77.478s)]
+'U_guineensis_R1.fastq.gz' (AFTER cleaning): fastqc finished [53.117s]
+'U_guineensis_R2.fastq.gz' (AFTER cleaning): fastqc finished [50.980s]
+'U_kirkiana_R1.fastq.gz' (AFTER cleaning): fastqc finished [37.094s]
+'U_kirkiana_R2.fastq.gz' (AFTER cleaning): fastqc finished [36.136s]
+'U_heudelotii_R2.fastq.gz' (AFTER cleaning): fastqc finished [1m 26.7s (86.717s)]
+'U_heudelotii_R1.fastq.gz' (AFTER cleaning): fastqc finished [1m 32.4s (92.371s)]
+'U_littoralis_R1.fastq.gz' (AFTER cleaning): fastqc finished [29.944s]
+'U_littoralis_R2.fastq.gz' (AFTER cleaning): fastqc finished [30.265s]
+'U_lissopyrena_R1.fastq.gz' (AFTER cleaning): fastqc finished [1m 47.3s (107.332s)]
+'U_lissopyrena_R2.fastq.gz' (AFTER cleaning): fastqc finished [1m 47.6s (107.593s)]
+'U_louvelii_R1.fastq.gz' (AFTER cleaning): fastqc finished [57.753s]
+'U_louvelii_R2.fastq.gz' (AFTER cleaning): fastqc finished [56.488s]
+'U_mole_R1.fastq.gz' (AFTER cleaning): fastqc finished [58.861s]
+'U_mole_R2.fastq.gz' (AFTER cleaning): fastqc finished [57.811s]
+'U_pilosa_R2.fastq.gz' (AFTER cleaning): fastqc finished [1m 30.7s (90.672s)]
+'U_pilosa_R1.fastq.gz' (AFTER cleaning): fastqc finished [1m 33.2s (93.221s)]
+'U_nitida_R1.fastq.gz' (AFTER cleaning): fastqc finished [2m 16.2s (136.157s)]
+'U_nitida_R2.fastq.gz' (AFTER cleaning): fastqc finished [2m 15.1s (135.104s)]
+'U_pynaertii_R1.fastq.gz' (AFTER cleaning): fastqc finished [10.905s]
+'U_pynaertii_R2.fastq.gz' (AFTER cleaning): fastqc finished [11.259s]
+'U_pilosa_var_petiolata_R1.fastq.gz' (AFTER cleaning): fastqc finished [58.691s]
+'U_pilosa_var_petiolata_R2.fastq.gz' (AFTER cleaning): fastqc finished [57.775s]
+'U_robynsii_R2.fastq.gz' (AFTER cleaning): fastqc finished [48.046s]
+'U_robynsii_R1.fastq.gz' (AFTER cleaning): fastqc finished [50.278s]
+'U_rufopilosa_R1.fastq.gz' (AFTER cleaning): fastqc finished [16.147s]
+'U_rufopilosa_R2.fastq.gz' (AFTER cleaning): fastqc finished [16.463s]
+'U_staudtii_R1.fastq.gz' (AFTER cleaning): fastqc finished [23.390s]
+'U_staudtii_R2.fastq.gz' (AFTER cleaning): fastqc finished [25.319s]
+'U_teusczii_f_pilosa_R1.fastq.gz' (AFTER cleaning): fastqc finished [14.087s]
+'U_teusczii_f_pilosa_R2.fastq.gz' (AFTER cleaning): fastqc finished [14.931s]
+'U_sansibarica_R2.fastq.gz' (AFTER cleaning): fastqc finished [48.267s]
+'U_sansibarica_R1.fastq.gz' (AFTER cleaning): fastqc finished [50.042s]
+'U_teusczii_f_teusczii_R1.fastq.gz' (AFTER cleaning): fastqc finished [21.922s]
+'U_teusczii_f_teusczii_R2.fastq.gz' (AFTER cleaning): fastqc finished [20.166s]
+'U_vanhouttei_R1.fastq.gz' (AFTER cleaning): fastqc finished [33.909s]
+'U_vanhouttei_R2.fastq.gz' (AFTER cleaning): fastqc finished [34.206s]
+'U_togoensis_R2.fastq.gz' (AFTER cleaning): fastqc finished [56.124s]
+'U_togoensis_R1.fastq.gz' (AFTER cleaning): fastqc finished [57.552s]
+ └─→ fastqc analysis completed for 108 file(s) [20m 15.4s (1215.353s)]
+
+
+
+Logs Summarization and File Cleanup (2026-09-16 13:48:16)
+---------------------------------------------------------
+    Now Captus will summarize the logs from 'bbduk.sh' and 'FastQC' or 'Falco' to produce a final report in HTML format. The data tables and individual graphs associated with the HTML report will be placed in a subdirectory  called '03_qc_extras'.
+
+
+       Keep all files: False
+  QC extras directory: /home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/03_qc_extras
+                       Output directory already exists
+
+    Reads/Bases stats: /home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/03_qc_extras/reads_bases.tsv
+   Adaptors 1st round: /home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/03_qc_extras/adaptors_round1.tsv
+   Adaptors 2nd round: /home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/03_qc_extras/adaptors_round2.tsv
+         Contaminants: /home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/03_qc_extras/contaminants.tsv
+  Per base seq. qual.: /home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/03_qc_extras/per_base_seq_qual.tsv
+Per seq. qual. scores: /home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/03_qc_extras/per_seq_qual_scores.tsv
+Per base seq. content: /home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/03_qc_extras/per_base_seq_content.tsv
+  Per seq. GC content: /home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/03_qc_extras/per_seq_gc_content.tsv
+   Seq. length distr.: /home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/03_qc_extras/seq_len_dist.tsv
+     Seq. duplication: /home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/03_qc_extras/seq_dup_levels.tsv
+      Adaptor content: /home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/03_qc_extras/adaptor_content.tsv
+
+    Generating Sequence Quality Control report...
+
+   Sequence QC report: /home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/captus-clean_report.html
+                       Report generated in 2.169s
+
+    Deleting intermediate FASTQ files and other unnecessary files...
+
+    A total of 270 files amounting to 11.92GB were deleted in 0.038s
+
+
+
+Captus-assembly: CLEAN -> successfully completed [20m 22.0s (1222.008s)] (2026-09-16 13:48:19)
+----------------------------------------------------------------------------------------------
+
