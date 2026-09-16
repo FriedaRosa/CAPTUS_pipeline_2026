@@ -1,0 +1,30 @@
+Captus' MEGAHIT Command:
+  megahit -1 /home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/U_rufopilosa_R1.fastq.gz -2 /home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/U_rufopilosa_R2.fastq.gz --min-count 2 --k-list 31,39,47,63 --merge-level 20,0.95 --prune-level 2 --memory 16343842775 --num-cpu-threads 14 --out-dir /home/frieda/CAPTUS_pipeline_2026/data/02_assemblies/U_rufopilosa__captus-asm/01_assembly --min-contig-len 77 --tmp-dir /home/frieda/captus_megahit_tmp
+
+
+2026-09-16 17:48:22 - MEGAHIT v1.2.9
+2026-09-16 17:48:22 - Using megahit_core with POPCNT and BMI2 support
+2026-09-16 17:48:22 - Convert reads to binary library
+2026-09-16 17:48:23 - b'INFO  sequence/io/sequence_lib.cpp  :   75 - Lib 0 (/home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/U_rufopilosa_R1.fastq.gz,/home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/U_rufopilosa_R2.fastq.gz): pe, 2215362 reads, 151 max length'
+2026-09-16 17:48:23 - b'INFO  utils/utils.h                 :  152 - Real: 1.7258\tuser: 1.1157\tsys: 0.3420\tmaxrss: 63456'
+2026-09-16 17:48:23 - Start assembly. Number of CPU threads 14 
+2026-09-16 17:48:23 - k list: 31,39,47,63 
+2026-09-16 17:48:23 - Memory used: 16343842775
+2026-09-16 17:48:23 - Extract solid (k+1)-mers for k = 31 
+2026-09-16 17:48:28 - Build graph for k = 31 
+2026-09-16 17:48:31 - Assemble contigs from SdBG for k = 31
+2026-09-16 17:48:41 - Local assembly for k = 31
+2026-09-16 17:48:42 - Extract iterative edges from k = 31 to 39 
+2026-09-16 17:48:43 - Build graph for k = 39 
+2026-09-16 17:48:43 - Assemble contigs from SdBG for k = 39
+2026-09-16 17:48:46 - Local assembly for k = 39
+2026-09-16 17:48:47 - Extract iterative edges from k = 39 to 47 
+2026-09-16 17:48:48 - Build graph for k = 47 
+2026-09-16 17:48:48 - Assemble contigs from SdBG for k = 47
+2026-09-16 17:48:50 - Local assembly for k = 47
+2026-09-16 17:48:51 - Extract iterative edges from k = 47 to 63 
+2026-09-16 17:48:51 - Build graph for k = 63 
+2026-09-16 17:48:51 - Assemble contigs from SdBG for k = 63
+2026-09-16 17:48:53 - Merging to output final contigs 
+2026-09-16 17:48:53 - 4005 contigs, total 678585 bp, min 77 bp, max 6331 bp, avg 169 bp, N50 144 bp
+2026-09-16 17:48:53 - ALL DONE. Time elapsed: 31.018625 seconds 
