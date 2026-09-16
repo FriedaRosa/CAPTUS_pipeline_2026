@@ -1,0 +1,5 @@
+#File	/home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/00_adaptors_trimmed/U_pilosa_var_petiolata_R1.fastq.gz	/home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/00_adaptors_trimmed/U_pilosa_var_petiolata_R2.fastq.gz
+#Total	12617730
+#Matched	11	0.00009%
+#Name	Reads	ReadsPct
+contam_48	11	0.00009%

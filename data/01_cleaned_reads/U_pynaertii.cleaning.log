@@ -1,0 +1,28 @@
+Captus' BBDuk Command:
+  bbduk.sh -Xmx10910m threads=10 in=/home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/00_adaptors_trimmed/U_pynaertii_R#.fastq.gz out=/home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/U_pynaertii_R#.fastq.gz ref=/home/frieda/miniconda3/envs/captus/lib/python3.14/site-packages/data/phix174_ill.ref.fa.gz,/home/frieda/miniconda3/envs/captus/lib/python3.14/site-packages/data/sequencing_artifacts.fasta k=31 hdist=1 qtrim=lr trimq=13 maq=16 ftl=0 ftr=0 minlength=25 maxns=5 ziplevel=5 overwrite=t stats=/home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/U_pynaertii.cleaning.stats.txt 2>/home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/U_pynaertii.stdout.log
+
+
+Executing jgi.BBDuk [-Xmx10910m, threads=10, in=/home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/00_adaptors_trimmed/U_pynaertii_R#.fastq.gz, out=/home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/U_pynaertii_R#.fastq.gz, ref=/home/frieda/miniconda3/envs/captus/lib/python3.14/site-packages/data/phix174_ill.ref.fa.gz,/home/frieda/miniconda3/envs/captus/lib/python3.14/site-packages/data/sequencing_artifacts.fasta, k=31, hdist=1, qtrim=lr, trimq=13, maq=16, ftl=0, ftr=0, minlength=25, maxns=5, ziplevel=5, overwrite=t, stats=/home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/U_pynaertii.cleaning.stats.txt]
+Version 39.52
+
+Allocating kmer table: 	0.023 seconds.
+Initial:
+Memory: max=11442m, total=11442m, free=11409m, used=33m
+
+Added 8403228 kmers; time: 	1.220 seconds.
+Memory: max=11442m, total=11442m, free=11121m, used=321m
+
+Input is being processed as paired
+Started output streams:	0.090 seconds.
+Processing time:   		4.965 seconds.
+
+Input:                  	441678 reads 		52086392 bases.
+Contaminants:           	2 reads (0.00%) 	280 bases (0.00%)
+QTrimmed:               	40134 reads (9.09%) 	181837 bases (0.35%)
+Low quality discards:   	17324 reads (3.92%) 	2062277 bases (3.96%)
+Total Removed:          	17704 reads (4.01%) 	2244394 bases (4.31%)
+Result:                 	423974 reads (95.99%) 	49841998 bases (95.69%)
+
+Time:                         	6.296 seconds.
+Reads Processed:        441k 	70.16k reads/sec
+Bases Processed:      52086k 	8.27m bases/sec

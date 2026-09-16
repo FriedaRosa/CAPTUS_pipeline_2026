@@ -1,0 +1,5 @@
+#File	/home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/00_adaptors_trimmed/U_nitida_R1.fastq.gz	/home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/00_adaptors_trimmed/U_nitida_R2.fastq.gz
+#Total	21782784
+#Matched	62	0.00028%
+#Name	Reads	ReadsPct
+contam_48	62	0.00028%

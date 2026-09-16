@@ -1,0 +1,5 @@
+#File	/home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/00_adaptors_trimmed/U_rufopilosa_R1.fastq.gz	/home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/00_adaptors_trimmed/U_rufopilosa_R2.fastq.gz
+#Total	2309780
+#Matched	1	0.00004%
+#Name	Reads	ReadsPct
+contam_64	1	0.00004%
