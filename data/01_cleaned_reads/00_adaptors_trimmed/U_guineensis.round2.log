@@ -1,0 +1,31 @@
+Captus' BBDuk Command for BOTH rounds:
+  bbduk.sh -Xmx5455m threads=10 ktrim=r minlength=25 interleaved=f trimpairsevenly=t trimbyoverlap=t overwrite=t ref=/home/frieda/miniconda3/envs/captus/lib/python3.14/site-packages/data/adaptors_combined.fasta in=/home/frieda/CAPTUS_pipeline_2026/data/input/input_sequences/U_guineensis_R#.fastq.gz out=stdout.fq ftr=0 k=21 mink=11 hdist=2 stats=/home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/00_adaptors_trimmed/U_guineensis.round1.stats.txt tossbrokenreads=t 2>/home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/00_adaptors_trimmed/U_guineensis.stdout1.log | bbduk.sh -Xmx5455m threads=10 ktrim=r minlength=25 interleaved=f trimpairsevenly=t trimbyoverlap=t overwrite=t ref=/home/frieda/miniconda3/envs/captus/lib/python3.14/site-packages/data/adaptors_combined.fasta in=stdin.fq out=/home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/00_adaptors_trimmed/U_guineensis_R#.fastq.gz k=19 mink=9 hdist=1 stats=/home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/00_adaptors_trimmed/U_guineensis.round2.stats.txt 2>/home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/00_adaptors_trimmed/U_guineensis.stdout2.log
+
+
+ROUND 2 LOG:
+Executing bbduk.BBDukS [-Xmx5455m, threads=10, ktrim=r, minlength=25, interleaved=f, trimpairsevenly=t, trimbyoverlap=t, overwrite=t, ref=/home/frieda/miniconda3/envs/captus/lib/python3.14/site-packages/data/adaptors_combined.fasta, in=stdin.fq, out=/home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/00_adaptors_trimmed/U_guineensis_R#.fastq.gz, k=19, mink=9, hdist=1, stats=/home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/00_adaptors_trimmed/U_guineensis.round2.stats.txt]
+Version 40.02
+
+Set threads to 10
+Set INTERLEAVED to false
+Forcing interleaved input because paired output was specified for a single input file.
+maskMiddle was disabled because useShortKmers=true
+Allocating kmer table: 	Added 322384 kmers; time: 	0.666 seconds.
+Memory: max=5721m, total=5721m, free=5678m, used=43m
+
+Initial:
+Memory: max=5721m, total=5721m, free=5678m, used=43m
+
+Input is being processed as paired
+Started output streams:	0.072 seconds.
+Processing time:   		202.381 seconds.
+
+Input:                  	8480564 reads 		826792548 bases.
+KTrimmed:               	185928 reads (2.19%) 	1831650 bases (0.22%)
+Trimmed by overlap:     	8 reads (0.00%) 	714 bases (0.00%)
+Total Removed:          	2538 reads (0.03%) 	1832364 bases (0.22%)
+Result:                 	8478026 reads (99.97%) 	824960184 bases (99.78%)
+
+Time:                         	203.209 seconds.
+Reads Processed:       8480k 	41.73k reads/sec
+Bases Processed:        826m 	4.07m bases/sec

@@ -1,0 +1,30 @@
+Captus' BBDuk Command for BOTH rounds:
+  bbduk.sh -Xmx5455m threads=10 ktrim=r minlength=25 interleaved=f trimpairsevenly=t trimbyoverlap=t overwrite=t ref=/home/frieda/miniconda3/envs/captus/lib/python3.14/site-packages/data/adaptors_combined.fasta in=/home/frieda/CAPTUS_pipeline_2026/data/input/input_sequences/U_amplifolia_R#.fastq.gz out=stdout.fq ftr=0 k=21 mink=11 hdist=2 stats=/home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/00_adaptors_trimmed/U_amplifolia.round1.stats.txt tossbrokenreads=t 2>/home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/00_adaptors_trimmed/U_amplifolia.stdout1.log | bbduk.sh -Xmx5455m threads=10 ktrim=r minlength=25 interleaved=f trimpairsevenly=t trimbyoverlap=t overwrite=t ref=/home/frieda/miniconda3/envs/captus/lib/python3.14/site-packages/data/adaptors_combined.fasta in=stdin.fq out=/home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/00_adaptors_trimmed/U_amplifolia_R#.fastq.gz k=19 mink=9 hdist=1 stats=/home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/00_adaptors_trimmed/U_amplifolia.round2.stats.txt 2>/home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/00_adaptors_trimmed/U_amplifolia.stdout2.log
+
+
+ROUND 1 LOG:
+Executing bbduk.BBDukS [-Xmx5455m, threads=10, ktrim=r, minlength=25, interleaved=f, trimpairsevenly=t, trimbyoverlap=t, overwrite=t, ref=/home/frieda/miniconda3/envs/captus/lib/python3.14/site-packages/data/adaptors_combined.fasta, in=/home/frieda/CAPTUS_pipeline_2026/data/input/input_sequences/U_amplifolia_R#.fastq.gz, out=stdout.fq, ftr=0, k=21, mink=11, hdist=2, stats=/home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/00_adaptors_trimmed/U_amplifolia.round1.stats.txt, tossbrokenreads=t]
+Version 40.02
+
+Set threads to 10
+Set INTERLEAVED to false
+maskMiddle was disabled because useShortKmers=true
+Allocating kmer table: 	Added 11201253 kmers; time: 	5.035 seconds.
+Memory: max=5721m, total=5721m, free=5175m, used=546m
+
+Initial:
+Memory: max=5721m, total=5721m, free=5175m, used=546m
+
+Input is being processed as paired
+Started output streams:	0.012 seconds.
+Processing time:   		121.470 seconds.
+
+Input:                  	6704430 reads 		1012368930 bases.
+KTrimmed:               	6426712 reads (95.86%) 	605775252 bases (59.84%)
+Trimmed by overlap:     	47096 reads (0.70%) 	294064 bases (0.03%)
+Total Removed:          	322252 reads (4.81%) 	606069316 bases (59.87%)
+Result:                 	6382178 reads (95.19%) 	406299614 bases (40.13%)
+
+Time:                         	126.593 seconds.
+Reads Processed:       6704k 	52.96k reads/sec
+Bases Processed:       1012m 	8.00m bases/sec

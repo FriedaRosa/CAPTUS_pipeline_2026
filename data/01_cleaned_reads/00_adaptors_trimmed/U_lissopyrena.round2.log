@@ -1,0 +1,55 @@
+Captus' BBDuk Command for BOTH rounds:
+  bbduk.sh -Xmx5455m threads=10 ktrim=r minlength=25 interleaved=f trimpairsevenly=t trimbyoverlap=t overwrite=t ref=/home/frieda/miniconda3/envs/captus/lib/python3.14/site-packages/data/adaptors_combined.fasta in=/home/frieda/CAPTUS_pipeline_2026/data/input/input_sequences/U_lissopyrena_R#.fastq.gz out=stdout.fq ftr=0 k=21 mink=11 hdist=2 stats=/home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/00_adaptors_trimmed/U_lissopyrena.round1.stats.txt tossbrokenreads=t 2>/home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/00_adaptors_trimmed/U_lissopyrena.stdout1.log | bbduk.sh -Xmx5455m threads=10 ktrim=r minlength=25 interleaved=f trimpairsevenly=t trimbyoverlap=t overwrite=t ref=/home/frieda/miniconda3/envs/captus/lib/python3.14/site-packages/data/adaptors_combined.fasta in=stdin.fq out=/home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/00_adaptors_trimmed/U_lissopyrena_R#.fastq.gz k=19 mink=9 hdist=1 stats=/home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/00_adaptors_trimmed/U_lissopyrena.round2.stats.txt 2>/home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/00_adaptors_trimmed/U_lissopyrena.stdout2.log
+
+
+ROUND 2 LOG:
+Executing bbduk.BBDukS [-Xmx5455m, threads=10, ktrim=r, minlength=25, interleaved=f, trimpairsevenly=t, trimbyoverlap=t, overwrite=t, ref=/home/frieda/miniconda3/envs/captus/lib/python3.14/site-packages/data/adaptors_combined.fasta, in=stdin.fq, out=/home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/00_adaptors_trimmed/U_lissopyrena_R#.fastq.gz, k=19, mink=9, hdist=1, stats=/home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/00_adaptors_trimmed/U_lissopyrena.round2.stats.txt]
+Version 40.02
+
+Set threads to 10
+Set INTERLEAVED to false
+Forcing interleaved input because paired output was specified for a single input file.
+maskMiddle was disabled because useShortKmers=true
+Allocating kmer table: 	Added 322384 kmers; time: 	0.542 seconds.
+Memory: max=5721m, total=5721m, free=5678m, used=43m
+
+Initial:
+Memory: max=5721m, total=5721m, free=5678m, used=43m
+
+Input is being processed as paired
+Started output streams:	0.137 seconds.
+Exception in thread "FastqStreamer-Input" java.lang.NoClassDefFoundError: template/ThreadWaiter
+	at stream.FastqStreamer$ProcessThread.processBytes(FastqStreamer.java:225)
+	at stream.FastqStreamer$ProcessThread.run(FastqStreamer.java:193)
+Caused by: java.lang.ClassNotFoundException: template.ThreadWaiter
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:583)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	... 2 more
+Exception in thread "FastqWriter-Output" java.lang.RuntimeException: FastqWriter thread 0 failed
+	at stream.FastqWriter$ProcessThread.run(FastqWriter.java:282)
+Caused by: java.lang.NoClassDefFoundError: template/ThreadWaiter
+	at stream.FastqWriter$ProcessThread.writeOutput(FastqWriter.java:301)
+	at stream.FastqWriter$ProcessThread.run(FastqWriter.java:267)
+Caused by: java.lang.ClassNotFoundException: template.ThreadWaiter
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:583)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	... 2 more
+Exception in thread "FastqWriter-Output" Processing time:   		484.442 seconds.
+java.lang.RuntimeException: FastqWriter thread 0 failed
+	at stream.FastqWriter$ProcessThread.run(FastqWriter.java:282)
+Caused by: java.lang.NoClassDefFoundError: template/ThreadWaiter
+	at stream.FastqWriter$ProcessThread.writeOutput(FastqWriter.java:301)
+	at stream.FastqWriter$ProcessThread.run(FastqWriter.java:267)
+Exception in thread "main" java.lang.NoClassDefFoundError: fileIO/TextStreamWriter
+	at bbduk.BBDukProcessorS.writeStats(BBDukProcessorS.java:574)
+	at bbduk.BBDukProcessorS.printOutput(BBDukProcessorS.java:351)
+	at bbduk.BBDukS.process2(BBDukS.java:226)
+	at bbduk.BBDukS.process(BBDukS.java:189)
+	at bbduk.BBDukS.main(BBDukS.java:49)
+Caused by: java.lang.ClassNotFoundException: fileIO.TextStreamWriter
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:583)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	... 5 more

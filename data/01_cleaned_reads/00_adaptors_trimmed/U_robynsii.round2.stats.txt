@@ -1,0 +1,57 @@
+#File	stdin.fq
+#Total	6991548
+#Matched	87008	1.24447%
+#Name	Reads	ReadsPct
+I5_Nextera_Transposase_2	9602	0.13734%
+I5_Nextera_Transposase_1	9327	0.13340%
+Reverse_adaptor	8292	0.11860%
+Forward_filter	8192	0.11717%
+PhiX_read2_adaptor	8632	0.12346%
+Reverse_filter	4816	0.06888%
+TruSeq_Adaptor_Index_1_6	4071	0.05823%
+Ad153_5T_1-index_1	4324	0.06185%
+Illumina 3p RNA Adaptor	3909	0.05591%
+Stop_Oligo_(STP)_8	2478	0.03544%
+RNA_Adaptor_(RA5)_part_#_15013205	2095	0.02996%
+Nextera_LMP_Read2_External_Adaptor	2417	0.03457%
+RNA_Adaptor_(RA3)_part_#_15013207	1980	0.02832%
+PhiX_read1_adaptor	1778	0.02543%
+I5_Primer_Nextera_XT_and_Nextera_Enrichment_[N/S/E]501	1650	0.02360%
+Bisulfite_R2	1687	0.02413%
+I5_Adaptor_Nextera	1564	0.02237%
+I7_Nextera_Transposase_2	1499	0.02144%
+I7_Primer_Nextera_XT_and_Nextera_Enrichment_N701	1053	0.01506%
+I7_Nextera_Transposase_1	1028	0.01470%
+I7_Adaptor_Nextera_No_Barcode	1002	0.01433%
+TruSeq_Universal_Adaptor	1080	0.01545%
+RNA_RT_Primer_(RTP)_part_#_15013981	941	0.01346%
+Nextera_LMP_Read1_External_Adaptor	975	0.01395%
+Illumina Small RNA v1.5 3p Adaptor	808	0.01156%
+RNA_PCR_Primer_(RP1)_part_#_15013198	706	0.01010%
+Bisulfite_R1	552	0.00790%
+Ad153_5T_1-index_10	252	0.00360%
+Ad153_5T_1-index_23	67	0.00096%
+Ad153_5T_1-index_12	42	0.00060%
+Ad153_5T_1-index_67	34	0.00049%
+pcr_dimer	32	0.00046%
+Ad153_5T_1-index_86	43	0.00062%
+Ad153_5T_1-index_2	18	0.00026%
+I5_Primer_Nextera_XT_Index_Kit_v2_S510	11	0.00016%
+TruSeq_Adaptor_Index_4	10	0.00014%
+PCR_Primers	12	0.00017%
+Ad153_5T_1-index_30	4	0.00006%
+Ad153_5T_1-index_101	7	0.00010%
+Ad153Omega_Bottom_2	4	0.00006%
+Ad153_5T_1-index_18	2	0.00003%
+Ad153_5T_1-index_22	1	0.00001%
+Ad153_5T_1-index_63	1	0.00001%
+Ad153_5T_1-index_91	1	0.00001%
+I5_Primer_Nextera_XT_and_Nextera_Enrichment_[N/S/E]504	1	0.00001%
+RNA_PCR_Primer_Index_42_(RPI42)	1	0.00001%
+TruSeq_Adaptor_Index_10	1	0.00001%
+TruSeq_Adaptor_Index_13	1	0.00001%
+TruSeq_Adaptor_Index_2	1	0.00001%
+RNA_PCR_Primer_Index_32_(RPI32)	1	0.00001%
+I5_Primer_Nextera_XT_Index_Kit_v2_S513	1	0.00001%
+Ad153_5T_1-index_79	1	0.00001%
+I5_Primer_Nextera_XT_and_Nextera_Enrichment_[N/S/E]503	1	0.00001%
