@@ -1,0 +1,165 @@
+
+
+Starting Captus-assembly: ASSEMBLE (2026-09-16 13:54:25)
+--------------------------------------------------------
+    Welcome to the de novo assembly step of Captus-assembly. In this step, Captus will use MEGAHIT to assemble your input reads and then Salmon to accurately estimate contig depth. It is also possible to subsample a number of reads using reformat.sh from BBTools prior to assembly, this is useful while performing tests or when including samples with considerably higher sequencing depth in a dataset.
+    Since you provided a directory name, Captus will look in that location for all the FASTQ files that contain the string '_R1' in their names and match them with their respective '_R2' pairs. If the '_R2' can not be found, the sample is treated as single-end. Sample names are derived from the text found before the '_R1' string.The full set of reads per sample will be assembled, no subsampling will be performed.
+    For more information, please see https://github.com/edgardomortiz/Captus
+
+       Captus version: v1.6.6
+              Command: /home/frieda/miniconda3/envs/captus/bin/captus assemble -r ./data/01_cleaned_reads -o ./data/02_assemblies --threads auto
+                   OS: Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39
+                 Host: emb-lap-frwo
+             Max. RAM: 15.2GB (out of 15.4GB)
+         Max. Threads: 14 (out of 14)
+
+         Dependencies:
+              MEGAHIT: v1.2.9 OK
+      megahit_toolkit: v1.2.9 OK
+              BBTools: not used
+               Salmon: v2.7.0 OK
+
+     Python libraries:
+                numpy: v2.5.3 OK
+               pandas: v3.0.5 OK
+               plotly: v7.0.0 OK
+
+     Output directory: /home/frieda/CAPTUS_pipeline_2026/data/02_assemblies
+                       Output directory already exists and files may be overwritten
+
+
+
+Subsampling Reads with reformat.sh (2026-09-16 13:54:26)
+--------------------------------------------------------
+    Now Captus will randomly subsample 0 read pairs (or single-end reads) from each sample prior to de novo assembly with MEGAHIT.
+
+Skipping read subsampling step... (to enable provide a number of reads to subsample with '--sample_reads_target')
+
+
+
+De Novo Assembly with MEGAHIT (2026-09-16 13:54:26)
+---------------------------------------------------
+    Now Captus will perform de novo assembly with your input reads using MEGAHIT. Both '--min_contig_len' (when set to 'auto') and '--k_list' will be adjusted sample-wise according to the mean read length of the sample's FASTQ files.
+
+Concurrent assemblies: 1
+     RAM per assembly: 15.2GB
+ Threads per assembly: 14
+
+               preset: CAPSKIM
+               k_list: 31,39,47,63,79,95,111,127,143,159,175
+            min_count: 2
+          prune_level: 2
+          merge_level: 20,0.95
+       min_contig_len: auto
+        extra_options: None
+              tmp_dir: /home/frieda/captus_megahit_tmp
+        max_contig_gc: 100.0%
+      disable_mapping: False
+     min_contig_depth: 1.5x (auto)
+       redo_filtering: True
+
+      Overwrite files: False
+       Keep all files: False
+  Samples to assemble: 27
+
+   Output directories: /home/frieda/CAPTUS_pipeline_2026/data/02_assemblies/[Sample_name]__captus-asm/01_assembly
+                       A directory will be created for each sample
+
+De novo assembling with MEGAHIT:
+'Spondianthus_preussii': assembled [7m 6.1s (426.089s)]
+'U_acuminata': assembled [17m 55.8s (1075.810s)]
+'U_ambanjensis': assembled [13m 3.6s (783.561s)]
+'U_amplifolia': assembled [1m 44.8s (104.751s)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Starting Captus-assembly: ASSEMBLE (2026-09-16 14:38:49)
+--------------------------------------------------------
+    Welcome to the de novo assembly step of Captus-assembly. In this step, Captus will use MEGAHIT to assemble your input reads and then Salmon to accurately estimate contig depth. It is also possible to subsample a number of reads using reformat.sh from BBTools prior to assembly, this is useful while performing tests or when including samples with considerably higher sequencing depth in a dataset.
+    Since you provided a directory name, Captus will look in that location for all the FASTQ files that contain the string '_R1' in their names and match them with their respective '_R2' pairs. If the '_R2' can not be found, the sample is treated as single-end. Sample names are derived from the text found before the '_R1' string.The full set of reads per sample will be assembled, no subsampling will be performed.
+    For more information, please see https://github.com/edgardomortiz/Captus
+
+       Captus version: v1.6.6
+              Command: /home/frieda/miniconda3/envs/captus/bin/captus assemble -r ./data/01_cleaned_reads -o ./data/02_assemblies --threads auto
+                   OS: Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39
+                 Host: emb-lap-frwo
+             Max. RAM: 15.2GB (out of 15.4GB)
+         Max. Threads: 14 (out of 14)
+
+         Dependencies:
+              MEGAHIT: v1.2.9 OK
+      megahit_toolkit: v1.2.9 OK
+              BBTools: not used
+               Salmon: v2.7.0 OK
+
+     Python libraries:
+                numpy: v2.5.3 OK
+               pandas: v3.0.5 OK
+               plotly: v7.0.0 OK
+
+     Output directory: /home/frieda/CAPTUS_pipeline_2026/data/02_assemblies
+                       Output directory already exists and files may be overwritten
+
+
+
+Subsampling Reads with reformat.sh (2026-09-16 14:38:50)
+--------------------------------------------------------
+    Now Captus will randomly subsample 0 read pairs (or single-end reads) from each sample prior to de novo assembly with MEGAHIT.
+
+Skipping read subsampling step... (to enable provide a number of reads to subsample with '--sample_reads_target')
+
+
+
+De Novo Assembly with MEGAHIT (2026-09-16 14:38:50)
+---------------------------------------------------
+    Now Captus will perform de novo assembly with your input reads using MEGAHIT. Both '--min_contig_len' (when set to 'auto') and '--k_list' will be adjusted sample-wise according to the mean read length of the sample's FASTQ files.
+
+Concurrent assemblies: 1
+     RAM per assembly: 15.2GB
+ Threads per assembly: 14
+
+               preset: CAPSKIM
+               k_list: 31,39,47,63,79,95,111,127,143,159,175
+            min_count: 2
+          prune_level: 2
+          merge_level: 20,0.95
+       min_contig_len: auto
+        extra_options: None
+              tmp_dir: /home/frieda/captus_megahit_tmp
+        max_contig_gc: 100.0%
+      disable_mapping: False
+     min_contig_depth: 1.5x (auto)
+       redo_filtering: True
+
+      Overwrite files: False
+       Keep all files: False
+  Samples to assemble: 27
+
+   Output directories: /home/frieda/CAPTUS_pipeline_2026/data/02_assemblies/[Sample_name]__captus-asm/01_assembly
+                       A directory will be created for each sample
+
+De novo assembling with MEGAHIT:
+'Spondianthus_preussii': SKIPPED (output files already exist)
+'U_acuminata': SKIPPED (output files already exist)
+'U_ambanjensis': SKIPPED (output files already exist)
+'U_amplifolia': SKIPPED (output files already exist)
+'U_bojeri_1': assembled [7m 31.6s (451.632s)]
+'U_bojeri_2': assembled [15m 50.1s (950.105s)]
+'U_densifolia': assembled [12m 29.0s (749.043s)]
+'U_ferruginea': assembled [5m 37.7s (337.665s)]
+'U_guineensis': assembled [6m 32.9s (392.857s)]
+'U_heudelotii': assembled [13m 18.7s (798.725s)]
+'U_kirkiana': assembled [25m 35.6s (1535.566s)]
+'U_lissopyrena': assembled [28m 22.8s (1702.847s)]
+'U_littoralis': assembled [2m 39.9s (159.851s)]

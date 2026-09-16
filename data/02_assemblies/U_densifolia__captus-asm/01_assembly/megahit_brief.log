@@ -1,0 +1,58 @@
+Captus' MEGAHIT Command:
+  megahit -1 /home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/U_densifolia_R1.fastq.gz -2 /home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/U_densifolia_R2.fastq.gz --min-count 2 --k-list 31,39,47,63,79,95,111,127,143,159,175 --merge-level 20,0.95 --prune-level 2 --memory 16343842775 --num-cpu-threads 14 --out-dir /home/frieda/CAPTUS_pipeline_2026/data/02_assemblies/U_densifolia__captus-asm/01_assembly --min-contig-len 181 --tmp-dir /home/frieda/captus_megahit_tmp
+
+
+2026-09-16 15:02:18 - MEGAHIT v1.2.9
+2026-09-16 15:02:18 - Using megahit_core with POPCNT and BMI2 support
+2026-09-16 15:02:18 - Convert reads to binary library
+2026-09-16 15:02:25 - b'INFO  sequence/io/sequence_lib.cpp  :   75 - Lib 0 (/home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/U_densifolia_R1.fastq.gz,/home/frieda/CAPTUS_pipeline_2026/data/01_cleaned_reads/U_densifolia_R2.fastq.gz): pe, 6178502 reads, 151 max length'
+2026-09-16 15:02:26 - b'INFO  utils/utils.h                 :  152 - Real: 7.7874\tuser: 5.3807\tsys: 1.3134\tmaxrss: 249780'
+2026-09-16 15:02:26 - Start assembly. Number of CPU threads 14 
+2026-09-16 15:02:26 - k list: 31,39,47,63,79,95,111,127,143,159,175 
+2026-09-16 15:02:26 - Memory used: 16343842775
+2026-09-16 15:02:26 - Extract solid (k+1)-mers for k = 31 
+2026-09-16 15:03:18 - Build graph for k = 31 
+2026-09-16 15:03:34 - Assemble contigs from SdBG for k = 31
+2026-09-16 15:05:10 - Local assembly for k = 31
+2026-09-16 15:05:28 - Extract iterative edges from k = 31 to 39 
+2026-09-16 15:05:40 - Build graph for k = 39 
+2026-09-16 15:05:48 - Assemble contigs from SdBG for k = 39
+2026-09-16 15:06:45 - Local assembly for k = 39
+2026-09-16 15:07:12 - Extract iterative edges from k = 39 to 47 
+2026-09-16 15:07:21 - Build graph for k = 47 
+2026-09-16 15:07:25 - Assemble contigs from SdBG for k = 47
+2026-09-16 15:08:06 - Local assembly for k = 47
+2026-09-16 15:08:42 - Extract iterative edges from k = 47 to 63 
+2026-09-16 15:08:48 - Build graph for k = 63 
+2026-09-16 15:08:53 - Assemble contigs from SdBG for k = 63
+2026-09-16 15:09:19 - Local assembly for k = 63
+2026-09-16 15:10:03 - Extract iterative edges from k = 63 to 79 
+2026-09-16 15:10:07 - Build graph for k = 79 
+2026-09-16 15:10:09 - Assemble contigs from SdBG for k = 79
+2026-09-16 15:10:25 - Local assembly for k = 79
+2026-09-16 15:11:03 - Extract iterative edges from k = 79 to 95 
+2026-09-16 15:11:08 - Build graph for k = 95 
+2026-09-16 15:11:10 - Assemble contigs from SdBG for k = 95
+2026-09-16 15:11:21 - Local assembly for k = 95
+2026-09-16 15:11:53 - Extract iterative edges from k = 95 to 111 
+2026-09-16 15:11:57 - Build graph for k = 111 
+2026-09-16 15:11:58 - Assemble contigs from SdBG for k = 111
+2026-09-16 15:12:09 - Local assembly for k = 111
+2026-09-16 15:12:41 - Extract iterative edges from k = 111 to 127 
+2026-09-16 15:12:44 - Build graph for k = 127 
+2026-09-16 15:12:45 - Assemble contigs from SdBG for k = 127
+2026-09-16 15:12:54 - Local assembly for k = 127
+2026-09-16 15:13:22 - Extract iterative edges from k = 127 to 143 
+2026-09-16 15:13:24 - Build graph for k = 143 
+2026-09-16 15:13:26 - Assemble contigs from SdBG for k = 143
+2026-09-16 15:13:35 - Local assembly for k = 143
+2026-09-16 15:14:02 - Extract iterative edges from k = 143 to 159 
+2026-09-16 15:14:02 - Build graph for k = 159 
+2026-09-16 15:14:04 - Assemble contigs from SdBG for k = 159
+2026-09-16 15:14:11 - Local assembly for k = 159
+2026-09-16 15:14:38 - Extract iterative edges from k = 159 to 175 
+2026-09-16 15:14:39 - Build graph for k = 175 
+2026-09-16 15:14:40 - Assemble contigs from SdBG for k = 175
+2026-09-16 15:14:46 - Merging to output final contigs 
+2026-09-16 15:14:46 - 22435 contigs, total 10491966 bp, min 181 bp, max 9429 bp, avg 467 bp, N50 472 bp
+2026-09-16 15:14:46 - ALL DONE. Time elapsed: 748.494540 seconds 
