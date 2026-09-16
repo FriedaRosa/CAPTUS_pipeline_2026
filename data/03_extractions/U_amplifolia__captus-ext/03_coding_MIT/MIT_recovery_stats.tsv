@@ -1,0 +1,6 @@
+#Captus v1.6.6
+#Command: /home/frieda/miniconda3/envs/captus/bin/captus extract -a ./data/02_assemblies -o ./data/03_extractions -n Mega353 -p SeedPlantPTD -m SeedPlantsMIT
+sample_name	marker_type	locus	ref_name	ref_coords	ref_type	ref_len_matched	hit	pct_recovered	pct_identity	score	wscore	hit_len	cds_len	intron_len	flanks_len	frameshifts	hit_contigs	hit_l50	hit_l90	hit_lg50	hit_lg90	ctg_names	ctg_strands	ctg_coords	ctg_mean_depth
+U_amplifolia	MIT	atp8	AET62907.1-atp8	1-36	prot	36	00	22.50	100.00	0.225	1.000	108	108	0	0		1	1	1	0	0	NODE_1486_length_138_cov_5.0000_k_79_flag_1	+	29-136	5.0000
+U_amplifolia	MIT	rps10	QIV67023.1-rps10	29-76	prot	48	00	40.00	87.50	0.300	0.746	147	147	0	0	72	1	1	1	0	0	NODE_5643_length_156_cov_4.0000_k_79_flag_1	+	5-150	4.0000
+U_amplifolia	MIT	rps12	QIS40626.1-rps12	38-115	prot	78	00	62.40	66.67	0.208	0.444	234	234	0	0		1	1	1	1	0	NODE_1594_length_485_cov_10.0000_k_79_flag_1	-	79-312	10.0000

@@ -1,0 +1,8 @@
+#Captus v1.6.6
+#Command: /home/frieda/miniconda3/envs/captus/bin/captus extract -a ./data/02_assemblies -o ./data/03_extractions -n Mega353 -p SeedPlantPTD -m SeedPlantsMIT
+sample_name	marker_type	locus	ref_name	ref_coords	ref_type	ref_len_matched	hit	pct_recovered	pct_identity	score	wscore	hit_len	cds_len	intron_len	flanks_len	frameshifts	hit_contigs	hit_l50	hit_l90	hit_lg50	hit_lg90	ctg_names	ctg_strands	ctg_coords	ctg_mean_depth
+U_teusczii_f_teusczii	MIT	atp9	AET62949.1-atp9	37-71	prot	35	00	47.30	77.14	0.257	0.595	105	105	0	0		1	1	1	0	0	NODE_18279_length_134_cov_2.0000_k_79_flag_1	+	18-122	2.0000
+U_teusczii_f_teusczii	MIT	cox3	QGW53590.1-cox3	57-132	prot	76	00	28.68	93.42	0.249	0.873	228	228	0	0		1	1	1	0	0	NODE_8115_length_234_cov_6.0000_k_79_flag_1	+	5-232	6.0000
+U_teusczii_f_teusczii	MIT	nad3	BAD83443.2-nad3	1-38	prot	38	00	32.20	89.47	0.254	0.801	114	114	0	0		1	1	1	0	0	NODE_12226_length_134_cov_4.0000_k_79_flag_1	+	14-127	4.0000
+U_teusczii_f_teusczii	MIT	nad6	QCQ81896.1-nad6	6-12;137-179	prot	50	00	24.39	98.00	0.234	0.959	150	150	0	0		2	1	2	0	0	NODE_15330_length_137_cov_2.0000_k_79_flag_1;NODE_18656_length_142_cov_4.0000_k_79_flag_1	+;-	86-106;9-137	3.0000
+U_teusczii_f_teusczii	MIT	sdh4	ATD51557.1-sdh4	19-60	prot	42	00	30.66	85.71	0.219	0.735	126	126	0	0		1	1	1	0	0	NODE_24056_length_137_cov_7.0000_k_79_flag_1	-	7-132	7.0000

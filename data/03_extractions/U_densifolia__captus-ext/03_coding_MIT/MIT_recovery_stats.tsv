@@ -1,0 +1,10 @@
+#Captus v1.6.6
+#Command: /home/frieda/miniconda3/envs/captus/bin/captus extract -a ./data/02_assemblies -o ./data/03_extractions -n Mega353 -p SeedPlantPTD -m SeedPlantsMIT
+sample_name	marker_type	locus	ref_name	ref_coords	ref_type	ref_len_matched	hit	pct_recovered	pct_identity	score	wscore	hit_len	cds_len	intron_len	flanks_len	frameshifts	hit_contigs	hit_l50	hit_l90	hit_lg50	hit_lg90	ctg_names	ctg_strands	ctg_coords	ctg_mean_depth
+U_densifolia	MIT	ccmB	QGX42491.1-ccmB	64-206	prot	143	00	69.42	95.10	0.626	0.898	420	420	0	0		1	1	1	1	0	NODE_6611_length_600_cov_9.0000_k_175_flag_1	-	171-590	9.0000
+U_densifolia	MIT	cox3	QGW53590.1-cox3	1-89;201-265	prot	154	00	58.11	90.26	0.468	0.814	549	549	0	0		2	1	2	2	0	NODE_13470_length_541_cov_8.0000_k_175_flag_1;NODE_18517_length_460_cov_32.0000_k_175_flag_1	+;+	142-408;59-340	20.0000
+U_densifolia	MIT	matR	AIG89909.1-matR	135-610	prot	476	00	72.34	87.82	0.547	0.744	1422	1422	0	0		1	1	1	1	0	NODE_11335_length_1432_cov_38.0000_k_175_flag_1	+	3-1424	38.0000
+U_densifolia	MIT	nad1_exon_4_5	ACV96637.1-nad1_exon_4_5	21-58	prot	38	00	36.19	97.37	0.343	0.948	114	114	0	0		1	1	1	0	0	NODE_9547_length_425_cov_16.0000_k_175_flag_1	+	304-417	16.0000
+U_densifolia	MIT	nad4L	CAQ77604.1-nad4L	73-100	prot	28	00	28.00	96.43	0.260	0.930	84	84	0	0		1	1	1	0	0	NODE_12102_length_437_cov_22.0000_k_175_flag_1	+	4-87	22.0000
+U_densifolia	MIT	rpl5	QHE65829.1-rpl5	18-106	prot	89	00	48.11	88.76	0.373	0.788	270	270	0	0		1	1	1	0	0	NODE_8451_length_317_cov_2.0000_k_175_flag_1	+	38-307	2.0000
+U_densifolia	MIT	tatC	ABG65646.1-tatC	178-273	prot	96	00	35.16	79.17	0.205	0.627	288	288	0	0		1	1	1	0	0	NODE_18586_length_726_cov_9.0000_k_175_flag_1	-	437-724	9.0000

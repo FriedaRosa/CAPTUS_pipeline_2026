@@ -163,3 +163,149 @@ De novo assembling with MEGAHIT:
 'U_kirkiana': assembled [25m 35.6s (1535.566s)]
 'U_lissopyrena': assembled [28m 22.8s (1702.847s)]
 'U_littoralis': assembled [2m 39.9s (159.851s)]
+'U_louvelii': assembled [7m 27.4s (447.446s)]
+'U_mole': assembled [9m 30.1s (570.132s)]
+'U_nitida': assembled [28m 37.2s (1717.179s)]
+'U_pilosa': assembled [16m 8.4s (968.399s)]
+'U_pilosa_var_petiolata': assembled [4m 46.8s (286.815s)]
+'U_pynaertii': assembled [1m 17.5s (77.519s)]
+'U_robynsii': assembled [3m 39.9s (219.948s)]
+'U_rufopilosa': assembled [31.137s]
+'U_sansibarica': assembled [5m 1.7s (301.660s)]
+'U_staudtii': assembled [5m 55.7s (355.730s)]
+'U_teusczii_f_pilosa': assembled [41.901s]
+'U_teusczii_f_teusczii': assembled [1m 30.3s (90.274s)]
+'U_togoensis': assembled [9m 47.1s (587.069s)]
+'U_vanhouttei': assembled [16m 0.9s (960.855s)]
+ └─→ De novo assembly completed for 27 sample(s) [3h 48m 54.5s (13734.543s)]
+
+Depth of coverage estimation with Salmon:
+'Spondianthus_preussii': FAILED depth estimation (Salmon output not found)
+'U_acuminata': FAILED depth estimation (Salmon output not found)
+'U_ambanjensis': FAILED depth estimation (Salmon output not found)
+'U_amplifolia': FAILED depth estimation (Salmon output not found)
+'U_bojeri_1': FAILED depth estimation (Salmon output not found)
+'U_bojeri_2': FAILED depth estimation (Salmon output not found)
+'U_densifolia': FAILED depth estimation (Salmon output not found)
+'U_ferruginea': FAILED depth estimation (Salmon output not found)
+'U_guineensis': FAILED depth estimation (Salmon output not found)
+'U_heudelotii': FAILED depth estimation (Salmon output not found)
+'U_kirkiana': FAILED depth estimation (Salmon output not found)
+'U_lissopyrena': FAILED depth estimation (Salmon output not found)
+'U_littoralis': FAILED depth estimation (Salmon output not found)
+'U_louvelii': FAILED depth estimation (Salmon output not found)
+'U_mole': FAILED depth estimation (Salmon output not found)
+'U_nitida': FAILED depth estimation (Salmon output not found)
+'U_pilosa': FAILED depth estimation (Salmon output not found)
+'U_pilosa_var_petiolata': FAILED depth estimation (Salmon output not found)
+'U_pynaertii': FAILED depth estimation (Salmon output not found)
+'U_robynsii': FAILED depth estimation (Salmon output not found)
+'U_rufopilosa': FAILED depth estimation (Salmon output not found)
+'U_sansibarica': FAILED depth estimation (Salmon output not found)
+'U_staudtii': FAILED depth estimation (Salmon output not found)
+'U_teusczii_f_pilosa': FAILED depth estimation (Salmon output not found)
+'U_teusczii_f_teusczii': FAILED depth estimation (Salmon output not found)
+'U_togoensis': FAILED depth estimation (Salmon output not found)
+'U_vanhouttei': FAILED depth estimation (Salmon output not found)
+ └─→ Depth of coverage estimation completed for 27 sample(s) [3m 13.5s (193.527s)]
+
+Filtering contigs >100.0% GC and <1.5x (auto) depth:
+'Spondianthus_preussii': BEFORE 8,345 contigs, total 2,806,034 bp, min 250 bp, max 8,018 bp, mean 337 bp, N50 329 bp
+'Spondianthus_preussii': AFTER 7,927 contigs, total 2,672,949 bp, min 250 bp, max 8,018 bp, mean 338 bp, N50 330 bp
+'Spondianthus_preussii': assembly filtered [0.105s]
+'U_acuminata': BEFORE 110,449 contigs, total 26,566,897 bp, min 108 bp, max 14,319 bp, mean 241 bp, N50 229 bp
+'U_acuminata': AFTER 105,824 contigs, total 25,435,113 bp, min 108 bp, max 14,319 bp, mean 241 bp, N50 228 bp
+'U_acuminata': assembly filtered [2.548s]
+'U_ambanjensis': BEFORE 74,090 contigs, total 20,237,330 bp, min 126 bp, max 7,103 bp, mean 274 bp, N50 265 bp
+'U_ambanjensis': AFTER 67,171 contigs, total 18,277,395 bp, min 127 bp, max 7,103 bp, mean 273 bp, N50 263 bp
+'U_ambanjensis': assembly filtered [1.022s]
+'U_amplifolia': BEFORE 19,109 contigs, total 3,033,572 bp, min 82 bp, max 2,981 bp, mean 159 bp, N50 150 bp
+'U_amplifolia': AFTER 18,259 contigs, total 2,908,109 bp, min 82 bp, max 2,981 bp, mean 160 bp, N50 150 bp
+'U_amplifolia': assembly filtered [0.220s]
+'U_bojeri_1': BEFORE 38,097 contigs, total 9,536,192 bp, min 113 bp, max 11,870 bp, mean 251 bp, N50 237 bp
+'U_bojeri_1': AFTER 36,830 contigs, total 9,240,991 bp, min 113 bp, max 11,870 bp, mean 251 bp, N50 237 bp
+'U_bojeri_1': assembly filtered [0.490s]
+'U_bojeri_2': BEFORE 67,748 contigs, total 22,901,447 bp, min 145 bp, max 47,042 bp, mean 339 bp, N50 334 bp
+'U_bojeri_2': AFTER 50,321 contigs, total 16,984,686 bp, min 145 bp, max 47,042 bp, mean 338 bp, N50 328 bp
+'U_bojeri_2': assembly filtered [1.260s]
+'U_densifolia': BEFORE 22,435 contigs, total 10,491,966 bp, min 181 bp, max 9,429 bp, mean 468 bp, N50 472 bp
+'U_densifolia': AFTER 19,211 contigs, total 9,225,602 bp, min 182 bp, max 9,429 bp, mean 481 bp, N50 487 bp
+'U_densifolia': assembly filtered [0.455s]
+'U_ferruginea': BEFORE 8,878 contigs, total 2,352,398 bp, min 132 bp, max 5,414 bp, mean 265 bp, N50 255 bp
+'U_ferruginea': AFTER 8,606 contigs, total 2,279,923 bp, min 132 bp, max 5,414 bp, mean 265 bp, N50 255 bp
+'U_ferruginea': assembly filtered [0.119s]
+'U_guineensis': BEFORE 25,051 contigs, total 6,112,653 bp, min 120 bp, max 10,103 bp, mean 245 bp, N50 231 bp
+'U_guineensis': AFTER 24,423 contigs, total 5,964,300 bp, min 120 bp, max 10,103 bp, mean 245 bp, N50 231 bp
+'U_guineensis': assembly filtered [0.267s]
+'U_heudelotii': BEFORE 34,082 contigs, total 10,788,041 bp, min 145 bp, max 8,794 bp, mean 317 bp, N50 303 bp
+'U_heudelotii': AFTER 31,838 contigs, total 10,142,796 bp, min 145 bp, max 8,794 bp, mean 319 bp, N50 305 bp
+'U_heudelotii': assembly filtered [0.385s]
+'U_kirkiana': BEFORE 104,271 contigs, total 39,544,383 bp, min 160 bp, max 48,280 bp, mean 380 bp, N50 383 bp
+'U_kirkiana': AFTER 67,881 contigs, total 25,387,265 bp, min 160 bp, max 48,280 bp, mean 374 bp, N50 369 bp
+'U_kirkiana': assembly filtered [1.245s]
+'U_lissopyrena': BEFORE 54,945 contigs, total 22,722,101 bp, min 171 bp, max 10,201 bp, mean 414 bp, N50 416 bp
+'U_lissopyrena': AFTER 43,884 contigs, total 18,461,231 bp, min 171 bp, max 10,201 bp, mean 421 bp, N50 420 bp
+'U_lissopyrena': assembly filtered [0.585s]
+'U_littoralis': BEFORE 17,178 contigs, total 3,356,906 bp, min 98 bp, max 8,630 bp, mean 196 bp, N50 178 bp
+'U_littoralis': AFTER 16,768 contigs, total 3,288,569 bp, min 98 bp, max 8,630 bp, mean 197 bp, N50 179 bp
+'U_littoralis': assembly filtered [0.135s]
+'U_louvelii': BEFORE 33,925 contigs, total 8,354,191 bp, min 115 bp, max 6,866 bp, mean 247 bp, N50 234 bp
+'U_louvelii': AFTER 32,931 contigs, total 8,114,349 bp, min 115 bp, max 6,866 bp, mean 247 bp, N50 234 bp
+'U_louvelii': assembly filtered [0.342s]
+'U_mole': BEFORE 41,236 contigs, total 9,407,155 bp, min 114 bp, max 8,345 bp, mean 229 bp, N50 214 bp
+'U_mole': AFTER 39,689 contigs, total 9,067,165 bp, min 114 bp, max 8,345 bp, mean 229 bp, N50 214 bp
+'U_mole': assembly filtered [0.397s]
+'U_nitida': BEFORE 68,559 contigs, total 23,320,151 bp, min 149 bp, max 9,821 bp, mean 341 bp, N50 333 bp
+'U_nitida': AFTER 61,226 contigs, total 21,065,719 bp, min 151 bp, max 9,821 bp, mean 345 bp, N50 337 bp
+'U_nitida': assembly filtered [0.843s]
+'U_pilosa': BEFORE 71,871 contigs, total 18,110,523 bp, min 119 bp, max 10,747 bp, mean 252 bp, N50 242 bp
+'U_pilosa': AFTER 68,103 contigs, total 17,132,848 bp, min 119 bp, max 10,747 bp, mean 252 bp, N50 241 bp
+'U_pilosa': assembly filtered [0.817s]
+'U_pilosa_var_petiolata': BEFORE 47,496 contigs, total 7,779,437 bp, min 84 bp, max 5,902 bp, mean 164 bp, N50 150 bp
+'U_pilosa_var_petiolata': AFTER 45,959 contigs, total 7,549,450 bp, min 84 bp, max 5,902 bp, mean 165 bp, N50 151 bp
+'U_pilosa_var_petiolata': assembly filtered [0.402s]
+'U_pynaertii': BEFORE 2,828 contigs, total 1,146,129 bp, min 170 bp, max 9,471 bp, mean 406 bp, N50 400 bp
+'U_pynaertii': AFTER 2,238 contigs, total 922,322 bp, min 248 bp, max 9,471 bp, mean 413 bp, N50 402 bp
+'U_pynaertii': assembly filtered [0.034s]
+'U_robynsii': BEFORE 12,312 contigs, total 3,575,098 bp, min 136 bp, max 6,290 bp, mean 291 bp, N50 278 bp
+'U_robynsii': AFTER 12,084 contigs, total 3,516,379 bp, min 136 bp, max 6,290 bp, mean 291 bp, N50 278 bp
+'U_robynsii': assembly filtered [0.114s]
+'U_rufopilosa': BEFORE 4,005 contigs, total 678,585 bp, min 77 bp, max 6,331 bp, mean 170 bp, N50 144 bp
+'U_rufopilosa': AFTER 3,622 contigs, total 628,460 bp, min 77 bp, max 6,331 bp, mean 174 bp, N50 145 bp
+'U_rufopilosa': assembly filtered [0.030s]
+'U_sansibarica': BEFORE 22,986 contigs, total 5,039,859 bp, min 109 bp, max 8,212 bp, mean 220 bp, N50 206 bp
+'U_sansibarica': AFTER 22,455 contigs, total 4,933,769 bp, min 109 bp, max 8,212 bp, mean 220 bp, N50 206 bp
+'U_sansibarica': assembly filtered [0.209s]
+'U_staudtii': BEFORE 46,065 contigs, total 10,310,644 bp, min 110 bp, max 8,237 bp, mean 224 bp, N50 213 bp
+'U_staudtii': AFTER 44,046 contigs, total 9,829,852 bp, min 110 bp, max 8,237 bp, mean 224 bp, N50 212 bp
+'U_staudtii': assembly filtered [0.443s]
+'U_teusczii_f_pilosa': BEFORE 10,864 contigs, total 1,543,492 bp, min 73 bp, max 1,177 bp, mean 143 bp, N50 145 bp
+'U_teusczii_f_pilosa': AFTER 9,793 contigs, total 1,407,516 bp, min 73 bp, max 1,177 bp, mean 144 bp, N50 148 bp
+'U_teusczii_f_pilosa': assembly filtered [0.110s]
+'U_teusczii_f_teusczii': BEFORE 24,707 contigs, total 3,857,395 bp, min 82 bp, max 6,446 bp, mean 157 bp, N50 145 bp
+'U_teusczii_f_teusczii': AFTER 23,414 contigs, total 3,669,654 bp, min 82 bp, max 6,446 bp, mean 157 bp, N50 146 bp
+'U_teusczii_f_teusczii': assembly filtered [0.233s]
+'U_togoensis': BEFORE 23,447 contigs, total 6,527,832 bp, min 134 bp, max 7,761 bp, mean 279 bp, N50 265 bp
+'U_togoensis': AFTER 22,192 contigs, total 6,197,201 bp, min 135 bp, max 7,761 bp, mean 280 bp, N50 265 bp
+'U_togoensis': assembly filtered [0.227s]
+'U_vanhouttei': BEFORE 87,156 contigs, total 25,304,620 bp, min 128 bp, max 12,296 bp, mean 291 bp, N50 286 bp
+'U_vanhouttei': AFTER 72,069 contigs, total 20,892,254 bp, min 128 bp, max 12,296 bp, mean 290 bp, N50 285 bp
+'U_vanhouttei': assembly filtered [0.792s]
+ └─→ Filtering completed for 27 sample(s) [14.053s]
+
+  Assembly statistics: /home/frieda/CAPTUS_pipeline_2026/data/02_assemblies/captus-assemble_assembly_stats.tsv
+     Depth statistics: /home/frieda/CAPTUS_pipeline_2026/data/02_assemblies/captus-assemble_depth_stats.tsv
+    Length statistics: /home/frieda/CAPTUS_pipeline_2026/data/02_assemblies/captus-assemble_length_stats.tsv
+
+    Generating Assembly report...
+
+      Assembly report: /home/frieda/CAPTUS_pipeline_2026/data/02_assemblies/captus-assemble_report.html
+                       Report generated in 0.574s
+
+MEGAHIT temporary directory '/home/frieda/captus_megahit_tmp' deleted
+
+
+
+Captus-assembly: ASSEMBLE -> successfully completed [3h 52m 29.6s (13949.624s)] (2026-09-16 18:31:19)
+-----------------------------------------------------------------------------------------------------
+

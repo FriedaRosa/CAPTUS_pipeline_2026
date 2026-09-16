@@ -1,0 +1,472 @@
+
+
+Starting Captus-assembly: EXTRACT (2026-09-16 18:41:18)
+-------------------------------------------------------
+    Welcome to the marker extraction step of Captus-assembly. In this step, Captus will use Scipio to search within your FASTA assemblies and recover any set of reference proteins provided through '--nuc_refs', '--ptd_refs', and/or '--mit_refs'. Captus includes some reference protein sets to work with Plants like the 'Angiosperms353' protein set for nuclear genes, and two organellar protein reference sets 'SeedPlantsPTD' for plastids, and 'SeedPlantsMIT' for mitochondria.
+    If you have references that are not proteins (e.g. non-coding regions, gene sequences including introns, full mRNAs, etc.) You can provide these miscellaneous DNA references with '--dna_refs' and Captus will use BLAT to find and extract matches in your assemblies.
+    Finally, if you want to explore the usefulness of the contigs that were not hit by any protein or other DNA references after the Captus' extraction process, or simply if you do not have reference sets to test, you can try the option '--cluster_leftovers' to attempt sequence clustering across samples in order to discover homologous markers.
+    For more information, please see https://github.com/edgardomortiz/Captus
+
+             Captus version: v1.6.6
+                    Command: /home/frieda/miniconda3/envs/captus/bin/captus extract -a ./data/02_assemblies -o ./data/03_extractions -n Mega353 -p SeedPlantPTD -m SeedPlantsMIT
+                         OS: Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39
+                       Host: emb-lap-frwo
+                   Max. RAM: 15.2GB (out of 15.4GB)
+               Max. Threads: 14 (out of 14)
+
+               Dependencies:
+                  Scipio   : v1.4.1 OK
+                  ├─BioPerl: v1.7.8 OK
+                  └─YAML   : v1.30 OK
+                  BLAT     : v37x1 OK
+                  MMseqs2  : not used
+                  MAFFT    : not used
+
+           Python libraries:
+                      numpy: v2.5.3 OK
+                     pandas: v3.0.5 OK
+                     plotly: v7.0.0 OK
+
+      Assembly dirs checked: 27
+           Valid assemblies: 27
+
+           Output directory: /home/frieda/CAPTUS_pipeline_2026/data/03_extractions
+                             Output directory successfully created
+
+
+
+Protein and DNA Markers Extraction from FASTA assemblies (2026-09-16 18:41:19)
+------------------------------------------------------------------------------
+    Now Captus will search within your FASTA assemblies for the set of reference proteins provided by '--nuc_refs', '--ptd_refs', and/or '--mit_refs' and extract the sequences both in nucleotide and translated to aminoacid using the specified '--nuc_transtable', '--ptd_transtable' and '--mit_transtable' respectively.
+    Additionally, miscellaneous DNA references provided with '--dna_refs' will also be extracted.
+
+Verifying protein reference sets...
+
+            PROTEIN OPTIONS:
+    Max. loci for Scipio x2: 2000
+    Predict dubious introns: False
+     Concurrent extractions: 3
+         RAM per extraction: 5.1GB
+     Threads per extraction: 4
+
+           Nuclear proteins:
+                  reference: Mega353 /home/frieda/miniconda3/envs/captus/lib/python3.14/site-packages/data/Mega353.FAA
+             reference info: 353 loci, 15,371 sequences (loci names found, detected multiple sequences per locus)
+          translation table: 1
+              nuc_min_score: 0.13
+           nuc_min_identity: 65
+           nuc_min_coverage: 20
+        nuc_depth_tolerance: 0.5 (min = 10^(log(depth of the contig with best hit in locus) * 0.5))
+
+        Plastidial proteins:
+                  reference: file not found
+
+     Mitochondrial proteins:
+                  reference: SeedPlantsMIT /home/frieda/miniconda3/envs/captus/lib/python3.14/site-packages/data/SeedPlantsMIT.FAA
+             reference info: 45 loci, 167 sequences (loci names found, detected multiple sequences per locus)
+          translation table: 1
+              mit_min_score: 0.2
+           mit_min_identity: 65
+           mit_min_coverage: 20
+        mit_depth_tolerance: 0.5 (min = 10^(log(depth of the contig with best hit in locus) * 0.5))
+
+
+  MISCELLANEOUS DNA OPTIONS:
+                  reference: not used
+
+
+             OUTPUT OPTIONS:
+   Ignore depth of coverage: False
+   Disable contig stitching: False
+         Max. locus overlap: 5.0%
+ Paralog identity tolerance: 0.66
+ Paralog coverage tolerance: 0.33
+    Paralog depth tolerance: 0.33
+              Max. paralogs: -1 (Keep all paralogs)
+   Max. separate loci files: 0 (Do not write separate loci files per sample)
+            Overwrite files: False
+             Keep all files: False
+
+         Samples to process: 27
+     Extractions to process: 54 protein and 0 nucleotide
+
+           Nuclear proteins: /home/frieda/CAPTUS_pipeline_2026/data/03_extractions/[Sample_name]__captus-ext/01_coding_NUC
+     Mitochondrial proteins: /home/frieda/CAPTUS_pipeline_2026/data/03_extractions/[Sample_name]__captus-ext/03_coding_MIT
+       Annotated assemblies: /home/frieda/CAPTUS_pipeline_2026/data/03_extractions/[Sample_name]__captus-ext/06_assembly_annotated
+                             (These output directories will be created for each sample)
+
+   Paths to references used: /home/frieda/CAPTUS_pipeline_2026/data/03_extractions/captus-extract_refs.json
+
+Extracting protein-coding markers with Scipio:
+'U_acuminata': recovered 38 mitochondrial genes (84.4% of 45), 81.4% of total reference length, 4 paralogs found [44.243s]
+'U_kirkiana': recovered 36 nuclear genes (10.2% of 353), 2.4% of total reference length, 0 paralogs found [1m 43.4s (103.373s)]
+'U_kirkiana': recovered 38 mitochondrial genes (84.4% of 45), 84.7% of total reference length, 3 paralogs found [1m 37.3s (97.273s)]
+'U_vanhouttei': recovered 38 mitochondrial genes (84.4% of 45), 80.0% of total reference length, 1 paralogs found [23.746s]
+'U_vanhouttei': recovered 66 nuclear genes (18.7% of 353), 5.4% of total reference length, 3 paralogs found [1m 17.7s (77.656s)]
+'U_nitida': recovered 38 mitochondrial genes (84.4% of 45), 75.0% of total reference length, 7 paralogs found [29.882s]
+'U_ambanjensis': recovered 16 nuclear genes (4.5% of 353), 0.9% of total reference length, 0 paralogs found [1m 16.8s (76.773s)]
+'U_ambanjensis': recovered 32 mitochondrial genes (71.1% of 45), 50.1% of total reference length, 1 paralogs found [13.115s]
+'U_acuminata': recovered 343 nuclear genes (97.2% of 353), 68.9% of total reference length, 35 paralogs found [5m 57.8s (357.845s)]
+'U_lissopyrena': recovered 37 mitochondrial genes (82.2% of 45), 67.2% of total reference length, 2 paralogs found [18.213s]
+'U_nitida': recovered 322 nuclear genes (91.2% of 353), 59.0% of total reference length, 34 paralogs found [4m 24.7s (264.748s)]
+'U_pilosa': recovered 34 mitochondrial genes (75.6% of 45), 53.5% of total reference length, 5 paralogs found [10.492s]
+'U_pilosa': recovered 277 nuclear genes (78.5% of 353), 37.6% of total reference length, 12 paralogs found [2m 15.1s (135.095s)]
+'U_bojeri_2': recovered 28 nuclear genes (7.9% of 353), 1.8% of total reference length, 0 paralogs found [1m 22.4s (82.383s)]
+'U_staudtii': recovered 18 nuclear genes (5.1% of 353), 0.8% of total reference length, 0 paralogs found [41.079s]
+'U_staudtii': recovered 19 mitochondrial genes (42.2% of 45), 19.0% of total reference length, 0 paralogs found [8.467s]
+'U_lissopyrena': recovered 340 nuclear genes (96.3% of 353), 65.2% of total reference length, 48 paralogs found [5m 5.0s (305.042s)]
+'U_heudelotii': recovered 37 mitochondrial genes (82.2% of 45), 72.5% of total reference length, 1 paralogs found [7.610s]
+'U_bojeri_2': recovered 38 mitochondrial genes (84.4% of 45), 84.1% of total reference length, 1 paralogs found [1m 50.7s (110.738s)]
+'U_bojeri_1': recovered 36 mitochondrial genes (80.0% of 45), 66.7% of total reference length, 2 paralogs found [19.763s]
+'U_bojeri_1': recovered 211 nuclear genes (59.8% of 353), 21.2% of total reference length, 4 paralogs found [1m 13.1s (73.092s)]
+'U_mole': recovered 32 mitochondrial genes (71.1% of 45), 52.3% of total reference length, 6 paralogs found [12.354s]
+'U_mole': recovered 184 nuclear genes (52.1% of 353), 17.9% of total reference length, 6 paralogs found [1m 5.5s (65.516s)]
+'U_densifolia': recovered 7 mitochondrial genes (15.6% of 45), 8.8% of total reference length, 0 paralogs found [17.495s]
+'U_heudelotii': recovered 332 nuclear genes (94.1% of 353), 62.9% of total reference length, 28 paralogs found [3m 4.8s (184.757s)]
+'U_louvelii': recovered 16 mitochondrial genes (35.6% of 45), 17.0% of total reference length, 2 paralogs found [7.228s]
+'U_pilosa_var_petiolata': recovered 187 nuclear genes (53.0% of 353), 19.2% of total reference length, 3 paralogs found [1m 0.7s (60.713s)]
+'U_pilosa_var_petiolata': recovered 29 mitochondrial genes (64.4% of 45), 40.1% of total reference length, 1 paralogs found [7.378s]
+'U_louvelii': recovered 303 nuclear genes (85.8% of 353), 48.0% of total reference length, 26 paralogs found [1m 49.6s (109.638s)]
+'U_togoensis': recovered 30 mitochondrial genes (66.7% of 45), 40.2% of total reference length, 2 paralogs found [10.219s]
+'U_densifolia': recovered 316 nuclear genes (89.5% of 353), 52.2% of total reference length, 25 paralogs found [2m 43.6s (163.608s)]
+'U_guineensis': recovered 33 mitochondrial genes (73.3% of 45), 53.5% of total reference length, 2 paralogs found [6.236s]
+'U_togoensis': recovered 237 nuclear genes (67.1% of 353), 27.6% of total reference length, 8 paralogs found [1m 9.3s (69.309s)]
+'U_guineensis': recovered 208 nuclear genes (58.9% of 353), 22.7% of total reference length, 5 paralogs found [57.771s]
+'U_sansibarica': recovered 150 nuclear genes (42.5% of 353), 12.8% of total reference length, 3 paralogs found [43.055s]
+'U_sansibarica': recovered 30 mitochondrial genes (66.7% of 45), 39.2% of total reference length, 1 paralogs found [11.982s]
+'U_teusczii_f_teusczii': recovered 5 mitochondrial genes (11.1% of 45), 2.1% of total reference length, 0 paralogs found [7.262s]
+'U_robynsii': FAILED extraction of mitochondrial genes
+'U_teusczii_f_teusczii': recovered 24 nuclear genes (6.8% of 353), 1.0% of total reference length, 0 paralogs found [26.110s]
+'U_littoralis': recovered 31 mitochondrial genes (68.9% of 45), 43.9% of total reference length, 2 paralogs found [11.816s]
+'U_amplifolia': recovered 27 nuclear genes (7.6% of 353), 1.7% of total reference length, 0 paralogs found [26.227s]
+'U_robynsii': recovered 173 nuclear genes (49.0% of 353), 18.2% of total reference length, 5 paralogs found [53.174s]
+'U_amplifolia': recovered 3 mitochondrial genes (6.7% of 45), 1.4% of total reference length, 0 paralogs found [4.211s]
+'U_littoralis': recovered 194 nuclear genes (55.0% of 353), 18.5% of total reference length, 7 paralogs found [46.918s]
+'Spondianthus_preussii': recovered 4 mitochondrial genes (8.9% of 45), 2.4% of total reference length, 0 paralogs found [6.751s]
+'U_ferruginea': recovered 1 mitochondrial genes (2.2% of 45), 0.6% of total reference length, 0 paralogs found [7.987s]
+'U_teusczii_f_pilosa': recovered 22 nuclear genes (6.2% of 353), 0.9% of total reference length, 0 paralogs found [9.495s]
+'U_teusczii_f_pilosa': FAILED extraction of mitochondrial genes
+'U_pynaertii': recovered 8 nuclear genes (2.3% of 353), 0.5% of total reference length, 0 paralogs found [9.812s]
+'U_pynaertii': recovered 23 mitochondrial genes (51.1% of 45), 38.2% of total reference length, 2 paralogs found [12.627s]
+'U_ferruginea': recovered 196 nuclear genes (55.5% of 353), 20.3% of total reference length, 7 paralogs found [52.021s]
+'U_rufopilosa': recovered 40 nuclear genes (11.3% of 353), 2.4% of total reference length, 0 paralogs found [11.070s]
+'U_rufopilosa': recovered 2 mitochondrial genes (4.4% of 45), 1.2% of total reference length, 0 paralogs found [10.194s]
+'Spondianthus_preussii': recovered 303 nuclear genes (85.8% of 353), 48.9% of total reference length, 6 paralogs found [1m 19.9s (79.936s)]
+ └─→ Protein-coding markers: finished processing for 54 extraction(s) [17m 27.7s (1047.718s)]
+
+Merging GFFs, summarizing recovery stats, and cleaning up:
+'U_louvelii': GFF annotations and recovery stats merged, unnecessary files removed [4.514s]
+'U_densifolia': GFF annotations and recovery stats merged, unnecessary files removed [4.515s]
+'U_mole': GFF annotations and recovery stats merged, unnecessary files removed [4.652s]
+'U_bojeri_1': GFF annotations and recovery stats merged, unnecessary files removed [5.294s]
+'U_heudelotii': GFF annotations and recovery stats merged, unnecessary files removed [5.520s]
+'U_staudtii': GFF annotations and recovery stats merged, unnecessary files removed [5.635s]
+'U_togoensis': GFF annotations and recovery stats merged, unnecessary files removed [1.832s]
+'U_guineensis': GFF annotations and recovery stats merged, unnecessary files removed [2.332s]
+'U_sansibarica': GFF annotations and recovery stats merged, unnecessary files removed [1.833s]
+'U_robynsii': GFF annotations and recovery stats merged, unnecessary files removed [1.885s]
+'U_bojeri_2': GFF annotations and recovery stats merged, unnecessary files removed [7.738s]
+'U_teusczii_f_teusczii': GFF annotations and recovery stats merged, unnecessary files removed [2.247s]
+'U_littoralis': GFF annotations and recovery stats merged, unnecessary files removed [1.623s]
+'U_lissopyrena': GFF annotations and recovery stats merged, unnecessary files removed [8.042s]
+'U_pilosa_var_petiolata': GFF annotations and recovery stats merged, unnecessary files removed [3.528s]
+'U_pilosa': GFF annotations and recovery stats merged, unnecessary files removed [8.110s]
+'Spondianthus_preussii': GFF annotations and recovery stats merged, unnecessary files removed [1.061s]
+'U_pynaertii': GFF annotations and recovery stats merged, unnecessary files removed [0.470s]
+'U_teusczii_f_pilosa': GFF annotations and recovery stats merged, unnecessary files removed [0.611s]
+'U_rufopilosa': GFF annotations and recovery stats merged, unnecessary files removed [0.368s]
+'U_amplifolia': GFF annotations and recovery stats merged, unnecessary files removed [1.673s]
+'U_ferruginea': GFF annotations and recovery stats merged, unnecessary files removed [1.134s]
+'U_ambanjensis': GFF annotations and recovery stats merged, unnecessary files removed [8.764s]
+'U_vanhouttei': GFF annotations and recovery stats merged, unnecessary files removed [9.114s]
+'U_nitida': GFF annotations and recovery stats merged, unnecessary files removed [9.132s]
+'U_kirkiana': GFF annotations and recovery stats merged, unnecessary files removed [9.396s]
+'U_acuminata': GFF annotations and recovery stats merged, unnecessary files removed [9.586s]
+ └─→ Merged GFF and summary recovery stats created for 27 sample(s) [9.726s]
+
+
+
+Clustering and Extracting Markers Across Samples with MMseqs2/BLAT (2026-09-16 18:58:57)
+----------------------------------------------------------------------------------------
+    Now Captus will cluster the assembly sequences across samples to discover homologous markers. If protein and/or miscellaneous DNA references sequences were extracted in the previous step, the '06_assembly_annotated/leftover_contigs.fasta.gz' files from each sample will be used for clustering, otherwise the '01_assembly/assembly.fasta' files are used. USE WITH CAUTION: Clustering time and/or success will depend on the size of your assembly files, it should be safe to use if you assembled captured data, RNAseq reads, or even genome skimming data.
+    After clustering has been completed, only the clusters with at least '--cl_min_samples' will be considered and a single representative sequence from each cluster will be selected to create a new reference file to perform a final DNA marker extraction across all samples. The extraction of these new markers is done with the same settings chosen for miscellaneous DNA markers.
+
+Skipping clustering step... (to enable use '--cluster_leftovers', and verify that all the software dependencies are correctly installed)
+
+
+
+Statistics Summarization (2026-09-16 18:58:57)
+----------------------------------------------
+    Now Captus will collect the extraction statistics from each sample to compile a comprehensive table and a HTML report for visualization of extraction statistics.
+
+      Extraction statistics: /home/frieda/CAPTUS_pipeline_2026/data/03_extractions/captus-extract_stats.tsv
+
+    Generating Marker Extraction report...
+
+          Extraction report: /home/frieda/CAPTUS_pipeline_2026/data/03_extractions/captus-extract_report.html
+                             Report generated in 0.500s
+
+
+
+Captus-assembly: EXTRACT -> successfully completed [17m 39.3s (1059.335s)] (2026-09-16 18:58:57)
+------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Starting Captus-assembly: EXTRACT (2026-09-16 19:12:19)
+-------------------------------------------------------
+    Welcome to the marker extraction step of Captus-assembly. In this step, Captus will use Scipio to search within your FASTA assemblies and recover any set of reference proteins provided through '--nuc_refs', '--ptd_refs', and/or '--mit_refs'. Captus includes some reference protein sets to work with Plants like the 'Angiosperms353' protein set for nuclear genes, and two organellar protein reference sets 'SeedPlantsPTD' for plastids, and 'SeedPlantsMIT' for mitochondria.
+    If you have references that are not proteins (e.g. non-coding regions, gene sequences including introns, full mRNAs, etc.) You can provide these miscellaneous DNA references with '--dna_refs' and Captus will use BLAT to find and extract matches in your assemblies.
+    Finally, if you want to explore the usefulness of the contigs that were not hit by any protein or other DNA references after the Captus' extraction process, or simply if you do not have reference sets to test, you can try the option '--cluster_leftovers' to attempt sequence clustering across samples in order to discover homologous markers.
+    For more information, please see https://github.com/edgardomortiz/Captus
+
+             Captus version: v1.6.6
+                    Command: /home/frieda/miniconda3/envs/captus/bin/captus extract -a ./data/02_assemblies -o ./data/03_extractions -n Mega353 -p SeedPlantsPTD -m SeedPlantsMIT
+                         OS: Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39
+                       Host: emb-lap-frwo
+                   Max. RAM: 15.2GB (out of 15.4GB)
+               Max. Threads: 14 (out of 14)
+
+               Dependencies:
+                  Scipio   : v1.4.1 OK
+                  ├─BioPerl: v1.7.8 OK
+                  └─YAML   : v1.30 OK
+                  BLAT     : v37x1 OK
+                  MMseqs2  : not used
+                  MAFFT    : not used
+
+           Python libraries:
+                      numpy: v2.5.3 OK
+                     pandas: v3.0.5 OK
+                     plotly: v7.0.0 OK
+
+      Assembly dirs checked: 27
+           Valid assemblies: 27
+
+           Output directory: /home/frieda/CAPTUS_pipeline_2026/data/03_extractions
+                             Output directory already exists and files may be overwritten
+
+
+
+Protein and DNA Markers Extraction from FASTA assemblies (2026-09-16 19:12:20)
+------------------------------------------------------------------------------
+    Now Captus will search within your FASTA assemblies for the set of reference proteins provided by '--nuc_refs', '--ptd_refs', and/or '--mit_refs' and extract the sequences both in nucleotide and translated to aminoacid using the specified '--nuc_transtable', '--ptd_transtable' and '--mit_transtable' respectively.
+    Additionally, miscellaneous DNA references provided with '--dna_refs' will also be extracted.
+
+Verifying protein reference sets...
+
+            PROTEIN OPTIONS:
+    Max. loci for Scipio x2: 2000
+    Predict dubious introns: False
+     Concurrent extractions: 3
+         RAM per extraction: 5.1GB
+     Threads per extraction: 4
+
+           Nuclear proteins:
+                  reference: Mega353 /home/frieda/miniconda3/envs/captus/lib/python3.14/site-packages/data/Mega353.FAA
+             reference info: 353 loci, 15,371 sequences (loci names found, detected multiple sequences per locus)
+          translation table: 1
+              nuc_min_score: 0.13
+           nuc_min_identity: 65
+           nuc_min_coverage: 20
+        nuc_depth_tolerance: 0.5 (min = 10^(log(depth of the contig with best hit in locus) * 0.5))
+
+        Plastidial proteins:
+                  reference: SeedPlantsPTD /home/frieda/miniconda3/envs/captus/lib/python3.14/site-packages/data/SeedPlantsPTD.FAA
+             reference info: 83 loci, 2,194 sequences (loci names found, detected multiple sequences per locus)
+          translation table: 11
+              ptd_min_score: 0.2
+           ptd_min_identity: 65
+           ptd_min_coverage: 20
+        ptd_depth_tolerance: 0.5 (min = 10^(log(depth of the contig with best hit in locus) * 0.5))
+
+     Mitochondrial proteins:
+                  reference: SeedPlantsMIT /home/frieda/miniconda3/envs/captus/lib/python3.14/site-packages/data/SeedPlantsMIT.FAA
+             reference info: 45 loci, 167 sequences (loci names found, detected multiple sequences per locus)
+          translation table: 1
+              mit_min_score: 0.2
+           mit_min_identity: 65
+           mit_min_coverage: 20
+        mit_depth_tolerance: 0.5 (min = 10^(log(depth of the contig with best hit in locus) * 0.5))
+
+
+  MISCELLANEOUS DNA OPTIONS:
+                  reference: not used
+
+
+             OUTPUT OPTIONS:
+   Ignore depth of coverage: False
+   Disable contig stitching: False
+         Max. locus overlap: 5.0%
+ Paralog identity tolerance: 0.66
+ Paralog coverage tolerance: 0.33
+    Paralog depth tolerance: 0.33
+              Max. paralogs: -1 (Keep all paralogs)
+   Max. separate loci files: 0 (Do not write separate loci files per sample)
+            Overwrite files: False
+             Keep all files: False
+
+         Samples to process: 27
+     Extractions to process: 81 protein and 0 nucleotide
+
+           Nuclear proteins: /home/frieda/CAPTUS_pipeline_2026/data/03_extractions/[Sample_name]__captus-ext/01_coding_NUC
+        Plastidial proteins: /home/frieda/CAPTUS_pipeline_2026/data/03_extractions/[Sample_name]__captus-ext/02_coding_PTD
+     Mitochondrial proteins: /home/frieda/CAPTUS_pipeline_2026/data/03_extractions/[Sample_name]__captus-ext/03_coding_MIT
+       Annotated assemblies: /home/frieda/CAPTUS_pipeline_2026/data/03_extractions/[Sample_name]__captus-ext/06_assembly_annotated
+                             (These output directories will be created for each sample)
+
+   Paths to references used: /home/frieda/CAPTUS_pipeline_2026/data/03_extractions/captus-extract_refs.json
+
+Extracting protein-coding markers with Scipio:
+'U_acuminata': extraction of mitochondrial genes SKIPPED (output files already exist)
+'U_acuminata': extraction of nuclear genes SKIPPED (output files already exist)
+'U_kirkiana': extraction of nuclear genes SKIPPED (output files already exist)
+'U_kirkiana': extraction of mitochondrial genes SKIPPED (output files already exist)
+'U_vanhouttei': extraction of nuclear genes SKIPPED (output files already exist)
+'U_vanhouttei': recovered 72 plastidial genes (86.7% of 83), 58.2% of total reference length, 11 paralogs found [48.931s]
+'U_vanhouttei': extraction of mitochondrial genes SKIPPED (output files already exist)
+'U_nitida': extraction of nuclear genes SKIPPED (output files already exist)
+'U_kirkiana': recovered 79 plastidial genes (95.2% of 83), 93.5% of total reference length, 1 paralogs found [1m 6.7s (66.725s)]
+'U_nitida': extraction of mitochondrial genes SKIPPED (output files already exist)
+'U_ambanjensis': extraction of nuclear genes SKIPPED (output files already exist)
+'U_acuminata': recovered 79 plastidial genes (95.2% of 83), 80.5% of total reference length, 8 paralogs found [1m 14.6s (74.610s)]
+'U_ambanjensis': extraction of mitochondrial genes SKIPPED (output files already exist)
+'U_lissopyrena': extraction of nuclear genes SKIPPED (output files already exist)
+'U_ambanjensis': recovered 75 plastidial genes (90.4% of 83), 64.3% of total reference length, 6 paralogs found [41.122s]
+'U_lissopyrena': extraction of mitochondrial genes SKIPPED (output files already exist)
+'U_nitida': recovered 80 plastidial genes (96.4% of 83), 84.7% of total reference length, 12 paralogs found [58.883s]
+'U_pilosa': extraction of nuclear genes SKIPPED (output files already exist)
+'U_pilosa': extraction of mitochondrial genes SKIPPED (output files already exist)
+'U_bojeri_2': extraction of nuclear genes SKIPPED (output files already exist)
+'U_lissopyrena': recovered 74 plastidial genes (89.2% of 83), 60.2% of total reference length, 12 paralogs found [57.124s]
+'U_bojeri_2': extraction of mitochondrial genes SKIPPED (output files already exist)
+'U_staudtii': extraction of nuclear genes SKIPPED (output files already exist)
+'U_staudtii': recovered 57 plastidial genes (68.7% of 83), 34.0% of total reference length, 4 paralogs found [24.842s]
+'U_staudtii': extraction of mitochondrial genes SKIPPED (output files already exist)
+'U_heudelotii': extraction of nuclear genes SKIPPED (output files already exist)
+'U_bojeri_2': recovered 79 plastidial genes (95.2% of 83), 93.2% of total reference length, 0 paralogs found [58.088s]
+'U_heudelotii': extraction of mitochondrial genes SKIPPED (output files already exist)
+'U_bojeri_1': extraction of nuclear genes SKIPPED (output files already exist)
+'U_pilosa': recovered 77 plastidial genes (92.8% of 83), 74.6% of total reference length, 8 paralogs found [1m 3.3s (63.278s)]
+'U_bojeri_1': extraction of mitochondrial genes SKIPPED (output files already exist)
+'U_mole': extraction of nuclear genes SKIPPED (output files already exist)
+'U_heudelotii': recovered 77 plastidial genes (92.8% of 83), 71.9% of total reference length, 19 paralogs found [36.179s]
+'U_mole': extraction of mitochondrial genes SKIPPED (output files already exist)
+'U_densifolia': extraction of nuclear genes SKIPPED (output files already exist)
+'U_bojeri_1': recovered 78 plastidial genes (94.0% of 83), 78.0% of total reference length, 15 paralogs found [38.154s]
+'U_densifolia': extraction of mitochondrial genes SKIPPED (output files already exist)
+'U_louvelii': extraction of nuclear genes SKIPPED (output files already exist)
+'U_mole': recovered 77 plastidial genes (92.8% of 83), 73.4% of total reference length, 15 paralogs found [44.392s]
+'U_louvelii': extraction of mitochondrial genes SKIPPED (output files already exist)
+'U_pilosa_var_petiolata': extraction of nuclear genes SKIPPED (output files already exist)
+'U_densifolia': recovered 73 plastidial genes (88.0% of 83), 60.9% of total reference length, 13 paralogs found [34.243s]
+'U_pilosa_var_petiolata': extraction of mitochondrial genes SKIPPED (output files already exist)
+'U_togoensis': extraction of nuclear genes SKIPPED (output files already exist)
+'U_louvelii': recovered 78 plastidial genes (94.0% of 83), 78.5% of total reference length, 16 paralogs found [38.146s]
+'U_togoensis': extraction of mitochondrial genes SKIPPED (output files already exist)
+'U_guineensis': extraction of nuclear genes SKIPPED (output files already exist)
+'U_pilosa_var_petiolata': recovered 75 plastidial genes (90.4% of 83), 73.5% of total reference length, 4 paralogs found [30.738s]
+'U_guineensis': extraction of mitochondrial genes SKIPPED (output files already exist)
+'U_sansibarica': extraction of nuclear genes SKIPPED (output files already exist)
+'U_togoensis': recovered 79 plastidial genes (95.2% of 83), 75.3% of total reference length, 14 paralogs found [29.170s]
+'U_sansibarica': extraction of mitochondrial genes SKIPPED (output files already exist)
+'U_teusczii_f_teusczii': extraction of nuclear genes SKIPPED (output files already exist)
+'U_guineensis': recovered 71 plastidial genes (85.5% of 83), 50.6% of total reference length, 17 paralogs found [29.835s]
+'U_teusczii_f_teusczii': extraction of mitochondrial genes SKIPPED (output files already exist)
+'U_robynsii': extraction of nuclear genes SKIPPED (output files already exist)
+'U_teusczii_f_teusczii': recovered 77 plastidial genes (92.8% of 83), 72.8% of total reference length, 4 paralogs found [20.166s]
+'U_robynsii': extraction of mitochondrial genes SKIPPED (output files already exist)
+'U_littoralis': extraction of nuclear genes SKIPPED (output files already exist)
+'U_sansibarica': recovered 78 plastidial genes (94.0% of 83), 77.2% of total reference length, 7 paralogs found [31.930s]
+'U_littoralis': extraction of mitochondrial genes SKIPPED (output files already exist)
+'U_amplifolia': extraction of nuclear genes SKIPPED (output files already exist)
+'U_robynsii': recovered 6 plastidial genes (7.2% of 83), 0.7% of total reference length, 2 paralogs found [14.061s]
+'U_amplifolia': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Spondianthus_preussii': extraction of nuclear genes SKIPPED (output files already exist)
+'U_amplifolia': recovered 36 plastidial genes (43.4% of 83), 12.2% of total reference length, 6 paralogs found [17.268s]
+'Spondianthus_preussii': extraction of mitochondrial genes SKIPPED (output files already exist)
+'U_ferruginea': extraction of nuclear genes SKIPPED (output files already exist)
+'Spondianthus_preussii': recovered 6 plastidial genes (7.2% of 83), 1.2% of total reference length, 0 paralogs found [16.774s]
+'U_ferruginea': extraction of mitochondrial genes SKIPPED (output files already exist)
+'U_teusczii_f_pilosa': extraction of nuclear genes SKIPPED (output files already exist)
+'U_littoralis': recovered 79 plastidial genes (95.2% of 83), 87.8% of total reference length, 8 paralogs found [30.436s]
+'U_teusczii_f_pilosa': extraction of mitochondrial genes SKIPPED (output files already exist)
+'U_pynaertii': extraction of nuclear genes SKIPPED (output files already exist)
+'U_ferruginea': recovered 15 plastidial genes (18.1% of 83), 4.2% of total reference length, 2 paralogs found [13.889s]
+'U_pynaertii': extraction of mitochondrial genes SKIPPED (output files already exist)
+'U_rufopilosa': extraction of nuclear genes SKIPPED (output files already exist)
+'U_teusczii_f_pilosa': recovered 34 plastidial genes (41.0% of 83), 8.3% of total reference length, 1 paralogs found [6.536s]
+'U_rufopilosa': extraction of mitochondrial genes SKIPPED (output files already exist)
+'U_pynaertii': recovered 67 plastidial genes (80.7% of 83), 52.9% of total reference length, 4 paralogs found [13.150s]
+'U_rufopilosa': recovered 80 plastidial genes (96.4% of 83), 87.8% of total reference length, 2 paralogs found [12.999s]
+ └─→ Protein-coding markers: finished processing for 81 extraction(s) [5m 23.3s (323.334s)]
+
+Merging GFFs, summarizing recovery stats, and cleaning up:
+'U_acuminata': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'U_pilosa': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'U_kirkiana': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'U_nitida': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'U_densifolia': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'U_vanhouttei': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'U_pilosa_var_petiolata': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'U_bojeri_2': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'U_sansibarica': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'U_louvelii': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'U_heudelotii': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'U_teusczii_f_teusczii': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'U_staudtii': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'U_ambanjensis': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'U_littoralis': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'U_guineensis': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'U_robynsii': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Spondianthus_preussii': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'U_pynaertii': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'U_bojeri_1': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'U_amplifolia': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'U_ferruginea': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'U_rufopilosa': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'U_togoensis': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'U_teusczii_f_pilosa': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'U_lissopyrena': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'U_mole': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+ └─→ Merged GFF and summary recovery stats created for 27 sample(s) [0.230s]
+
+
+
+Clustering and Extracting Markers Across Samples with MMseqs2/BLAT (2026-09-16 19:17:44)
+----------------------------------------------------------------------------------------
+    Now Captus will cluster the assembly sequences across samples to discover homologous markers. If protein and/or miscellaneous DNA references sequences were extracted in the previous step, the '06_assembly_annotated/leftover_contigs.fasta.gz' files from each sample will be used for clustering, otherwise the '01_assembly/assembly.fasta' files are used. USE WITH CAUTION: Clustering time and/or success will depend on the size of your assembly files, it should be safe to use if you assembled captured data, RNAseq reads, or even genome skimming data.
+    After clustering has been completed, only the clusters with at least '--cl_min_samples' will be considered and a single representative sequence from each cluster will be selected to create a new reference file to perform a final DNA marker extraction across all samples. The extraction of these new markers is done with the same settings chosen for miscellaneous DNA markers.
+
+Skipping clustering step... (to enable use '--cluster_leftovers', and verify that all the software dependencies are correctly installed)
+
+
+
+Statistics Summarization (2026-09-16 19:17:44)
+----------------------------------------------
+    Now Captus will collect the extraction statistics from each sample to compile a comprehensive table and a HTML report for visualization of extraction statistics.
+
+      Extraction statistics: /home/frieda/CAPTUS_pipeline_2026/data/03_extractions/captus-extract_stats.tsv
+
+    Generating Marker Extraction report...
+
+          Extraction report: /home/frieda/CAPTUS_pipeline_2026/data/03_extractions/captus-extract_report.html
+                             Report generated in 0.453s
+
+
+
+Captus-assembly: EXTRACT -> successfully completed [5m 25.3s (325.300s)] (2026-09-16 19:17:45)
+----------------------------------------------------------------------------------------------
+

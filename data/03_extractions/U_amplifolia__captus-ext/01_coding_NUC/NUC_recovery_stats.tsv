@@ -1,0 +1,30 @@
+#Captus v1.6.6
+#Command: /home/frieda/miniconda3/envs/captus/bin/captus extract -a ./data/02_assemblies -o ./data/03_extractions -n Mega353 -p SeedPlantPTD -m SeedPlantsMIT
+sample_name	marker_type	locus	ref_name	ref_coords	ref_type	ref_len_matched	hit	pct_recovered	pct_identity	score	wscore	hit_len	cds_len	intron_len	flanks_len	frameshifts	hit_contigs	hit_l50	hit_l90	hit_lg50	hit_lg90	ctg_names	ctg_strands	ctg_coords	ctg_mean_depth
+U_amplifolia	NUC	4796	HAEU-4796	56-106	prot	51	00	23.39	92.16	0.197	0.849	233	153	0	80		1	1	1	0	0	NODE_13982_length_233_cov_41.0000_k_79_flag_1	+	79-231	41.0000
+U_amplifolia	NUC	4951	TDTF-4951	87-149	prot	63	00	32.64	98.41	0.316	0.969	190	189	0	1		1	1	1	0	0	NODE_9525_length_190_cov_43.0000_k_79_flag_1	+	1-189	43.0000
+U_amplifolia	NUC	4954	NXOH-4954	46-113	prot	68	00	21.86	95.59	0.199	0.914	207	204	0	3		1	1	1	0	0	NODE_565_length_207_cov_124.0000_k_79_flag_1	+	2-205	124.0000
+U_amplifolia	NUC	4989	AXBO-4989	145-211	prot	67	00	30.32	85.07	0.213	0.680	209	201	0	8		1	1	1	0	0	NODE_7185_length_209_cov_18.0000_k_79_flag_1	-	4-204	18.0000
+U_amplifolia	NUC	5328	RVGH-5328	129-166	prot	38	00	22.89	81.58	0.145	0.666	127	114	0	13		1	1	1	0	0	NODE_16736_length_127_cov_25.0000_k_79_flag_1	-	14-127	25.0000
+U_amplifolia	NUC	5355	SZPD-5355	2-37	prot	36	00	35.29	100.00	0.353	1.000	224	108	0	116		1	1	1	0	0	NODE_11213_length_224_cov_35.0000_k_79_flag_1	-	2-109	35.0000
+U_amplifolia	NUC	5428	XNLP-5428	2-57	prot	56	00	29.47	92.86	0.253	0.862	230	168	0	62		1	1	1	0	0	NODE_12644_length_230_cov_40.0000_k_79_flag_1	-	1-168	40.0000
+U_amplifolia	NUC	5562	WTKZ-5562	91-122	prot	32	00	26.23	100.00	0.262	1.000	172	96	0	76		1	1	1	0	0	NODE_9242_length_172_cov_392.0000_k_79_flag_1	+	53-148	392.0000
+U_amplifolia	NUC	5644	WCOR-5644	101-149	prot	49	00	21.49	97.96	0.206	0.960	149	147	0	2		1	1	1	0	0	NODE_10422_length_149_cov_2.0000_k_79_flag_1	-	2-148	2.0000
+U_amplifolia	NUC	5660	BCAA-5660	47-83	prot	37	00	21.51	97.30	0.203	0.910	166	111	0	55		1	1	1	0	0	NODE_10161_length_166_cov_10.0000_k_79_flag_1	-	3-113	10.0000
+U_amplifolia	NUC	5744	BHYC-5744	8-34	prot	27	00	22.69	100.00	0.227	1.000	183	81	0	102		1	1	1	0	0	NODE_17785_length_183_cov_4.0000_k_79_flag_1	-	102-182	4.0000
+U_amplifolia	NUC	5857	INQX-5857	1-54;103-124	prot	76	00	34.70	94.74	0.311	0.885	436	228	0	208		2	1	2	0	0	NODE_4600_length_258_cov_47.0000_k_79_flag_1;NODE_12974_length_179_cov_11.0000_k_79_flag_1	+;+	97-258;2-67	29.0000
+U_amplifolia	NUC	5858	HQRJ-5858	1-46	prot	46	00	21.20	100.00	0.212	1.000	173	138	0	35		1	1	1	0	0	NODE_17491_length_173_cov_555.0000_k_79_flag_1	+	34-171	555.0000
+U_amplifolia	NUC	5910	UTQR-5910	122-177	prot	56	00	23.33	94.64	0.208	0.888	260	168	0	92		1	1	1	0	0	NODE_16599_length_260_cov_2.0000_k_79_flag_1	+	92-259	2.0000
+U_amplifolia	NUC	5933	QIKZ-5933	13-48;170-213	prot	80	00	30.65	91.25	0.253	0.832	283	240	0	43		2	1	2	0	0	NODE_13012_length_171_cov_41.0000_k_79_flag_1;NODE_15198_length_174_cov_209.0000_k_79_flag_1	+;-	3-110;42-173	125.0000
+U_amplifolia	NUC	5940	WBOD-5940	2-41	prot	40	00	21.39	92.50	0.182	0.825	131	120	0	11		1	1	1	0	0	NODE_10097_length_131_cov_2.0000_k_79_flag_1	-	4-123	2.0000
+U_amplifolia	NUC	5958	ZMGN-5958	74-117	prot	44	00	37.61	90.91	0.308	0.826	204	132	3	69		1	1	1	0	0	NODE_898_length_204_cov_127.0000_k_79_flag_1	-	71-202	127.0000
+U_amplifolia	NUC	6034	PAZJ-6034	100-128,129-145	prot	46	00	22.89	93.48	0.199	0.874	284	138	86	60		1	1	1	0	0	NODE_13341_length_284_cov_348.0000_k_79_flag_1	+	18-103,190-241	348.0000
+U_amplifolia	NUC	6048	WMUK-6048	53-75;78-112	prot	58	00	51.79	93.10	0.446	0.866	293	177	3	113		2	1	2	2	0	NODE_1351_length_143_cov_85.0000_k_79_flag_1;NODE_3806_length_204_cov_345.0000_k_79_flag_1	-;-	3-71;45-152	215.0000
+U_amplifolia	NUC	6051	VYGG-6051	48-138	prot	91	00	29.45	90.11	0.236	0.812	299	282	0	17		1	1	1	0	0	NODE_8181_length_299_cov_202.0000_k_79_flag_1	-	18-299	202.0000
+U_amplifolia	NUC	6110	JETM-6110	2-10;62-100	prot	48	00	42.11	77.08	0.228	0.594	254	144	0	110		2	1	2	0	0	NODE_6422_length_163_cov_31.0000_k_79_flag_1;NODE_3626_length_127_cov_19.0000_k_79_flag_1	-;+	35-61;3-119	25.0000
+U_amplifolia	NUC	6128	XFFT-6128	8-18,19-28,29-92	prot	85	00	33.20	82.35	0.215	0.678	262	234	3	25		1	1	1	0	0	NODE_10085_length_262_cov_226.0000_k_79_flag_1	-	207-239,199-204,3-197	226.0000
+U_amplifolia	NUC	6148	WFBF-6148	8-23,24-58;90-152	prot	114	00	75.00	86.84	0.553	0.753	450	342	70	38		2	1	2	2	0	NODE_3374_length_226_cov_46.0000_k_79_flag_1;NODE_587_length_224_cov_283.0000_k_79_flag_1	-;-	175-222,1-104;35-224	164.5000
+U_amplifolia	NUC	6295	INQX-6295	74-133;268-347	prot	140	00	37.23	97.14	0.351	0.943	422	420	0	2		2	1	2	0	0	NODE_13865_length_181_cov_145.0000_k_79_flag_1;NODE_7327_length_243_cov_62.0000_k_79_flag_1	-;-	2-181;3-242	103.5000
+U_amplifolia	NUC	6875	XPBC-6875	8-49	prot	42	00	30.66	97.62	0.292	0.882	156	126	0	30		1	1	1	0	0	NODE_3992_length_156_cov_5.0000_k_79_flag_1	-	15-140	5.0000
+U_amplifolia	NUC	6979	BHYC-6979	6-63	prot	58	00	21.40	96.55	0.199	0.894	200	174	0	26		1	1	1	0	0	NODE_11663_length_200_cov_6.0000_k_79_flag_1	+	27-200	6.0000
+U_amplifolia	NUC	6992	TKEK-6992	60-83	prot	24	00	25.26	91.67	0.211	0.840	143	72	0	71		1	1	1	0	0	NODE_2511_length_143_cov_2.0000_k_79_flag_1	-	3-74	2.0000

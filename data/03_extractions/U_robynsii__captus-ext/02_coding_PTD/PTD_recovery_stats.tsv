@@ -1,0 +1,11 @@
+#Captus v1.6.6
+#Command: /home/frieda/miniconda3/envs/captus/bin/captus extract -a ./data/02_assemblies -o ./data/03_extractions -n Mega353 -p SeedPlantsPTD -m SeedPlantsMIT
+sample_name	marker_type	locus	ref_name	ref_coords	ref_type	ref_len_matched	hit	pct_recovered	pct_identity	score	wscore	hit_len	cds_len	intron_len	flanks_len	frameshifts	hit_contigs	hit_l50	hit_l90	hit_lg50	hit_lg90	ctg_names	ctg_strands	ctg_coords	ctg_mean_depth
+U_robynsii	PTD	petL	BAH11276.1-petL	7-23	prot	17	00	54.84	82.35	0.355	0.557	78	78	0	0	62,63	1	1	1	1	0	NODE_10609_length_249_cov_63.0000_k_127_flag_1	-	114-189	63.0000
+U_robynsii	PTD	petL	BAH11276.1-petL	8-17;18-31	prot	24	01	77.42	70.83	0.323	0.501	223	72	151	0		2	1	2	2	0	NODE_7753_length_292_cov_363.0000_k_127_flag_1;NODE_6811_length_217_cov_26.0000_k_127_flag_1	-;-	152-181;166-207	194.5000
+U_robynsii	PTD	petL	BAH11276.1-petL	8-23	prot	16	02	51.61	75.00	0.258	0.448	147	147	0	0	47,48	1	1	1	1	0	NODE_10706_length_412_cov_44.0000_k_127_flag_1	-	102-246	44.0000
+U_robynsii	PTD	psaI	QEQ14241.1-psaI	5-13	prot	9	00	25.71	88.89	0.200	0.790	27	27	0	0		1	1	1	0	0	NODE_12295_length_307_cov_44.2444_k_127_flag_3	-	158-184	44.2444
+U_robynsii	PTD	psaJ	AJB98924.1-psaJ	36-44	prot	9	00	20.45	100.00	0.205	1.000	27	27	0	0		1	1	1	0	0	NODE_8005_length_355_cov_29.0000_k_127_flag_1	-	184-210	29.0000
+U_robynsii	PTD	psbJ	QIA95693.1-psbJ	24-40	prot	17	00	42.50	100.00	0.425	1.000	30	30	0	0		1	1	1	0	0	NODE_11449_length_271_cov_37.0000_k_127_flag_1	+	18-47	37.0000
+U_robynsii	PTD	psbM	CAC88038.1-psbM	1-34	prot	34	00	100.00	97.06	0.941	0.915	102	102	0	0		1	1	1	1	1	NODE_7593_length_203_cov_2.0000_k_127_flag_1	+	82-183	2.0000
+U_robynsii	PTD	rps15	AYD72909.1-rps15	1-87	prot	87	00	100.00	78.16	0.563	0.611	228	228	0	0		1	1	1	1	1	NODE_4337_length_372_cov_10.0000_k_127_flag_1	+	79-306	10.0000

@@ -1,0 +1,45 @@
+#Captus v1.6.6
+#Command: /home/frieda/miniconda3/envs/captus/bin/captus extract -a ./data/02_assemblies -o ./data/03_extractions -n Mega353 -p SeedPlantPTD -m SeedPlantsMIT
+sample_name	marker_type	locus	ref_name	ref_coords	ref_type	ref_len_matched	hit	pct_recovered	pct_identity	score	wscore	hit_len	cds_len	intron_len	flanks_len	frameshifts	hit_contigs	hit_l50	hit_l90	hit_lg50	hit_lg90	ctg_names	ctg_strands	ctg_coords	ctg_mean_depth
+U_acuminata	MIT	atp1	QOX10099.1-atp1	1-511	prot	511	00	100.00	95.30	0.906	0.907	1437	1437	0	0		1	1	1	1	1	NODE_30068_length_1736_cov_13.0000_k_95_flag_1	+	274-1710	13.0000
+U_acuminata	MIT	atp4	AIG90002.1-atp4	20-198	prot	179	00	90.40	84.36	0.621	0.708	531	531	0	0		1	1	1	1	1	NODE_46187_length_2514_cov_22.0000_k_95_flag_0	+	4-534	22.0000
+U_acuminata	MIT	atp6	BAM36206.1-atp6	1-129;132-261	prot	259	00	99.23	80.69	0.609	0.651	780	780	0	0		2	1	2	2	2	NODE_47390_length_472_cov_10.0000_k_95_flag_1;NODE_72080_length_3055_cov_10.0000_k_95_flag_1	-;+	37-426;2-391	10.0000
+U_acuminata	MIT	atp8	AET62907.1-atp8	1-105;116-160	prot	150	00	93.75	90.67	0.762	0.821	447	447	0	0		2	1	2	1	2	NODE_62370_length_1078_cov_10.6338_k_95_flag_1;NODE_105800_length_2200_cov_10.9240_k_95_flag_0	-;+	8-322;55-186	10.7789
+U_acuminata	MIT	atp9	AET62949.1-atp9	1-74	prot	74	00	100.00	97.30	0.946	0.947	222	222	0	0		1	1	1	1	1	NODE_60371_length_875_cov_10.7744_k_95_flag_0	+	168-389	10.7744
+U_acuminata	MIT	ccmB	QGX42491.1-ccmB	30-206	prot	177	00	85.92	93.79	0.752	0.870	531	531	0	0		1	1	1	1	0	NODE_59926_length_919_cov_11.0000_k_95_flag_1	-	385-915	11.0000
+U_acuminata	MIT	ccmC	QOI73961.1-ccmC	1-251	prot	251	00	100.00	94.02	0.880	0.884	753	753	0	0		1	1	1	1	1	NODE_67376_length_3155_cov_17.5033_k_95_flag_1	+	2342-3094	17.5033
+U_acuminata	MIT	ccmFC	BAD83536.2-ccmFC	1-255,256-438	prot	438	00	100.00	92.24	0.845	0.828	2289	1350	939	0		1	1	1	1	1	NODE_40157_length_4718_cov_20.4886_k_95_flag_1	+	190-956,1896-2478	20.4886
+U_acuminata	MIT	ccmFN	QEX95847.1-ccmFN	1-446;447-534	prot	534	00	92.55	95.32	0.839	0.900	1602	1602	0	0		2	1	2	1	2	NODE_18130_length_2018_cov_18.8419_k_95_flag_0;NODE_94267_length_307_cov_5.5472_k_95_flag_0	-;-	96-1434;45-307	12.1945
+U_acuminata	MIT	cob	QTT60957.1-cob	108-389	prot	282	00	72.49	97.16	0.684	0.917	858	858	0	0		1	1	1	1	0	NODE_23414_length_1768_cov_15.0000_k_95_flag_1	+	98-955	15.0000
+U_acuminata	MIT	cob	QTT60957.1-cob	1-115	prot	115	01	29.56	97.39	0.280	0.588	345	345	0	0		1	1	1	0	0	NODE_33062_length_1520_cov_19.0000_k_95_flag_1	+	1126-1470	19.0000
+U_acuminata	MIT	cox1	AIG89850.1-cox1	1-242;243-527	prot	527	00	100.00	97.15	0.943	0.943	1989	1581	408	0		2	1	2	1	2	NODE_65197_length_1222_cov_15.0000_k_95_flag_1;NODE_55423_length_1858_cov_11.0000_k_95_flag_1	-;-	167-892;762-1616	13.0000
+U_acuminata	MIT	cox2	AMP43656.1-cox2	1-115;116-199;235-260	prot	225	00	86.54	98.22	0.835	0.963	682	675	7	0		3	1	3	2	0	NODE_26950_length_930_cov_14.7317_k_95_flag_0;NODE_9682_length_266_cov_7.0000_k_95_flag_1;NODE_92478_length_2457_cov_15.4378_k_95_flag_1	-;+;-	4-348;8-259;1577-1654	12.3898
+U_acuminata	MIT	cox3	QGW53590.1-cox3	1-265	prot	265	00	100.00	95.85	0.917	0.919	795	795	0	0		1	1	1	1	1	NODE_105800_length_2200_cov_10.9240_k_95_flag_0	+	783-1577	10.9240
+U_acuminata	MIT	matR	AKM22502.1-matR	1-439;440-684;685-729	prot	729	00	100.00	86.83	0.737	0.752	2035	1959	76	0		3	1	2	1	2	NODE_31415_length_3257_cov_29.0000_k_95_flag_1;NODE_67845_length_747_cov_100.0000_k_95_flag_1;NODE_49161_length_630_cov_10.9178_k_95_flag_1	+;+;-	2077-3234;54-719;463-597	46.6393
+U_acuminata	MIT	nad1_exon_1	ACV96637.1-nad1_exon_1	1-129	prot	129	00	100.00	97.67	0.953	0.954	387	387	0	0		1	1	1	1	1	NODE_64698_length_3330_cov_18.5951_k_95_flag_0	-	1890-2276	18.5951
+U_acuminata	MIT	nad1_exon_2_3	ACV96637.1-nad1_exon_2_3	1-19;20-27,28-91	prot	91	00	100.00	96.70	0.934	0.934	1803	273	1530	0		2	1	2	1	2	NODE_26405_length_1404_cov_17.0000_k_95_flag_1;NODE_93541_length_2148_cov_20.0000_k_95_flag_1	+;-	1332-1389;2035-2057,404-595	18.5000
+U_acuminata	MIT	nad1_exon_4_5	ACV96637.1-nad1_exon_4_5	1-19;21-105	prot	104	00	99.05	97.12	0.933	0.942	312	312	0	0		2	1	2	1	2	NODE_31415_length_3257_cov_29.0000_k_95_flag_1;NODE_62885_length_1224_cov_20.0000_k_95_flag_1	+;-	1377-1433;798-1052	24.5000
+U_acuminata	MIT	nad2_exon_1_2	QEM24359.1-nad2_exon_1_2	1-51,52-182	prot	182	00	100.00	98.35	0.967	0.959	1764	546	1218	0		1	1	1	1	1	NODE_22323_length_3542_cov_16.0000_k_95_flag_1	-	2092-2244,481-873	16.0000
+U_acuminata	MIT	nad2_exon_3_4_5	QEM24359.1-nad2_exon_3_4_5	1-53;55-139;140-306	prot	305	00	99.67	90.82	0.814	0.823	840	801	39	0		3	1	3	1	3	NODE_52537_length_2453_cov_45.0000_k_95_flag_1;NODE_20260_length_1142_cov_16.0000_k_95_flag_1;NODE_63854_length_449_cov_11.0000_k_95_flag_1	-;-;-	1200-1358;7-262;25-410	24.0000
+U_acuminata	MIT	nad3	BAD83443.2-nad3	1-118	prot	118	00	100.00	90.68	0.814	0.822	354	354	0	0		1	1	1	1	1	NODE_76981_length_1800_cov_13.0000_k_95_flag_1	+	590-943	13.0000
+U_acuminata	MIT	nad4	QEX95970.1-nad4	155-325;327-466,467-495	prot	340	00	68.69	97.35	0.651	0.947	3590	1020	2570	0		2	1	2	2	0	NODE_77390_length_932_cov_9.0000_k_95_flag_1;NODE_22567_length_5884_cov_19.0000_k_95_flag_1	+;-	52-564;3326-3746,670-755	14.0000
+U_acuminata	MIT	nad4	QEX95970.1-nad4	1-154,155-176	prot	176	01	35.56	96.59	0.331	0.671	1931	528	1403	0		1	1	1	0	0	NODE_78917_length_2413_cov_11.5181_k_95_flag_1	-	1582-2042,112-178	11.5181
+U_acuminata	MIT	nad4L	CAQ77604.1-nad4L	2-100	prot	99	00	99.00	96.97	0.930	0.940	297	297	0	0		1	1	1	1	1	NODE_26834_length_401_cov_21.0000_k_95_flag_1	+	14-310	21.0000
+U_acuminata	MIT	nad5_exon_1_2_3	AEK01311.1-nad5_exon_1_2_3	124-488	prot	365	00	74.80	95.89	0.686	0.919	1077	1077	0	0		1	1	1	1	0	NODE_1541_length_3886_cov_25.0137_k_95_flag_1	-	2494-3570	25.0137
+U_acuminata	MIT	nad5_exon_1_2_3	AEK01311.1-nad5_exon_1_2_3	1-77,78-153	prot	153	01	31.35	98.04	0.301	0.622	1308	459	849	0		1	1	1	0	0	NODE_27607_length_1741_cov_15.8834_k_95_flag_1	-	1077-1308,1-227	15.8834
+U_acuminata	MIT	nad5_exon_4_5	AEK01311.1-nad5_exon_4_5	1-29;30-180	prot	180	00	100.00	86.11	0.722	0.741	466	459	7	0		2	1	2	1	2	NODE_42643_length_1422_cov_14.0000_k_95_flag_1;NODE_16160_length_602_cov_10.0000_k_95_flag_1	+;+	1333-1419;8-379	12.0000
+U_acuminata	MIT	nad6	QCQ81896.1-nad6	1-205	prot	205	00	100.00	84.39	0.688	0.712	540	540	0	0		1	1	1	1	1	NODE_29050_length_679_cov_8.0000_k_95_flag_1	-	19-558	8.0000
+U_acuminata	MIT	nad6	QCQ81896.1-nad6	138-205	prot	68	01	33.17	97.06	0.312	0.543	204	204	0	0		1	1	1	0	0	NODE_108715_length_1747_cov_13.0000_k_95_flag_1	-	1544-1747	13.0000
+U_acuminata	MIT	nad7	QSJ48341.1-nad7	1-48,49-71,72-89;90-121;178-226,227-393	prot	337	00	85.75	95.85	0.786	0.917	4282	1014	3268	0		3	1	2	1	0	NODE_62074_length_3758_cov_29.0000_k_95_flag_0;NODE_108469_length_259_cov_5.4146_k_95_flag_0;NODE_37734_length_2463_cov_10.6440_k_95_flag_1	+;-;-	1190-1332,2233-2301,3608-3663;165-259;2245-2392,680-1182	15.0195
+U_acuminata	MIT	nad9	QSJ48311.1-nad9	1-190	prot	190	00	100.00	95.26	0.905	0.908	570	570	0	0		1	1	1	1	1	NODE_11390_length_979_cov_8.0000_k_95_flag_1	+	24-593	8.0000
+U_acuminata	MIT	rpl10	AMP43670.1-rpl10	1-143	prot	143	00	88.27	93.71	0.772	0.852	429	429	0	0		1	1	1	1	0	NODE_55423_length_1858_cov_11.0000_k_95_flag_1	-	72-500	11.0000
+U_acuminata	MIT	rpl5	QHE65829.1-rpl5	1-185	prot	185	00	100.00	90.81	0.816	0.820	558	558	0	0		1	1	1	1	1	NODE_62965_length_698_cov_12.0000_k_95_flag_1	+	69-626	12.0000
+U_acuminata	MIT	rps1	QTC06424.1-rps1	1-205	prot	205	00	100.00	89.27	0.785	0.797	546	546	0	0		1	1	1	1	1	NODE_29857_length_3296_cov_18.0000_k_95_flag_0	+	1593-2138	18.0000
+U_acuminata	MIT	rps10	QIV67023.1-rps10	2-120	prot	119	00	99.17	87.39	0.742	0.745	267	267	0	0	153	1	1	1	1	1	NODE_85220_length_608_cov_7.0000_k_95_flag_1	+	103-368	7.0000
+U_acuminata	MIT	rps12	QIS40626.1-rps12	2-125	prot	124	00	99.20	96.77	0.928	0.933	372	372	0	0		1	1	1	1	1	NODE_76981_length_1800_cov_13.0000_k_95_flag_1	+	986-1357	13.0000
+U_acuminata	MIT	rps13	AOW70633.1-rps13	1-116	prot	116	00	100.00	94.83	0.897	0.892	348	348	0	0		1	1	1	1	1	NODE_26405_length_1404_cov_17.0000_k_95_flag_1	+	121-468	17.0000
+U_acuminata	MIT	rps14	AOO96407.1-rps14	30-100	prot	71	00	71.00	87.32	0.530	0.743	219	219	0	0	185,186	1	1	1	1	0	NODE_86537_length_509_cov_12.5894_k_95_flag_1	+	59-275	12.5894
+U_acuminata	MIT	rps3	QMQ97381.1-rps3	25-567	prot	543	00	95.77	90.79	0.781	0.787	1674	1674	0	0		1	1	1	1	1	NODE_12575_length_2935_cov_21.0401_k_95_flag_1	-	140-1813	21.0401
+U_acuminata	MIT	rps4	AXV54317.1-rps4	3-349	prot	347	00	99.43	92.22	0.840	0.797	1038	1038	0	0		1	1	1	1	1	NODE_18754_length_3227_cov_354.3333_k_95_flag_1	-	188-1225	354.3333
+U_acuminata	MIT	sdh4	ATD51557.1-sdh4	1-137	prot	137	00	100.00	90.51	0.810	0.819	396	396	0	0		1	1	1	1	1	NODE_105800_length_2200_cov_10.9240_k_95_flag_0	+	1508-1903	10.9240
+U_acuminata	MIT	tatC	ABG65646.1-tatC	1-273	prot	273	00	100.00	88.28	0.766	0.760	852	852	0	0	81	1	1	1	1	1	NODE_83864_length_1489_cov_19.0000_k_95_flag_1	-	402-1252	19.0000

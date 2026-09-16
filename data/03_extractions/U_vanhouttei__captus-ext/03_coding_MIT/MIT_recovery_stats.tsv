@@ -1,0 +1,42 @@
+#Captus v1.6.6
+#Command: /home/frieda/miniconda3/envs/captus/bin/captus extract -a ./data/02_assemblies -o ./data/03_extractions -n Mega353 -p SeedPlantPTD -m SeedPlantsMIT
+sample_name	marker_type	locus	ref_name	ref_coords	ref_type	ref_len_matched	hit	pct_recovered	pct_identity	score	wscore	hit_len	cds_len	intron_len	flanks_len	frameshifts	hit_contigs	hit_l50	hit_l90	hit_lg50	hit_lg90	ctg_names	ctg_strands	ctg_coords	ctg_mean_depth
+U_vanhouttei	MIT	atp1	QOX10099.1-atp1	1-511	prot	511	00	100.00	94.72	0.894	0.896	1521	1521	0	0		1	1	1	1	1	NODE_66898_length_3898_cov_8.0000_k_127_flag_1	-	960-2480	8.0000
+U_vanhouttei	MIT	atp4	AIG90002.1-atp4	1-198	prot	198	00	100.00	84.34	0.687	0.703	588	588	0	0		1	1	1	1	1	NODE_28228_length_3150_cov_7.0000_k_127_flag_1	-	1214-1801	7.0000
+U_vanhouttei	MIT	atp6	BAM36206.1-atp6	1-155;164-261	prot	253	00	96.93	82.21	0.625	0.675	747	747	0	0		2	1	2	1	2	NODE_81667_length_1237_cov_6.7135_k_127_flag_1;NODE_41125_length_1678_cov_6.0000_k_127_flag_1	+;-	754-1206;1383-1676	6.3567
+U_vanhouttei	MIT	atp8	AET62907.1-atp8	1-160	prot	160	00	100.00	90.00	0.800	0.790	477	477	0	0		1	1	1	1	1	NODE_32563_length_1525_cov_6.0000_k_127_flag_1	+	916-1392	6.0000
+U_vanhouttei	MIT	atp9	AET62949.1-atp9	1-74	prot	74	00	100.00	97.30	0.946	0.947	222	222	0	0		1	1	1	1	1	NODE_79192_length_3379_cov_7.9656_k_127_flag_0	+	2640-2861	7.9656
+U_vanhouttei	MIT	ccmB	QGX42491.1-ccmB	1-206	prot	206	00	100.00	92.72	0.854	0.849	618	618	0	0		1	1	1	1	1	NODE_8015_length_1915_cov_6.0000_k_127_flag_1	-	902-1519	6.0000
+U_vanhouttei	MIT	ccmC	QOI73961.1-ccmC	1-251	prot	251	00	100.00	94.02	0.880	0.884	753	753	0	0		1	1	1	1	1	NODE_25615_length_1524_cov_8.0000_k_127_flag_1	+	672-1424	8.0000
+U_vanhouttei	MIT	ccmFC	BAD83536.2-ccmFC	1-255,256-312	prot	312	00	71.23	91.67	0.594	0.691	1881	942	939	0		1	1	1	1	0	NODE_41944_length_3256_cov_11.0000_k_127_flag_1	-	1117-1883,3-177	11.0000
+U_vanhouttei	MIT	ccmFC	BAD83536.2-ccmFC	306-438	prot	133	01	30.37	93.23	0.263	0.466	429	429	0	0		1	1	1	0	0	NODE_60390_length_2909_cov_9.0000_k_127_flag_1	+	1-429	9.0000
+U_vanhouttei	MIT	ccmFN	QEX95847.1-ccmFN	73-577	prot	505	00	87.52	95.25	0.792	0.848	1512	1512	0	0		1	1	1	1	0	NODE_22629_length_2468_cov_8.0000_k_127_flag_1	-	918-2429	8.0000
+U_vanhouttei	MIT	cob	QTT60957.1-cob	1-389	prot	389	00	100.00	97.43	0.949	0.933	1179	1179	0	0		1	1	1	1	1	NODE_7313_length_2185_cov_7.0000_k_127_flag_1	-	110-1288	7.0000
+U_vanhouttei	MIT	cox1	AIG89850.1-cox1	2-242;243-286;388-527	prot	425	00	80.65	96.71	0.753	0.933	1686	1275	411	0		3	1	3	2	0	NODE_74942_length_1031_cov_5.0000_k_127_flag_1;NODE_18634_length_283_cov_3.0000_k_127_flag_1;NODE_75610_length_4074_cov_10.3727_k_127_flag_0	+;-;+	48-770;2-133;3-422	6.1242
+U_vanhouttei	MIT	cox2	AMP43656.1-cox2	1-260	prot	260	00	100.00	89.23	0.785	0.796	831	831	0	0		1	1	1	1	1	NODE_50140_length_2050_cov_7.0000_k_127_flag_1	-	376-1206	7.0000
+U_vanhouttei	MIT	cox3	QGW53590.1-cox3	1-178;205-265	prot	239	00	90.19	95.82	0.826	0.917	717	717	0	0		2	1	2	1	2	NODE_86894_length_618_cov_5.0000_k_127_flag_1;NODE_11711_length_513_cov_6.0000_k_127_flag_1	+;+	84-617;228-410	5.5000
+U_vanhouttei	MIT	matR	AIG89909.1-matR	1-358;416-658	prot	601	00	91.34	88.52	0.704	0.762	1788	1788	0	0		2	1	2	1	2	NODE_72139_length_5583_cov_8.0000_k_127_flag_1;NODE_9121_length_3527_cov_8.0000_k_127_flag_1	+;-	4514-5581;2802-3521	8.0000
+U_vanhouttei	MIT	nad1_exon_1	ACV96637.1-nad1_exon_1	1-129	prot	129	00	100.00	97.67	0.953	0.954	387	387	0	0		1	1	1	1	1	NODE_43893_length_3053_cov_11.0000_k_127_flag_1	+	108-494	11.0000
+U_vanhouttei	MIT	nad1_exon_2_3	ACV96637.1-nad1_exon_2_3	1-27,28-91	prot	91	00	100.00	97.80	0.956	0.957	1712	273	1439	0		1	1	1	1	1	NODE_77652_length_12296_cov_8.4385_k_127_flag_1	+	2873-2953,4393-4584	8.4385
+U_vanhouttei	MIT	nad1_exon_4_5	ACV96637.1-nad1_exon_4_5	1-19;21-105	prot	104	00	99.05	97.12	0.933	0.942	312	312	0	0		2	1	2	1	2	NODE_72139_length_5583_cov_8.0000_k_127_flag_1;NODE_9121_length_3527_cov_8.0000_k_127_flag_1	+;-	3814-3870;1744-1998	8.0000
+U_vanhouttei	MIT	nad2_exon_1_2	QEM24359.1-nad2_exon_1_2	1-51;52-182	prot	182	00	100.00	98.35	0.967	0.958	1821	546	1275	0		2	1	2	1	2	NODE_64152_length_1580_cov_7.0000_k_127_flag_1;NODE_84997_length_626_cov_5.0000_k_127_flag_1	+;+	273-425;121-513	6.0000
+U_vanhouttei	MIT	nad2_exon_3_4_5	QEM24359.1-nad2_exon_3_4_5	1-53;77-306	prot	283	00	92.48	90.11	0.742	0.790	735	735	0	0		2	1	2	1	2	NODE_38828_length_4335_cov_7.4872_k_127_flag_1;NODE_23336_length_1283_cov_6.0000_k_127_flag_1	+;+	3011-3169;142-717	6.7436
+U_vanhouttei	MIT	nad3	BAD83443.2-nad3	1-118	prot	118	00	100.00	90.68	0.814	0.822	354	354	0	0		1	1	1	1	1	NODE_64467_length_1168_cov_7.0000_k_127_flag_1	-	65-418	7.0000
+U_vanhouttei	MIT	nad4	QEX95970.1-nad4	1-154;155-325;354-495	prot	467	00	94.34	96.15	0.871	0.923	2684	1329	1355	0		3	2	3	2	3	NODE_72473_length_1552_cov_8.1186_k_127_flag_1;NODE_56121_length_2431_cov_8.0000_k_127_flag_1;NODE_86144_length_478_cov_3.0000_k_127_flag_1	+;-;+	205-665;1450-1963;61-414	6.3729
+U_vanhouttei	MIT	nad4L	CAQ77604.1-nad4L	1-100	prot	100	00	100.00	96.00	0.920	0.917	300	300	0	0		1	1	1	1	1	NODE_28228_length_3150_cov_7.0000_k_127_flag_1	-	1990-2289	7.0000
+U_vanhouttei	MIT	nad5_exon_1_2_3	AEK01311.1-nad5_exon_1_2_3	23-77,78-243;269-488	prot	441	00	90.37	95.69	0.826	0.915	2154	1305	849	0		2	1	2	2	2	NODE_45913_length_1517_cov_11.0000_k_127_flag_1;NODE_14602_length_3503_cov_9.0000_k_127_flag_1	+;+	5-170,1020-1516;3-644	10.0000
+U_vanhouttei	MIT	nad5_exon_4_5	AEK01311.1-nad5_exon_4_5	1-132,133-180	prot	180	00	100.00	93.89	0.878	0.882	1671	537	1134	0		1	1	1	1	1	NODE_79126_length_2920_cov_8.0000_k_127_flag_1	-	1722-2117,447-587	8.0000
+U_vanhouttei	MIT	nad6	QCQ81896.1-nad6	1-56;137-205	prot	125	00	60.98	96.00	0.561	0.921	375	375	0	0		2	1	2	2	0	NODE_59319_length_557_cov_6.0000_k_127_flag_1;NODE_54471_length_599_cov_4.0000_k_127_flag_1	+;+	388-555;85-291	5.0000
+U_vanhouttei	MIT	nad7	QSJ48341.1-nad7	1-51;72-226,227-393	prot	373	00	94.91	96.78	0.888	0.936	2184	1122	1062	0		2	1	2	1	2	NODE_72885_length_724_cov_6.0000_k_127_flag_1;NODE_58318_length_3370_cov_10.0000_k_127_flag_1	+;+	323-475;739-1204,2267-2769	8.0000
+U_vanhouttei	MIT	nad9	QSJ48311.1-nad9	7-190	prot	184	00	96.84	94.57	0.863	0.878	552	552	0	0		1	1	1	1	1	NODE_25941_length_1474_cov_5.0000_k_127_flag_1	+	4-555	5.0000
+U_vanhouttei	MIT	rpl10	AMP43670.1-rpl10	1-162	prot	162	00	100.00	91.98	0.840	0.828	486	486	0	0		1	1	1	1	1	NODE_75610_length_4074_cov_10.3727_k_127_flag_0	+	684-1169	10.3727
+U_vanhouttei	MIT	rpl5	QHE65829.1-rpl5	1-185	prot	185	00	100.00	90.81	0.816	0.807	558	558	0	0		1	1	1	1	1	NODE_3621_length_1848_cov_6.0000_k_127_flag_1	-	979-1536	6.0000
+U_vanhouttei	MIT	rps1	QTC06424.1-rps1	1-171	prot	171	00	83.41	88.89	0.649	0.790	453	453	0	0		1	1	1	1	0	NODE_27758_length_550_cov_4.0000_k_127_flag_1	-	8-460	4.0000
+U_vanhouttei	MIT	rps10	QIV67023.1-rps10	2-120	prot	119	00	99.17	87.39	0.742	0.745	267	267	0	0	153	1	1	1	1	1	NODE_35267_length_2383_cov_7.0000_k_127_flag_1	-	1057-1322	7.0000
+U_vanhouttei	MIT	rps12	AHA84987.1-rps12	41-106,107-112,113-125	prot	85	00	68.00	67.06	0.232	0.450	785	249	536	0		1	1	1	1	0	NODE_78016_length_1731_cov_14.0000_k_127_flag_1	-	1456-1653,1044-1060,869-902	14.0000
+U_vanhouttei	MIT	rps13	AOW70633.1-rps13	1-116	prot	116	00	100.00	94.83	0.897	0.892	348	348	0	0		1	1	1	1	1	NODE_77652_length_12296_cov_8.4385_k_127_flag_1	+	1662-2009	8.4385
+U_vanhouttei	MIT	rps14	AOO96407.1-rps14	1-100	prot	100	00	100.00	89.00	0.780	0.753	303	303	0	0	84,269,270	1	1	1	1	1	NODE_3621_length_1848_cov_6.0000_k_127_flag_1	-	675-974	6.0000
+U_vanhouttei	MIT	rps3	AZP40301.1-rps3	16-155;156-401;402-519;552-611	prot	564	00	92.31	84.57	0.638	0.713	1604	1554	50	0		4	2	4	2	4	NODE_11139_length_1134_cov_8.0000_k_127_flag_1;NODE_49633_length_645_cov_6.0000_k_127_flag_1;NODE_7804_length_403_cov_4.0000_k_127_flag_1;NODE_13802_length_664_cov_5.0000_k_127_flag_1	-;-;-;-	64-391;11-645;12-353;415-663	5.7500
+U_vanhouttei	MIT	rps4	AXV54317.1-rps4	3-275;297-349	prot	326	00	93.41	92.94	0.802	0.819	975	975	0	0		2	1	2	1	2	NODE_28695_length_1364_cov_5.0000_k_127_flag_1;NODE_2477_length_655_cov_5.0000_k_127_flag_1	+;-	523-1338;282-440	5.0000
+U_vanhouttei	MIT	sdh4	ATD51557.1-sdh4	1-27;58-137	prot	107	00	78.10	91.59	0.650	0.838	306	306	0	0		2	1	2	1	0	NODE_11711_length_513_cov_6.0000_k_127_flag_1;NODE_13988_length_1752_cov_6.0000_k_127_flag_1	+;+	341-421;123-347	6.0000
+U_vanhouttei	MIT	tatC	ABG65646.1-tatC	9-112;131-273	prot	247	00	90.48	89.07	0.707	0.773	756	756	0	0	39	2	1	2	1	2	NODE_12948_length_664_cov_5.0000_k_127_flag_1;NODE_58177_length_598_cov_6.0000_k_127_flag_1	+;-	338-663;53-481	5.5000

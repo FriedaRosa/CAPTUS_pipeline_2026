@@ -1,0 +1,7 @@
+#Captus v1.6.6
+#Command: /home/frieda/miniconda3/envs/captus/bin/captus extract -a ./data/02_assemblies -o ./data/03_extractions -n Mega353 -p SeedPlantPTD -m SeedPlantsMIT
+sample_name	marker_type	locus	ref_name	ref_coords	ref_type	ref_len_matched	hit	pct_recovered	pct_identity	score	wscore	hit_len	cds_len	intron_len	flanks_len	frameshifts	hit_contigs	hit_l50	hit_l90	hit_lg50	hit_lg90	ctg_names	ctg_strands	ctg_coords	ctg_mean_depth
+Spondianthus_preussii	MIT	ccmB	QGX42491.1-ccmB	13-106	prot	94	00	45.63	91.49	0.379	0.824	282	282	0	0		1	1	1	0	0	NODE_4605_length_288_cov_26.0000_k_159_flag_1	-	2-283	26.0000
+Spondianthus_preussii	MIT	ccmFC	BAD83536.2-ccmFC	41-174	prot	134	00	30.59	91.79	0.256	0.843	402	402	0	0		1	1	1	0	0	NODE_3767_length_523_cov_68.0000_k_159_flag_1	-	4-405	68.0000
+Spondianthus_preussii	MIT	nad1_exon_4_5	ACV96637.1-nad1_exon_4_5	21-46	prot	26	00	24.76	100.00	0.248	1.000	78	78	0	0		1	1	1	0	0	NODE_6673_length_439_cov_25.0000_k_159_flag_1	+	355-432	25.0000
+Spondianthus_preussii	MIT	rps19	ALL55122.1-rps19	1-31	prot	31	00	32.98	100.00	0.330	1.000	93	93	0	0		1	1	1	0	0	NODE_2883_length_274_cov_10.0000_k_159_flag_1	-	9-101	10.0000

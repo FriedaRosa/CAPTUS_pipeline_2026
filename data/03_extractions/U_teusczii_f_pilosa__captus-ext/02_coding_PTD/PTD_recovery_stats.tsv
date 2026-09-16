@@ -1,0 +1,38 @@
+#Captus v1.6.6
+#Command: /home/frieda/miniconda3/envs/captus/bin/captus extract -a ./data/02_assemblies -o ./data/03_extractions -n Mega353 -p SeedPlantsPTD -m SeedPlantsMIT
+sample_name	marker_type	locus	ref_name	ref_coords	ref_type	ref_len_matched	hit	pct_recovered	pct_identity	score	wscore	hit_len	cds_len	intron_len	flanks_len	frameshifts	hit_contigs	hit_l50	hit_l90	hit_lg50	hit_lg90	ctg_names	ctg_strands	ctg_coords	ctg_mean_depth
+U_teusczii_f_pilosa	PTD	atpE	AKT93660.1-atpE	32-78;102-133	prot	79	00	59.40	92.41	0.504	0.853	237	237	0	0		2	1	2	2	0	NODE_1482_length_152_cov_10.0000_k_63_flag_1;NODE_7254_length_214_cov_7.0000_k_63_flag_1	+;-	6-146;117-212	8.5000
+U_teusczii_f_pilosa	PTD	atpH	BAB47029.1-atpH	1-43	prot	43	00	53.09	97.67	0.506	0.954	129	129	0	0		1	1	1	1	0	NODE_939_length_195_cov_5.0000_k_63_flag_1	+	50-178	5.0000
+U_teusczii_f_pilosa	PTD	ndhC	AEX98425.1-ndhC	1-114	prot	114	00	94.21	91.23	0.777	0.832	192	192	0	0		1	1	1	1	1	NODE_2210_length_230_cov_6.0000_k_63_flag_1	-	9-200	6.0000
+U_teusczii_f_pilosa	PTD	ndhE	ABB21008.1-ndhE	27-76	prot	50	00	49.50	98.00	0.475	0.960	150	150	0	0		1	1	1	0	0	NODE_6258_length_187_cov_7.0000_k_63_flag_1	-	32-181	7.0000
+U_teusczii_f_pilosa	PTD	ndhG	QKX48822.1-ndhG	63-94;134-176	prot	75	00	42.61	88.00	0.324	0.774	225	225	0	0		2	1	2	0	0	NODE_3081_length_134_cov_11.0000_k_63_flag_1;NODE_1525_length_274_cov_7.0000_k_63_flag_1	-;+	7-102;23-151	9.0000
+U_teusczii_f_pilosa	PTD	ndhI	APA33661.1-ndhI	32-65;87-131;132-166	prot	114	00	68.67	92.98	0.590	0.863	366	342	24	0		3	2	3	3	0	NODE_3747_length_129_cov_3.0000_k_63_flag_1;NODE_8699_length_180_cov_6.0000_k_63_flag_1;NODE_444_length_201_cov_8.0000_k_63_flag_1	+;-;-	8-109;5-140;78-181	5.6667
+U_teusczii_f_pilosa	PTD	ndhJ	ASM42161.1-ndhJ	6-45	prot	40	00	25.32	92.50	0.215	0.856	120	120	0	0		1	1	1	0	0	NODE_3963_length_129_cov_7.0000_k_63_flag_1	+	4-123	7.0000
+U_teusczii_f_pilosa	PTD	pafII	ATU07177.1-pafII	4-82	prot	79	00	42.93	89.87	0.342	0.798	237	237	0	0		1	1	1	0	0	NODE_3159_length_249_cov_8.0000_k_63_flag_1	-	1-237	8.0000
+U_teusczii_f_pilosa	PTD	pbf1	APC60465.1-pbf1	33-43	prot	11	00	25.58	100.00	0.256	1.000	33	33	0	0		1	1	1	0	0	NODE_6380_length_313_cov_12.0000_k_63_flag_1	+	11-43	12.0000
+U_teusczii_f_pilosa	PTD	petD	BAO01524.1-petD	4-15;16-54;97-137	prot	92	00	57.50	100.00	0.575	0.998	297	276	21	0		3	2	3	2	0	NODE_288_length_199_cov_4.0000_k_63_flag_1;NODE_2506_length_137_cov_8.0000_k_63_flag_1;NODE_908_length_142_cov_9.0000_k_63_flag_1	-;+;-	6-42;22-137;11-133	7.0000
+U_teusczii_f_pilosa	PTD	petG	BAB47052.1-petG	1-12	prot	12	00	32.43	100.00	0.324	1.000	36	36	0	0		1	1	1	0	0	NODE_9458_length_138_cov_12.0000_k_63_flag_1	+	95-130	12.0000
+U_teusczii_f_pilosa	PTD	petL	BAB47051.1-petL	1-31	prot	31	00	100.00	96.77	0.935	0.937	93	93	0	0		1	1	1	1	1	NODE_10302_length_151_cov_2.0000_k_63_flag_1	-	15-107	2.0000
+U_teusczii_f_pilosa	PTD	petN	BAB47023.1-petN	11-29	prot	19	00	65.52	100.00	0.655	1.000	57	57	0	0		1	1	1	1	0	NODE_665_length_208_cov_14.0000_k_63_flag_1	-	147-203	14.0000
+U_teusczii_f_pilosa	PTD	psaJ	AEX99628.1-psaJ	1-44	prot	44	00	100.00	93.18	0.864	0.868	84	84	0	0		1	1	1	1	1	NODE_4241_length_153_cov_10.0000_k_63_flag_1	+	24-107	10.0000
+U_teusczii_f_pilosa	PTD	psbA	ACB86507.1-psbA	144-180;228-305	prot	115	00	32.58	98.26	0.314	0.965	345	345	0	0		2	1	2	0	0	NODE_8442_length_113_cov_4.0000_k_63_flag_1;NODE_3533_length_244_cov_6.0000_k_63_flag_1	+;-	3-113;9-242	5.0000
+U_teusczii_f_pilosa	PTD	psbF	BAL72608.1-psbF	29-39	prot	11	00	28.21	100.00	0.282	1.000	33	33	0	0		1	1	1	0	0	NODE_3264_length_137_cov_7.0000_k_63_flag_1	+	40-72	7.0000
+U_teusczii_f_pilosa	PTD	psbH	CBJ04326.1-psbH	51-73	prot	23	00	31.51	95.65	0.288	0.878	69	69	0	0		1	1	1	0	0	NODE_5666_length_383_cov_13.0000_k_63_flag_1	+	6-74	13.0000
+U_teusczii_f_pilosa	PTD	psbK	ANY60490.1-psbK	1-59	prot	59	00	100.00	91.53	0.831	0.824	129	129	0	0		1	1	1	1	1	NODE_9749_length_231_cov_9.0000_k_63_flag_1	-	10-138	9.0000
+U_teusczii_f_pilosa	PTD	psbL	BAO19729.1-psbL	1-6;7-38	prot	38	00	100.00	100.00	1.000	0.999	125	114	11	0		2	1	2	1	2	NODE_3264_length_137_cov_7.0000_k_63_flag_1;NODE_4263_length_179_cov_12.0000_k_63_flag_1	+;+	109-126;11-106	9.5000
+U_teusczii_f_pilosa	PTD	psbT	CAD28747.1-psbT	1-35	prot	35	00	100.00	100.00	1.000	1.000	105	105	0	0		1	1	1	1	1	NODE_6380_length_313_cov_12.0000_k_63_flag_1	-	110-214	12.0000
+U_teusczii_f_pilosa	PTD	psbZ	BAO01489.1-psbZ	1-62	prot	62	00	100.00	98.39	0.968	0.968	96	96	0	0		1	1	1	1	1	NODE_3775_length_134_cov_4.0000_k_63_flag_1	-	11-106	4.0000
+U_teusczii_f_pilosa	PTD	psbZ	BAO01489.1-psbZ	32-62	prot	31	01	50.00	96.77	0.468	0.662	93	93	0	0		1	1	1	1	0	NODE_2658_length_154_cov_10.0000_k_63_flag_1	-	58-150	10.0000
+U_teusczii_f_pilosa	PTD	rpl16	BAO01531.1-rpl16	69-112;122-135	prot	58	00	42.96	96.55	0.400	0.931	174	174	0	0		2	1	2	0	0	NODE_5041_length_149_cov_4.0000_k_63_flag_1;NODE_1510_length_183_cov_8.0000_k_63_flag_1	-;-	8-139;133-174	6.0000
+U_teusczii_f_pilosa	PTD	rpl23	BAO01536.1-rpl23	13-77	prot	65	00	69.89	96.92	0.656	0.852	195	195	0	0		1	1	1	1	0	NODE_2968_length_217_cov_7.0000_k_63_flag_1	+	5-199	7.0000
+U_teusczii_f_pilosa	PTD	rpl32	BAE47643.1-rpl32	1-23;24-54	prot	54	00	100.00	83.33	0.667	0.687	179	171	8	0		2	1	2	1	2	NODE_1108_length_115_cov_7.0000_k_63_flag_1;NODE_3432_length_240_cov_11.0000_k_63_flag_1	+;-	39-107;120-221	9.0000
+U_teusczii_f_pilosa	PTD	rpl33	QOL12685.1-rpl33	11-60	prot	50	00	72.46	100.00	0.725	0.990	141	141	0	0		1	1	1	1	0	NODE_5809_length_151_cov_2.0000_k_63_flag_1	-	8-148	2.0000
+U_teusczii_f_pilosa	PTD	rps12_exon_2_3	AII40871.1-rps12_exon_2_3	1-29	prot	29	00	37.66	100.00	0.377	1.000	87	87	0	0		1	1	1	0	0	NODE_4220_length_147_cov_7.0000_k_63_flag_1	+	53-139	7.0000
+U_teusczii_f_pilosa	PTD	rps14	AEJ82553.1-rps14	1-40	prot	40	00	40.00	100.00	0.400	1.000	120	120	0	0		1	1	1	0	0	NODE_8647_length_137_cov_10.0000_k_63_flag_1	-	7-126	10.0000
+U_teusczii_f_pilosa	PTD	rps15	QNP08450.1-rps15	14-37;38-67	prot	54	00	66.67	85.19	0.469	0.706	213	162	51	0		2	1	2	2	0	NODE_7501_length_126_cov_5.0000_k_63_flag_1;NODE_9983_length_118_cov_6.0000_k_63_flag_1	+;+	16-87;13-102	5.5000
+U_teusczii_f_pilosa	PTD	rps16	CAC88026.1-rps16	16-88	prot	73	00	82.95	94.52	0.739	0.871	99	99	0	0	54	1	1	1	1	0	NODE_8192_length_133_cov_9.0000_k_63_flag_1	+	26-123	9.0000
+U_teusczii_f_pilosa	PTD	rps18	APT42286.1-rps18	1-46	prot	46	00	45.54	95.65	0.416	0.844	138	138	0	0		1	1	1	0	0	NODE_1342_length_313_cov_10.0000_k_63_flag_1	-	17-154	10.0000
+U_teusczii_f_pilosa	PTD	rps19	ADY15391.1-rps19	1-92	prot	92	00	100.00	93.48	0.870	0.874	108	108	0	0		1	1	1	1	1	NODE_5368_length_434_cov_17.0000_k_63_flag_1	-	144-251	17.0000
+U_teusczii_f_pilosa	PTD	rps2	QBC66712.1-rps2	44-81;167-220	prot	92	00	38.98	95.65	0.356	0.914	276	276	0	0		2	1	2	0	0	NODE_8196_length_127_cov_8.0000_k_63_flag_1;NODE_376_length_170_cov_10.0000_k_63_flag_1	-;-	3-116;8-169	9.0000
+U_teusczii_f_pilosa	PTD	rps4	ARQ81760.1-rps4	19-64;74-201	prot	174	00	86.57	95.40	0.786	0.909	270	270	0	0		2	1	2	1	0	NODE_861_length_145_cov_6.0000_k_63_flag_1;NODE_1363_length_165_cov_7.0000_k_63_flag_1	+;+	5-136;17-154	6.5000
+U_teusczii_f_pilosa	PTD	rps7	AHY32771.1-rps7	104-155	prot	52	00	33.55	100.00	0.335	0.991	156	156	0	0		1	1	1	0	0	NODE_1529_length_239_cov_7.0000_k_63_flag_1	-	83-238	7.0000

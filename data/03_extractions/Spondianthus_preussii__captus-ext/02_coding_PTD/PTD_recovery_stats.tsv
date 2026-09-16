@@ -1,0 +1,9 @@
+#Captus v1.6.6
+#Command: /home/frieda/miniconda3/envs/captus/bin/captus extract -a ./data/02_assemblies -o ./data/03_extractions -n Mega353 -p SeedPlantsPTD -m SeedPlantsMIT
+sample_name	marker_type	locus	ref_name	ref_coords	ref_type	ref_len_matched	hit	pct_recovered	pct_identity	score	wscore	hit_len	cds_len	intron_len	flanks_len	frameshifts	hit_contigs	hit_l50	hit_l90	hit_lg50	hit_lg90	ctg_names	ctg_strands	ctg_coords	ctg_mean_depth
+Spondianthus_preussii	PTD	atpH	BAB47029.1-atpH	59-81	prot	23	00	28.40	100.00	0.284	1.000	69	69	0	0		1	1	1	0	0	NODE_4479_length_299_cov_4.0000_k_159_flag_1	-	227-295	4.0000
+Spondianthus_preussii	PTD	petL	BAH11276.1-petL	6-23	prot	18	00	58.06	72.22	0.258	0.509	156	156	0	0	132	1	1	1	1	0	NODE_5370_length_524_cov_15.0000_k_159_flag_1	-	298-452	15.0000
+Spondianthus_preussii	PTD	psaI	QKI32171.1-psaI	1-36	prot	36	00	100.00	97.22	0.944	0.945	33	33	0	0		1	1	1	1	1	NODE_8270_length_305_cov_26.0000_k_159_flag_1	+	73-105	26.0000
+Spondianthus_preussii	PTD	psaJ	AEX99628.1-psaJ	34-44	prot	11	00	25.00	90.91	0.205	0.826	39	39	0	0		1	1	1	0	0	NODE_4300_length_450_cov_19.0000_k_159_flag_1	-	239-277	19.0000
+Spondianthus_preussii	PTD	psbK	CDH98475.2-psbK	9-51	prot	43	00	66.15	95.35	0.600	0.864	231	231	0	0	125,126,152,153	1	1	1	1	0	NODE_2915_length_799_cov_72.0000_k_159_flag_1	-	259-485	72.0000
+Spondianthus_preussii	PTD	rpl2	QRI61044.1-rpl2	1-65;185-275	prot	156	00	56.73	97.44	0.538	0.948	465	465	0	0		2	1	2	2	0	NODE_5843_length_288_cov_17.0000_k_159_flag_1;NODE_7329_length_371_cov_51.0000_k_159_flag_1	+;+	94-288;3-272	34.0000

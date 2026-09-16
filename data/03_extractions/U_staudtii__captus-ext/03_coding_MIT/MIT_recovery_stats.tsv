@@ -1,0 +1,22 @@
+#Captus v1.6.6
+#Command: /home/frieda/miniconda3/envs/captus/bin/captus extract -a ./data/02_assemblies -o ./data/03_extractions -n Mega353 -p SeedPlantPTD -m SeedPlantsMIT
+sample_name	marker_type	locus	ref_name	ref_coords	ref_type	ref_len_matched	hit	pct_recovered	pct_identity	score	wscore	hit_len	cds_len	intron_len	flanks_len	frameshifts	hit_contigs	hit_l50	hit_l90	hit_lg50	hit_lg90	ctg_names	ctg_strands	ctg_coords	ctg_mean_depth
+U_staudtii	MIT	atp1	QOX10099.1-atp1	166-433	prot	268	00	52.45	98.13	0.505	0.958	804	804	0	0		1	1	1	1	0	NODE_28919_length_814_cov_3.0000_k_95_flag_1	+	3-806	3.0000
+U_staudtii	MIT	atp4	AIG90002.1-atp4	31-54;92-149	prot	82	00	41.41	97.56	0.394	0.939	246	246	0	0		2	1	2	0	0	NODE_22991_length_193_cov_4.0000_k_95_flag_1;NODE_8953_length_188_cov_4.0000_k_95_flag_1	-;-	117-188;15-188	4.0000
+U_staudtii	MIT	atp6	BAM36206.1-atp6	54-132;188-246	prot	138	00	52.87	82.61	0.345	0.682	414	414	0	0		2	1	2	2	0	NODE_36380_length_252_cov_2.7325_k_95_flag_1;NODE_25665_length_187_cov_4.0000_k_95_flag_1	-;-	2-238;9-185	3.3662
+U_staudtii	MIT	atp8	AET62907.1-atp8	1-14;32-75	prot	58	00	36.25	93.10	0.312	0.788	174	174	0	0		2	1	2	0	0	NODE_16725_length_313_cov_3.0000_k_95_flag_1;NODE_33348_length_324_cov_2.0000_k_95_flag_1	-;+	37-78;185-316	2.5000
+U_staudtii	MIT	ccmB	QGX42491.1-ccmB	83-206	prot	124	00	60.19	94.35	0.534	0.880	372	372	0	0		1	1	1	1	0	NODE_16456_length_413_cov_5.0000_k_95_flag_1	-	37-408	5.0000
+U_staudtii	MIT	ccmC	QOI73961.1-ccmC	98-251	prot	154	00	61.35	96.10	0.566	0.924	462	462	0	0		1	1	1	1	0	NODE_5848_length_465_cov_4.0000_k_95_flag_1	+	3-464	4.0000
+U_staudtii	MIT	cob	QTT60957.1-cob	128-238	prot	111	00	28.53	97.30	0.270	0.947	333	333	0	0		1	1	1	0	0	NODE_9322_length_388_cov_4.0000_k_95_flag_1	-	3-335	4.0000
+U_staudtii	MIT	cox2	AMP43656.1-cox2	1-65	prot	65	00	25.00	98.46	0.242	0.969	195	195	0	0		1	1	1	0	0	NODE_37686_length_377_cov_2.8298_k_95_flag_0	+	153-347	2.8298
+U_staudtii	MIT	cox3	QGW53590.1-cox3	1-92;160-265	prot	198	00	74.72	90.40	0.604	0.796	381	381	0	0	327	2	1	2	2	0	NODE_37920_length_229_cov_4.0000_k_95_flag_1;NODE_32035_length_274_cov_4.0000_k_95_flag_1	-;+	1-177;2-204	4.0000
+U_staudtii	MIT	matR	AIG89909.1-matR	1-113;135-241;364-555	prot	412	00	62.61	87.62	0.471	0.762	1230	1230	0	0		3	2	3	3	0	NODE_4671_length_408_cov_6.0000_k_95_flag_1;NODE_16217_length_316_cov_3.0000_k_95_flag_1;NODE_1641_length_590_cov_3.0000_k_95_flag_1	+;-;+	70-408;2-316;13-588	4.0000
+U_staudtii	MIT	nad1_exon_1	ACV96637.1-nad1_exon_1	20-92	prot	73	00	56.59	97.26	0.535	0.946	219	219	0	0		1	1	1	1	0	NODE_21899_length_238_cov_6.0000_k_95_flag_1	+	4-222	6.0000
+U_staudtii	MIT	nad2_exon_1_2	QEM24359.1-nad2_exon_1_2	52-96	prot	45	00	24.73	100.00	0.247	1.000	135	135	0	0		1	1	1	0	0	NODE_25854_length_656_cov_6.0000_k_95_flag_1	+	333-467	6.0000
+U_staudtii	MIT	nad3	BAD83443.2-nad3	1-30;60-118	prot	89	00	75.42	84.27	0.517	0.709	309	309	0	0		2	1	2	1	0	NODE_7363_length_280_cov_3.0000_k_95_flag_1;NODE_3154_length_246_cov_6.0000_k_95_flag_1	-;-	143-274;66-242	4.5000
+U_staudtii	MIT	nad4L	CAQ77604.1-nad4L	15-100	prot	86	00	86.00	93.02	0.740	0.865	204	204	0	0		1	1	1	1	0	NODE_16139_length_388_cov_1.8123_k_95_flag_1	+	96-299	1.8123
+U_staudtii	MIT	nad6	QCQ81896.1-nad6	69-122;140-193	prot	108	00	52.68	95.37	0.478	0.909	324	324	0	0		2	1	2	2	0	NODE_29415_length_177_cov_4.0000_k_95_flag_1;NODE_36217_length_205_cov_3.0000_k_95_flag_1	-;-	8-169;7-168	3.5000
+U_staudtii	MIT	nad9	QSJ48311.1-nad9	5-35;36-78	prot	74	00	38.95	94.59	0.347	0.894	278	222	56	0		2	1	2	0	0	NODE_42848_length_172_cov_4.0000_k_95_flag_1;NODE_27269_length_209_cov_4.0000_k_95_flag_1	+;+	70-161;57-186	4.0000
+U_staudtii	MIT	rps1	QTC06424.1-rps1	1-70	prot	70	00	34.15	87.14	0.254	0.759	210	210	0	0		1	1	1	0	0	NODE_2754_length_251_cov_6.0000_k_95_flag_1	+	39-248	6.0000
+U_staudtii	MIT	rps10	QIV67023.1-rps10	38-83	prot	46	00	38.33	84.78	0.267	0.693	141	141	0	0	45	1	1	1	0	0	NODE_16312_length_181_cov_7.0000_k_95_flag_1	-	21-160	7.0000
+U_staudtii	MIT	rps14	AOO96407.1-rps14	78-100	prot	23	00	23.00	100.00	0.230	0.975	75	75	0	0	41,42	1	1	1	0	0	NODE_42707_length_249_cov_3.0000_k_95_flag_1	-	23-95	3.0000

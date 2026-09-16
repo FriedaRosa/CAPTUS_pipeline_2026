@@ -1,0 +1,19 @@
+#Captus v1.6.6
+#Command: /home/frieda/miniconda3/envs/captus/bin/captus extract -a ./data/02_assemblies -o ./data/03_extractions -n Mega353 -p SeedPlantPTD -m SeedPlantsMIT
+sample_name	marker_type	locus	ref_name	ref_coords	ref_type	ref_len_matched	hit	pct_recovered	pct_identity	score	wscore	hit_len	cds_len	intron_len	flanks_len	frameshifts	hit_contigs	hit_l50	hit_l90	hit_lg50	hit_lg90	ctg_names	ctg_strands	ctg_coords	ctg_mean_depth
+U_ambanjensis	NUC	4942	HYZL-4942	58-75,76-98	prot	41	00	21.13	92.68	0.180	0.859	252	123	94	35		1	1	1	0	0	NODE_18168_length_252_cov_2.0000_k_111_flag_1	+	34-87,182-250	2.0000
+U_ambanjensis	NUC	5090	YZVJ-5090	1-8;64-90	prot	35	00	21.08	100.00	0.211	0.999	364	105	0	259		2	1	2	0	0	NODE_15413_length_300_cov_4.0000_k_111_flag_1;NODE_59253_length_326_cov_2.0000_k_111_flag_1	+;-	15-38;246-326	3.0000
+U_ambanjensis	NUC	5168	NTEO-5168	212-279	prot	68	00	24.03	85.29	0.170	0.728	212	204	0	8		1	1	1	0	0	NODE_46828_length_212_cov_3.0000_k_111_flag_1	+	2-205	3.0000
+U_ambanjensis	NUC	5328	XNLP-5328	94-156	prot	63	00	37.95	93.65	0.331	0.773	199	189	0	10		1	1	1	0	0	NODE_14321_length_199_cov_2.0000_k_111_flag_1	+	3-191	2.0000
+U_ambanjensis	NUC	5578	HAEU-5578	19-37	prot	19	00	26.39	94.74	0.236	0.816	196	57	0	139		1	1	1	0	0	NODE_48334_length_196_cov_3.0000_k_111_flag_1	-	53-109	3.0000
+U_ambanjensis	NUC	5703	FYTP-5703	1-12;92-149;180-195	prot	86	00	44.10	88.37	0.338	0.779	414	246	0	168		3	1	3	0	0	NODE_42469_length_191_cov_3.0000_k_111_flag_1;NODE_625_length_227_cov_2.0000_k_111_flag_1;NODE_51650_length_209_cov_4.0000_k_111_flag_1	+;+;+	9-47;68-226;2-49	3.0000
+U_ambanjensis	NUC	6000	QACK-6000	37-80	prot	44	00	21.67	100.00	0.217	1.000	356	132	0	224		1	1	1	0	0	NODE_66285_length_356_cov_3.0000_k_111_flag_1	+	108-239	3.0000
+U_ambanjensis	NUC	6051	RQZP-6051	126-190	prot	65	00	21.10	86.15	0.153	0.737	199	195	0	4		1	1	1	0	0	NODE_27213_length_199_cov_2.0000_k_111_flag_1	-	5-199	2.0000
+U_ambanjensis	NUC	6064	VNMY-6064	15-26,27-80;165-192	prot	94	00	43.32	79.79	0.258	0.633	404	282	99	23		2	1	2	0	0	NODE_26420_length_300_cov_3.0000_k_111_flag_1;NODE_57966_length_301_cov_4.0000_k_111_flag_1	+;-	2-38,138-298;23-106	3.5000
+U_ambanjensis	NUC	6110	NGRR-6110	43-79	prot	37	00	32.46	83.78	0.219	0.702	245	111	0	134		1	1	1	0	0	NODE_45543_length_245_cov_6.0000_k_111_flag_1	-	101-211	6.0000
+U_ambanjensis	NUC	6366	TJLC-6366	17-63;119-157	prot	86	00	54.78	81.40	0.344	0.662	260	258	0	2		2	1	2	2	0	NODE_24534_length_345_cov_2.0000_k_111_flag_1;NODE_20466_length_293_cov_3.0000_k_111_flag_1	-;-	203-343;1-117	2.5000
+U_ambanjensis	NUC	6492	ERIA-6492	29-45;92-147	prot	73	00	40.11	95.89	0.368	0.878	232	225	0	7	198	2	1	2	0	0	NODE_53362_length_327_cov_5.0000_k_111_flag_1;NODE_22105_length_192_cov_2.0000_k_111_flag_1	-;-	272-322;3-175	3.5000
+U_ambanjensis	NUC	6514	TIUZ-6514	5-12	prot	8	00	25.00	100.00	0.250	1.000	210	24	0	186		1	1	1	0	0	NODE_63884_length_210_cov_3.0000_k_111_flag_1	-	170-193	3.0000
+U_ambanjensis	NUC	6641	Vitvi-Genoscope.12X-6641	130-181	prot	52	00	27.51	94.23	0.243	0.888	259	156	0	103		1	1	1	0	0	NODE_44515_length_259_cov_2.0000_k_111_flag_1	-	2-157	2.0000
+U_ambanjensis	NUC	6732	UAXP-6732	25-62	prot	38	00	20.00	84.21	0.137	0.709	267	114	0	153		1	1	1	0	0	NODE_48887_length_267_cov_3.0000_k_111_flag_1	-	18-131	3.0000
+U_ambanjensis	NUC	7583	Arath-7583	4-41	prot	38	00	28.79	81.58	0.182	0.633	198	114	0	84		1	1	1	0	0	NODE_24011_length_198_cov_3.0000_k_111_flag_1	+	75-188	3.0000

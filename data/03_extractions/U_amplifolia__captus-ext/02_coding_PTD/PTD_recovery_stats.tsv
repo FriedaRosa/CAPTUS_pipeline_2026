@@ -1,0 +1,45 @@
+#Captus v1.6.6
+#Command: /home/frieda/miniconda3/envs/captus/bin/captus extract -a ./data/02_assemblies -o ./data/03_extractions -n Mega353 -p SeedPlantsPTD -m SeedPlantsMIT
+sample_name	marker_type	locus	ref_name	ref_coords	ref_type	ref_len_matched	hit	pct_recovered	pct_identity	score	wscore	hit_len	cds_len	intron_len	flanks_len	frameshifts	hit_contigs	hit_l50	hit_l90	hit_lg50	hit_lg90	ctg_names	ctg_strands	ctg_coords	ctg_mean_depth
+U_amplifolia	PTD	atpF	AFM92265.1-atpF	1-13;25-49;78-129;171-184	prot	104	00	56.52	90.38	0.457	0.814	312	312	0	0		4	1	4	4	0	NODE_16642_length_183_cov_7.0000_k_79_flag_1;NODE_5732_length_133_cov_13.0000_k_79_flag_1;NODE_1397_length_248_cov_6.0000_k_79_flag_1;NODE_5053_length_233_cov_7.0000_k_79_flag_1	+;-;+;+	144-182;59-133;53-208;120-161	8.2500
+U_amplifolia	PTD	atpH	BAB47029.1-atpH	60-81	prot	22	00	27.16	100.00	0.272	1.000	66	66	0	0		1	1	1	0	0	NODE_10396_length_185_cov_10.0000_k_79_flag_1	-	115-180	10.0000
+U_amplifolia	PTD	cemA	AXR88469.1-cemA	1-54;106-182	prot	131	00	57.21	83.21	0.380	0.664	384	384	0	0		2	1	2	2	0	NODE_5949_length_337_cov_11.0000_k_79_flag_1;NODE_9304_length_245_cov_11.0000_k_79_flag_1	+;-	185-337;13-243	11.0000
+U_amplifolia	PTD	infA	QLF67647.1-infA	1-10;11-73	prot	73	00	96.05	69.86	0.382	0.441	264	264	0	0	54,128,129,176,177,204	2	1	2	1	2	NODE_12264_length_220_cov_12.0000_k_79_flag_1;NODE_16693_length_310_cov_11.0000_k_79_flag_1	-;-	24-52;54-282	11.5000
+U_amplifolia	PTD	ndhC	ALF03757.1-ndhC	10-74;99-120	prot	87	00	72.50	91.95	0.608	0.845	261	261	0	0		2	1	2	1	0	NODE_8939_length_206_cov_16.0000_k_79_flag_1;NODE_5076_length_292_cov_7.0000_k_79_flag_1	-;+	9-203;1-66	11.5000
+U_amplifolia	PTD	ndhE	ABB21008.1-ndhE	1-79;83-101	prot	98	00	97.03	97.96	0.931	0.959	294	294	0	0		2	1	2	1	2	NODE_6576_length_471_cov_16.0000_k_79_flag_1;NODE_9578_length_156_cov_9.0000_k_79_flag_1	+;+	228-464;38-94	12.5000
+U_amplifolia	PTD	ndhH	AVL92386.1-ndhH	46-78;79-220;294-334;335-398	prot	280	00	70.35	92.86	0.603	0.860	945	840	105	0		4	1	4	2	0	NODE_5103_length_174_cov_5.0000_k_79_flag_1;NODE_15754_length_477_cov_10.0000_k_79_flag_1;NODE_7365_length_151_cov_11.0000_k_79_flag_1;NODE_8519_length_227_cov_11.0000_k_79_flag_1	+;+;+;+	50-149;47-471;17-138;35-227	9.2500
+U_amplifolia	PTD	ndhK	ARH08394.1-ndhK	1-55;71-137;164-222	prot	181	00	81.53	86.74	0.599	0.751	552	552	0	0		3	2	3	2	0	NODE_5076_length_292_cov_7.0000_k_79_flag_1;NODE_8355_length_202_cov_6.0000_k_79_flag_1;NODE_6347_length_399_cov_3.0000_k_79_flag_1	+;+;+	129-292;1-202;1-186	5.3333
+U_amplifolia	PTD	pafII	ATU07177.1-pafII	1-89	prot	89	00	48.37	88.76	0.375	0.552	267	267	0	0		1	1	1	0	0	NODE_8800_length_436_cov_17.0000_k_79_flag_1	+	135-401	17.0000
+U_amplifolia	PTD	pafII	ATU07177.1-pafII	82-184	prot	103	01	55.98	84.47	0.386	0.538	234	234	0	0		1	1	1	1	0	NODE_5715_length_249_cov_8.0000_k_79_flag_1	-	7-240	8.0000
+U_amplifolia	PTD	petB	QGT35023.1-petB	77-132;136-174	prot	95	00	43.58	96.84	0.408	0.937	285	285	0	0		2	1	2	0	0	NODE_7178_length_198_cov_4.0000_k_79_flag_1;NODE_14059_length_127_cov_4.0000_k_79_flag_1	-;+	28-195;2-118	4.0000
+U_amplifolia	PTD	petD	BAO01524.1-petD	1-39;101-137	prot	76	00	47.50	96.05	0.438	0.922	270	270	0	0		2	1	2	0	0	NODE_13510_length_161_cov_9.0000_k_79_flag_1;NODE_4821_length_159_cov_17.0000_k_79_flag_1	-;+	3-161;33-143	13.0000
+U_amplifolia	PTD	petG	BAB47052.1-petG	1-22;23-37	prot	37	00	100.00	97.30	0.946	0.946	124	111	13	0		2	1	2	1	2	NODE_18115_length_143_cov_14.0000_k_79_flag_1;NODE_12621_length_139_cov_9.0000_k_79_flag_1	-;-	14-79;78-122	11.5000
+U_amplifolia	PTD	petG	BAB47052.1-petG	4-22	prot	19	01	51.35	94.74	0.459	0.643	57	57	0	0		1	1	1	1	0	NODE_3016_length_175_cov_14.0000_k_79_flag_1	-	8-64	14.0000
+U_amplifolia	PTD	petL	BAF41265.1-petL	1-31	prot	31	00	100.00	90.32	0.806	0.816	42	42	0	0		1	1	1	1	1	NODE_2246_length_176_cov_21.0000_k_79_flag_1	+	11-52	21.0000
+U_amplifolia	PTD	petL	BAF41265.1-petL	1-17	prot	17	01	54.84	94.12	0.484	0.656	51	51	0	0		1	1	1	1	0	NODE_4963_length_242_cov_18.0000_k_79_flag_1	-	17-67	18.0000
+U_amplifolia	PTD	psaC	BAO01544.1-psaC	1-19;62-81	prot	39	00	48.15	100.00	0.481	0.999	117	117	0	0		2	1	2	0	0	NODE_15695_length_201_cov_11.0000_k_79_flag_1;NODE_9715_length_159_cov_5.0000_k_79_flag_1	-;+	26-82;7-66	8.0000
+U_amplifolia	PTD	psaI	BAB47043.1-psaI	1-29;30-36	prot	36	00	100.00	86.11	0.722	0.741	121	111	10	0		2	1	2	1	2	NODE_5361_length_661_cov_13.0000_k_79_flag_1;NODE_4092_length_137_cov_15.0000_k_79_flag_1	+;+	562-651;21-41	14.0000
+U_amplifolia	PTD	psbF	BAL72608.1-psbF	1-39	prot	39	00	100.00	100.00	1.000	1.000	60	60	0	0		1	1	1	1	1	NODE_7836_length_159_cov_5.0000_k_79_flag_1	-	10-69	5.0000
+U_amplifolia	PTD	psbH	CBJ04326.1-psbH	39-73	prot	35	00	47.95	94.29	0.425	0.865	105	105	0	0		1	1	1	0	0	NODE_1707_length_216_cov_11.0000_k_79_flag_1	-	108-212	11.0000
+U_amplifolia	PTD	psbJ	ACJ70770.1-psbJ	1-12	prot	12	00	27.91	100.00	0.279	0.926	33	33	0	0		1	1	1	0	0	NODE_14985_length_139_cov_2.0000_k_79_flag_1	-	33-65	2.0000
+U_amplifolia	PTD	psbK	ANY60490.1-psbK	1-59	prot	59	00	100.00	91.53	0.831	0.817	183	183	0	0		1	1	1	1	1	NODE_10086_length_391_cov_26.0000_k_79_flag_1	-	4-186	26.0000
+U_amplifolia	PTD	psbT	CAD28747.1-psbT	1-35	prot	35	00	100.00	100.00	1.000	1.000	105	105	0	0		1	1	1	1	1	NODE_13802_length_131_cov_14.0000_k_79_flag_1	+	19-123	14.0000
+U_amplifolia	PTD	psbZ	BAO01489.1-psbZ	1-62	prot	62	00	100.00	96.77	0.935	0.937	186	186	0	0		1	1	1	1	1	NODE_780_length_347_cov_10.0000_k_79_flag_1	+	161-346	10.0000
+U_amplifolia	PTD	rpl16	BAO01531.1-rpl16	1-69	prot	69	00	51.11	92.75	0.437	0.860	261	261	0	0		1	1	1	1	0	NODE_6500_length_273_cov_9.0000_k_79_flag_1	+	6-266	9.0000
+U_amplifolia	PTD	rpl2	QRI61044.1-rpl2	1-117;130-275	prot	263	00	95.64	91.25	0.789	0.832	792	792	0	0		2	1	2	1	2	NODE_9488_length_546_cov_14.0000_k_79_flag_1;NODE_4411_length_577_cov_35.0000_k_79_flag_1	+;+	195-545;92-532	24.5000
+U_amplifolia	PTD	rpl20	QHB79481.1-rpl20	1-23;24-71	prot	71	00	60.68	80.28	0.368	0.644	230	213	17	0		2	1	2	2	0	NODE_10596_length_204_cov_17.0000_k_79_flag_1;NODE_17390_length_173_cov_9.0000_k_79_flag_1	-;+	33-100;18-162	13.0000
+U_amplifolia	PTD	rpl22	ALB78386.1-rpl22	1-31;39-90	prot	83	00	65.35	89.16	0.512	0.780	261	261	0	0		2	1	2	2	0	NODE_13195_length_190_cov_20.0000_k_79_flag_1;NODE_16361_length_165_cov_6.0000_k_79_flag_1	+;+	63-167;4-159	13.0000
+U_amplifolia	PTD	rpl23	BAO01536.1-rpl23	1-93	prot	93	00	100.00	96.77	0.935	0.890	156	156	0	0		1	1	1	1	1	NODE_10263_length_260_cov_9.0000_k_79_flag_1	+	90-245	9.0000
+U_amplifolia	PTD	rpl23	BAO01536.1-rpl23	54-93	prot	40	01	43.01	97.50	0.409	0.592	120	120	0	0		1	1	1	0	0	NODE_9488_length_546_cov_14.0000_k_79_flag_1	+	54-173	14.0000
+U_amplifolia	PTD	rpl32	BAE47643.1-rpl32	1-54	prot	54	00	100.00	85.19	0.704	0.719	171	171	0	0		1	1	1	1	1	NODE_18254_length_430_cov_20.0000_k_79_flag_1	+	153-323	20.0000
+U_amplifolia	PTD	rpl33	QKK49195.1-rpl33	1-43	prot	43	00	65.15	81.40	0.409	0.648	129	129	0	0		1	1	1	1	0	NODE_8558_length_328_cov_20.0000_k_79_flag_1	-	19-147	20.0000
+U_amplifolia	PTD	rps11	QAV58545.1-rps11	16-50	prot	35	00	25.36	94.29	0.225	0.889	105	105	0	0		1	1	1	0	0	NODE_9128_length_131_cov_14.0000_k_79_flag_1	+	22-126	14.0000
+U_amplifolia	PTD	rps12_exon_1	CAD28682.1-rps12_exon_1	1-27	prot	27	00	71.05	96.30	0.658	0.927	81	81	0	0		1	1	1	1	0	NODE_14014_length_168_cov_10.0000_k_79_flag_1	+	81-161	10.0000
+U_amplifolia	PTD	rps12_exon_2_3	AGG39190.1-rps12_exon_2_3	1-78	prot	78	00	96.30	98.72	0.938	0.928	234	234	0	0		1	1	1	1	1	NODE_1594_length_485_cov_10.0000_k_79_flag_1	-	76-309	10.0000
+U_amplifolia	PTD	rps12_exon_2_3	AGG39190.1-rps12_exon_2_3	1-81	prot	81	01	100.00	95.06	0.901	0.877	120	120	0	0		1	1	1	1	1	NODE_17728_length_130_cov_4.0000_k_79_flag_1	+	6-125	4.0000
+U_amplifolia	PTD	rps14	AEJ82553.1-rps14	1-71	prot	71	00	71.00	97.18	0.670	0.858	213	213	0	0		1	1	1	1	0	NODE_3360_length_241_cov_18.0000_k_79_flag_1	+	23-235	18.0000
+U_amplifolia	PTD	rps18	APT42286.1-rps18	1-14;22-58;59-101	prot	94	00	93.07	88.30	0.713	0.778	295	282	13	0		3	2	3	2	3	NODE_8639_length_244_cov_11.0000_k_79_flag_1;NODE_794_length_163_cov_9.0000_k_79_flag_1;NODE_10949_length_310_cov_8.0000_k_79_flag_1	+;-;+	203-244;14-124;12-140	9.3333
+U_amplifolia	PTD	rps19	ADY15391.1-rps19	1-92	prot	92	00	100.00	93.48	0.870	0.874	108	108	0	0		1	1	1	1	1	NODE_6033_length_286_cov_49.0000_k_79_flag_1	+	90-197	49.0000
+U_amplifolia	PTD	rps2	QBC66712.1-rps2	26-77;119-204;224-236	prot	151	00	63.98	89.40	0.504	0.798	453	453	0	0		3	1	2	2	0	NODE_5_length_160_cov_3.0000_k_79_flag_1;NODE_16742_length_311_cov_7.0000_k_79_flag_1;NODE_14132_length_166_cov_9.0000_k_79_flag_1	-;-;+	2-157;15-272;7-45	6.3333
+U_amplifolia	PTD	rps7	AHY32771.1-rps7	30-155	prot	126	00	81.29	100.00	0.813	1.000	177	177	0	0		1	1	1	1	0	NODE_15878_length_200_cov_20.0000_k_79_flag_1	+	6-182	20.0000
+U_amplifolia	PTD	rps7	AHY32771.1-rps7	1-18;88-155	prot	86	01	55.48	98.84	0.542	0.806	258	258	0	0		2	1	2	2	0	NODE_3994_length_216_cov_12.0000_k_79_flag_1;NODE_7797_length_744_cov_20.0000_k_79_flag_1	+;-	129-182;429-632	16.0000

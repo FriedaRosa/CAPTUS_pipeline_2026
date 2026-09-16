@@ -1,0 +1,27 @@
+#Captus v1.6.6
+#Command: /home/frieda/miniconda3/envs/captus/bin/captus extract -a ./data/02_assemblies -o ./data/03_extractions -n Mega353 -p SeedPlantPTD -m SeedPlantsMIT
+sample_name	marker_type	locus	ref_name	ref_coords	ref_type	ref_len_matched	hit	pct_recovered	pct_identity	score	wscore	hit_len	cds_len	intron_len	flanks_len	frameshifts	hit_contigs	hit_l50	hit_l90	hit_lg50	hit_lg90	ctg_names	ctg_strands	ctg_coords	ctg_mean_depth
+U_teusczii_f_teusczii	NUC	4691	QUTB-4691	47-83;160-182	prot	60	00	32.97	93.33	0.286	0.870	266	180	3	83		2	1	2	0	0	NODE_10205_length_143_cov_2.0000_k_79_flag_1;NODE_5981_length_127_cov_2.0000_k_79_flag_1	-;-	3-113;57-125	2.0000
+U_teusczii_f_teusczii	NUC	4744	BRUD-4744	1-39;103-113	prot	50	00	44.25	88.00	0.336	0.774	250	147	3	100		2	1	2	0	0	NODE_13005_length_136_cov_2.0000_k_79_flag_1;NODE_22537_length_374_cov_15.0000_k_79_flag_1	-;-	9-125;93-122	8.5000
+U_teusczii_f_teusczii	NUC	4802	VNMY-4802	94-114;127-156	prot	51	00	29.14	100.00	0.291	0.999	153	153	0	0		2	1	2	0	0	NODE_9918_length_125_cov_2.0000_k_79_flag_1;NODE_1503_length_151_cov_2.0000_k_79_flag_1	+;-	1-63;1-90	2.0000
+U_teusczii_f_teusczii	NUC	5064	Poptr-v3.0-5064	38-63	prot	26	00	33.77	100.00	0.338	1.000	149	78	0	71		1	1	1	0	0	NODE_21373_length_149_cov_2.0000_k_79_flag_1	-	3-80	2.0000
+U_teusczii_f_teusczii	NUC	5280	YXNR-5280	57-104;179-217	prot	87	00	35.22	95.40	0.320	0.909	264	261	0	3		2	1	2	0	0	NODE_5191_length_147_cov_2.0000_k_79_flag_1;NODE_7602_length_124_cov_3.0000_k_79_flag_1	-;+	3-146;6-122	2.5000
+U_teusczii_f_teusczii	NUC	5304	CMCY-5304	38-70	prot	33	00	22.45	84.85	0.156	0.720	136	99	0	37		1	1	1	0	0	NODE_17459_length_136_cov_2.0000_k_79_flag_1	+	35-133	2.0000
+U_teusczii_f_teusczii	NUC	5434	EMBR-5434	107-156	prot	50	00	24.39	100.00	0.244	1.000	150	150	0	0		1	1	1	0	0	NODE_17582_length_150_cov_2.0000_k_79_flag_1	-	1-150	2.0000
+U_teusczii_f_teusczii	NUC	5894	TPEM-5894	31-64	prot	34	00	29.57	88.24	0.226	0.779	142	102	0	40		1	1	1	0	0	NODE_12890_length_142_cov_2.0000_k_79_flag_1	-	1-102	2.0000
+U_teusczii_f_teusczii	NUC	5940	BVOF-5940	12-54	prot	43	00	29.66	81.40	0.186	0.621	153	129	0	24		1	1	1	0	0	NODE_19096_length_153_cov_2.0000_k_79_flag_1	+	2-130	2.0000
+U_teusczii_f_teusczii	NUC	5980	INQX-5980	20-44	prot	25	00	22.94	88.00	0.174	0.774	144	75	0	69		1	1	1	0	0	NODE_18735_length_144_cov_2.0000_k_79_flag_1	-	1-75	2.0000
+U_teusczii_f_teusczii	NUC	5990	VYGG-5990	70-95	prot	26	00	27.37	92.31	0.232	0.852	136	78	3	55		1	1	1	0	0	NODE_13531_length_136_cov_2.0000_k_79_flag_1	+	34-111	2.0000
+U_teusczii_f_teusczii	NUC	6298	KAYP-6298	77-102	prot	26	00	23.85	84.62	0.165	0.716	134	78	0	56		1	1	1	0	0	NODE_1918_length_134_cov_2.0000_k_79_flag_1	+	22-99	2.0000
+U_teusczii_f_teusczii	NUC	6398	AIOU-6398	23-51	prot	29	00	23.02	93.10	0.198	0.867	148	87	0	61		1	1	1	0	0	NODE_19694_length_148_cov_2.0000_k_79_flag_1	+	52-138	2.0000
+U_teusczii_f_teusczii	NUC	6430	Sorbi-v2.1-6430	29-51	prot	23	00	25.27	100.00	0.253	1.000	141	69	0	72		1	1	1	0	0	NODE_18652_length_141_cov_2.0000_k_79_flag_1	+	21-89	2.0000
+U_teusczii_f_teusczii	NUC	6528	ZMGN-6528	17-47	prot	31	00	21.68	93.55	0.189	0.875	126	93	0	33		1	1	1	0	0	NODE_13401_length_126_cov_2.0000_k_79_flag_1	+	19-111	2.0000
+U_teusczii_f_teusczii	NUC	6532	BDJQ-6532	17-47	prot	31	00	36.05	100.00	0.360	1.000	134	93	0	41		1	1	1	0	0	NODE_8823_length_134_cov_4.0000_k_79_flag_1	+	41-133	4.0000
+U_teusczii_f_teusczii	NUC	6780	UZWG-6780	47-92;96-127	prot	78	00	61.42	93.59	0.535	0.875	252	234	3	15		2	1	2	2	0	NODE_9269_length_139_cov_2.0000_k_79_flag_1;NODE_955_length_127_cov_2.0000_k_79_flag_1	+;+	2-139;15-110	2.0000
+U_teusczii_f_teusczii	NUC	6782	Ambtr-6782	2-35	prot	34	00	26.77	97.06	0.252	0.915	145	102	0	43		1	1	1	0	0	NODE_20146_length_145_cov_2.0000_k_79_flag_1	+	42-143	2.0000
+U_teusczii_f_teusczii	NUC	6875	GJNX-6875	33-50	prot	18	00	29.51	88.89	0.230	0.790	126	54	0	72		1	1	1	0	0	NODE_15603_length_126_cov_2.0000_k_79_flag_1	+	3-56	2.0000
+U_teusczii_f_teusczii	NUC	6883	JSZD-6883	43-86	prot	44	00	26.67	97.73	0.255	0.914	145	132	0	13		1	1	1	0	0	NODE_11843_length_145_cov_2.0000_k_79_flag_1	+	14-145	2.0000
+U_teusczii_f_teusczii	NUC	6955	RDYY-6955	86-112	prot	27	00	24.11	100.00	0.241	1.000	132	81	3	48		1	1	1	0	0	NODE_18097_length_132_cov_2.0000_k_79_flag_1	+	3-83	2.0000
+U_teusczii_f_teusczii	NUC	6992	DESP-6992	110-140	prot	31	00	21.38	100.00	0.214	1.000	126	93	0	33		1	1	1	0	0	NODE_4469_length_126_cov_2.0000_k_79_flag_1	-	27-119	2.0000
+U_teusczii_f_teusczii	NUC	7572	ZENX-7572	22-64	prot	43	00	20.00	100.00	0.200	0.967	138	129	0	9		1	1	1	0	0	NODE_1835_length_138_cov_2.0000_k_79_flag_1	+	1-129	2.0000
+U_teusczii_f_teusczii	NUC	7628	HENI-7628	115-148	prot	34	00	20.24	94.12	0.179	0.886	146	102	0	44		1	1	1	0	0	NODE_1864_length_146_cov_2.0000_k_79_flag_1	-	36-137	2.0000

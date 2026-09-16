@@ -1,0 +1,21 @@
+#Captus v1.6.6
+#Command: /home/frieda/miniconda3/envs/captus/bin/captus extract -a ./data/02_assemblies -o ./data/03_extractions -n Mega353 -p SeedPlantPTD -m SeedPlantsMIT
+sample_name	marker_type	locus	ref_name	ref_coords	ref_type	ref_len_matched	hit	pct_recovered	pct_identity	score	wscore	hit_len	cds_len	intron_len	flanks_len	frameshifts	hit_contigs	hit_l50	hit_l90	hit_lg50	hit_lg90	ctg_names	ctg_strands	ctg_coords	ctg_mean_depth
+U_staudtii	NUC	5162	VQFW-5162	84-142	prot	59	00	22.10	86.44	0.161	0.747	245	177	0	68		1	1	1	0	0	NODE_44483_length_245_cov_3.0000_k_95_flag_1	+	68-244	3.0000
+U_staudtii	NUC	5460	Arath-5460	87-116	prot	30	00	21.90	80.00	0.131	0.640	364	90	0	274		1	1	1	0	0	NODE_30462_length_364_cov_2.0000_k_95_flag_1	+	270-359	2.0000
+U_staudtii	NUC	5849	XFJG-5849	5-46;152-159	prot	50	00	31.45	92.00	0.264	0.814	309	150	0	159		2	1	2	0	0	NODE_25268_length_265_cov_4.0000_k_95_flag_1;NODE_23913_length_188_cov_3.0000_k_95_flag_1	-;+	2-127;144-167	3.5000
+U_staudtii	NUC	5894	CPOC-5894	30-80	prot	51	00	44.35	90.20	0.357	0.814	236	153	0	83		1	1	1	0	0	NODE_39837_length_236_cov_3.0000_k_95_flag_1	+	83-235	3.0000
+U_staudtii	NUC	5933	Vitvi-Genoscope.12X-5933	94-142	prot	49	00	22.07	91.84	0.185	0.843	198	147	0	51		1	1	1	0	0	NODE_41055_length_198_cov_3.0000_k_95_flag_1	+	51-197	3.0000
+U_staudtii	NUC	6034	GHLP-6034	47-62,63-81	prot	35	00	21.88	82.86	0.144	0.687	314	102	97	115		1	1	1	0	0	NODE_2370_length_314_cov_2.0000_k_95_flag_1	-	249-296,98-151	2.0000
+U_staudtii	NUC	6110	JSZD-6110	9-44	prot	36	00	30.51	86.11	0.220	0.742	232	102	0	130		1	1	1	0	0	NODE_6048_length_232_cov_5.0000_k_95_flag_1	-	130-231	5.0000
+U_staudtii	NUC	6139	MRKX-6139	139-193	prot	55	00	20.30	92.73	0.173	0.860	196	165	0	31		1	1	1	0	0	NODE_40702_length_196_cov_2.0000_k_95_flag_1	-	30-194	2.0000
+U_staudtii	NUC	6430	Theca-v1.1-6430	29-50	prot	22	00	24.18	95.45	0.220	0.891	447	66	0	381		1	1	1	0	0	NODE_44275_length_447_cov_2.0000_k_95_flag_1	+	342-407	2.0000
+U_staudtii	NUC	6507	AZBL-6507	55-77	prot	23	00	23.23	100.00	0.232	1.000	183	69	0	114		1	1	1	0	0	NODE_2878_length_183_cov_2.0000_k_95_flag_1	-	109-177	2.0000
+U_staudtii	NUC	6527	FGDU-6527	128-160	prot	33	00	20.25	84.85	0.141	0.720	240	99	0	141		1	1	1	0	0	NODE_10544_length_240_cov_2.0000_k_95_flag_1	+	34-132	2.0000
+U_staudtii	NUC	6780	THHD-6780	38-91	prot	54	00	43.55	92.59	0.371	0.850	189	162	0	27		1	1	1	0	0	NODE_36358_length_189_cov_2.0000_k_95_flag_1	-	9-170	2.0000
+U_staudtii	NUC	6864	QUTB-6864	62-88	prot	27	00	24.11	77.78	0.134	0.605	176	81	0	95		1	1	1	0	0	NODE_44429_length_176_cov_2.0000_k_95_flag_1	-	43-123	2.0000
+U_staudtii	NUC	6933	KBRW-6933	102-142	prot	41	00	23.98	82.93	0.158	0.688	208	123	0	85		1	1	1	0	0	NODE_39037_length_208_cov_2.0000_k_95_flag_1	+	32-154	2.0000
+U_staudtii	NUC	6979	AQZD-6979	123-168	prot	46	00	27.38	82.61	0.179	0.682	226	141	3	82		1	1	1	0	0	NODE_20518_length_226_cov_2.0000_k_95_flag_1	+	1-141	2.0000
+U_staudtii	NUC	7194	Manes-v4.1-7194	37-52,53-68	prot	32	00	21.33	90.62	0.173	0.821	199	93	92	14		1	1	1	0	0	NODE_13057_length_199_cov_3.0000_k_95_flag_1	-	141-186,2-48	3.0000
+U_staudtii	NUC	7331	TIUZ-7331	29-82	prot	54	00	20.77	88.89	0.162	0.790	166	162	0	4		1	1	1	0	0	NODE_19240_length_166_cov_4.0000_k_95_flag_1	+	3-164	4.0000
+U_staudtii	NUC	7602	RZTJ-7602	37-96	prot	60	00	28.04	93.33	0.243	0.871	182	180	0	2		1	1	1	0	0	NODE_2762_length_182_cov_5.0000_k_95_flag_1	+	3-182	5.0000

@@ -1,0 +1,45 @@
+#Captus v1.6.6
+#Command: /home/frieda/miniconda3/envs/captus/bin/captus extract -a ./data/02_assemblies -o ./data/03_extractions -n Mega353 -p SeedPlantPTD -m SeedPlantsMIT
+sample_name	marker_type	locus	ref_name	ref_coords	ref_type	ref_len_matched	hit	pct_recovered	pct_identity	score	wscore	hit_len	cds_len	intron_len	flanks_len	frameshifts	hit_contigs	hit_l50	hit_l90	hit_lg50	hit_lg90	ctg_names	ctg_strands	ctg_coords	ctg_mean_depth
+U_rufopilosa	NUC	5131	WCOR-5131	87-133;221-249	prot	76	00	30.52	98.68	0.297	0.973	263	228	3	32		2	1	2	0	0	NODE_1695_length_141_cov_2.0000_k_63_flag_1;NODE_3586_length_124_cov_2.0000_k_63_flag_1	-;-	1-141;36-122	2.0000
+U_rufopilosa	NUC	5200	RVGH-5200	68-104	prot	37	00	21.64	100.00	0.216	1.000	183	111	0	72		1	1	1	0	0	NODE_2016_length_183_cov_2.0000_k_63_flag_1	-	2-112	2.0000
+U_rufopilosa	NUC	5280	YXNR-5280	57-106	prot	50	00	20.24	98.00	0.194	0.960	152	150	0	2		1	1	1	0	0	NODE_2498_length_152_cov_2.0000_k_63_flag_1	-	3-152	2.0000
+U_rufopilosa	NUC	5328	RVGH-5328	41-90;95-144	prot	100	00	60.24	88.00	0.458	0.774	302	300	0	2		2	1	2	2	0	NODE_3848_length_151_cov_2.0000_k_63_flag_1;NODE_2320_length_151_cov_2.0000_k_63_flag_1	+;+	2-151;1-150	2.0000
+U_rufopilosa	NUC	5343	Orysa-5343	127-175	prot	49	00	20.33	95.92	0.187	0.920	149	147	0	2		1	1	1	0	0	NODE_1881_length_149_cov_2.0000_k_63_flag_1	+	2-148	2.0000
+U_rufopilosa	NUC	5355	WXVX-5355	44-73	prot	30	00	30.00	93.33	0.260	0.871	147	90	0	57		1	1	1	0	0	NODE_2467_length_147_cov_2.0000_k_63_flag_1	+	55-144	2.0000
+U_rufopilosa	NUC	5357	WCOR-5357	11-52	prot	42	00	35.90	100.00	0.359	1.000	129	126	0	3		1	1	1	0	0	NODE_708_length_129_cov_2.0000_k_63_flag_1	-	2-127	2.0000
+U_rufopilosa	NUC	5430	WCOR-5430	99-134	prot	36	00	22.50	100.00	0.225	1.000	122	108	0	14		1	1	1	0	0	NODE_3212_length_122_cov_2.0000_k_63_flag_1	+	3-110	2.0000
+U_rufopilosa	NUC	5551	WCOR-5551	17-53;148-170	prot	60	00	21.58	100.00	0.216	0.999	220	180	0	40		2	1	2	0	0	NODE_3169_length_149_cov_2.0000_k_63_flag_1;NODE_1137_length_126_cov_2.0000_k_63_flag_1	-;-	1-111;3-71	2.0000
+U_rufopilosa	NUC	5594	WKCY-5594	155-204	prot	50	00	23.04	94.00	0.203	0.884	153	150	0	3		1	1	1	0	0	NODE_3770_length_153_cov_3.0000_k_63_flag_1	-	2-151	3.0000
+U_rufopilosa	NUC	5644	INQX-5644	89-131	prot	43	00	29.45	83.72	0.199	0.701	134	129	0	5		1	1	1	0	0	NODE_1526_length_134_cov_2.0000_k_63_flag_1	+	5-133	2.0000
+U_rufopilosa	NUC	5853	Orysa-5853	132-180	prot	49	00	21.97	87.76	0.166	0.770	160	147	0	13		1	1	1	0	0	NODE_3097_length_160_cov_2.0000_k_63_flag_1	-	2-148	2.0000
+U_rufopilosa	NUC	5858	SVVG-5858	36-83;168-203	prot	84	00	38.89	92.86	0.333	0.861	281	252	0	29		2	1	2	0	0	NODE_3242_length_148_cov_2.0000_k_63_flag_1;NODE_1786_length_151_cov_2.0000_k_63_flag_1	+;-	3-146;28-135	2.0000
+U_rufopilosa	NUC	5866	JPDJ-5866	65-89	prot	25	00	21.01	88.00	0.160	0.759	192	75	0	117		1	1	1	0	0	NODE_472_length_192_cov_3.0000_k_63_flag_1	-	12-86	3.0000
+U_rufopilosa	NUC	5894	TJLC-5894	31-80	prot	50	00	43.48	90.00	0.348	0.810	193	150	0	43		1	1	1	0	0	NODE_2741_length_193_cov_3.0000_k_63_flag_1	+	30-179	3.0000
+U_rufopilosa	NUC	5940	WBOD-5940	2-45	prot	44	00	23.53	88.64	0.182	0.716	159	132	0	27		1	1	1	0	0	NODE_2768_length_159_cov_3.0000_k_63_flag_1	-	1-132	3.0000
+U_rufopilosa	NUC	5942	GEHT-5942	1-46;58-97;107-159	prot	139	00	69.50	86.33	0.505	0.739	434	417	0	17		3	2	3	3	0	NODE_492_length_151_cov_2.0000_k_63_flag_1;NODE_87_length_126_cov_2.0000_k_63_flag_1;NODE_2955_length_163_cov_3.0000_k_63_flag_1	-;+;-	1-138;2-121;5-163	2.3333
+U_rufopilosa	NUC	5949	ROEI-5949	145-182	prot	38	00	20.88	92.11	0.176	0.848	121	114	0	7		1	1	1	0	0	NODE_2063_length_121_cov_2.0000_k_63_flag_1	-	7-120	2.0000
+U_rufopilosa	NUC	6128	KVAY-6128	50-119	prot	70	00	26.12	87.14	0.194	0.719	285	213	0	72		1	1	1	0	0	NODE_2631_length_285_cov_3.0000_k_63_flag_1	+	41-253	3.0000
+U_rufopilosa	NUC	6238	BKQU-6238	29-89;196-234	prot	100	00	41.15	79.00	0.239	0.623	301	300	0	1		2	1	2	0	0	NODE_2312_length_192_cov_3.0000_k_63_flag_1;NODE_2820_length_146_cov_2.0000_k_63_flag_1	-;+	9-191;30-146	2.5000
+U_rufopilosa	NUC	6274	XBKS-6274	111-155	prot	45	00	22.84	97.78	0.218	0.956	137	135	0	2		1	1	1	0	0	NODE_835_length_137_cov_2.0000_k_63_flag_1	+	3-137	2.0000
+U_rufopilosa	NUC	6295	PSHB-6295	1-38;109-157;183-201	prot	106	00	31.74	90.57	0.257	0.819	417	318	0	99		3	2	3	0	0	NODE_1069_length_150_cov_2.0000_k_63_flag_1;NODE_1736_length_150_cov_2.0000_k_63_flag_1;NODE_66_length_123_cov_2.0000_k_63_flag_0	+;-;-	36-149;2-148;65-121	2.0000
+U_rufopilosa	NUC	6389	HLJG-6389	13-38;45-83;133-172	prot	105	00	49.76	89.52	0.393	0.800	336	315	0	21		3	2	3	0	0	NODE_3383_length_117_cov_2.0000_k_63_flag_1;NODE_549_length_118_cov_2.0000_k_63_flag_1;NODE_3240_length_123_cov_2.0000_k_63_flag_1	-;-;+	22-99;2-118;1-120	2.0000
+U_rufopilosa	NUC	6407	PSJT-6407	11-53	prot	43	00	31.85	93.02	0.274	0.865	131	129	0	2		1	1	1	0	0	NODE_3432_length_131_cov_2.0000_k_63_flag_1	-	1-129	2.0000
+U_rufopilosa	NUC	6492	Orysa-6492	56-90;106-152	prot	82	00	44.81	100.00	0.448	0.993	353	246	0	107		2	1	2	0	0	NODE_3885_length_272_cov_3.0000_k_63_flag_1;NODE_2230_length_145_cov_2.0000_k_63_flag_1	+;-	104-208;5-145	2.5000
+U_rufopilosa	NUC	6532	BHYC-6532	47-86	prot	40	00	46.51	87.50	0.349	0.766	264	120	0	144		1	1	1	0	0	NODE_2857_length_264_cov_2.0000_k_63_flag_1	-	18-137	2.0000
+U_rufopilosa	NUC	6667	TDTF-6667	62-110	prot	49	00	20.16	85.71	0.144	0.735	150	147	0	3		1	1	1	0	0	NODE_2450_length_150_cov_2.0000_k_63_flag_1	-	2-148	2.0000
+U_rufopilosa	NUC	6732	ONLQ-6732	25-51;83-137	prot	82	00	56.55	75.61	0.290	0.571	289	246	0	43		2	1	2	2	0	NODE_2179_length_120_cov_2.0000_k_63_flag_1;NODE_227_length_191_cov_2.0000_k_63_flag_1	-;+	3-83;21-185	2.0000
+U_rufopilosa	NUC	6825	Arath-6825	87-115	prot	29	00	20.57	96.55	0.191	0.932	176	87	0	89		1	1	1	0	0	NODE_3559_length_176_cov_4.0000_k_63_flag_1	-	1-87	4.0000
+U_rufopilosa	NUC	6875	XPBC-6875	24-60	prot	37	00	27.01	89.19	0.212	0.785	119	111	0	8		1	1	1	0	0	NODE_3444_length_119_cov_3.0000_k_63_flag_1	-	6-116	3.0000
+U_rufopilosa	NUC	6882	EDEQ-6882	63-112	prot	50	00	28.25	92.00	0.237	0.846	199	150	0	49		1	1	1	0	0	NODE_819_length_199_cov_3.0000_k_63_flag_1	+	44-193	3.0000
+U_rufopilosa	NUC	6883	Orysa-6883	31-77	prot	47	00	28.48	97.87	0.273	0.958	168	141	0	27		1	1	1	0	0	NODE_1652_length_168_cov_3.0000_k_63_flag_1	+	23-163	3.0000
+U_rufopilosa	NUC	6914	WCOR-6914	187-239	prot	53	00	21.37	96.23	0.198	0.917	162	159	0	3		1	1	1	0	0	NODE_2100_length_162_cov_2.0000_k_63_flag_1	+	3-161	2.0000
+U_rufopilosa	NUC	6955	JCLQ-6955	65-112	prot	48	00	42.86	97.92	0.411	0.959	191	144	3	44		1	1	1	0	0	NODE_1733_length_191_cov_2.0000_k_63_flag_1	-	48-191	2.0000
+U_rufopilosa	NUC	7029	YKQR-7029	88-127	prot	40	00	26.14	92.50	0.222	0.856	144	120	0	24		1	1	1	0	0	NODE_2327_length_144_cov_2.0000_k_63_flag_1	-	21-140	2.0000
+U_rufopilosa	NUC	7067	ZENX-7067	69-103	prot	35	00	26.52	85.71	0.189	0.735	144	105	0	39		1	1	1	0	0	NODE_2979_length_144_cov_2.0000_k_63_flag_1	+	2-106	2.0000
+U_rufopilosa	NUC	7136	AXBO-7136	72-99	prot	28	00	20.59	96.43	0.191	0.930	120	84	0	36		1	1	1	0	0	NODE_4022_length_120_cov_2.0000_k_63_flag_1	+	37-120	2.0000
+U_rufopilosa	NUC	7333	IANR-7333	15-57	prot	43	00	31.16	88.37	0.239	0.781	131	129	0	2		1	1	1	0	0	NODE_1563_length_131_cov_2.0000_k_63_flag_1	-	1-129	2.0000
+U_rufopilosa	NUC	7336	Theca-v1.1-7336	2-40;104-152	prot	88	00	57.89	86.36	0.421	0.745	298	264	0	34		2	1	2	2	0	NODE_118_length_151_cov_2.0000_k_63_flag_1;NODE_3870_length_149_cov_2.0000_k_63_flag_1	+;-	33-149;3-149	2.0000
+U_rufopilosa	NUC	7583	Vitvi-Genoscope.12X-7583	7-54	prot	48	00	36.36	87.50	0.273	0.766	151	144	0	7		1	1	1	0	0	NODE_2427_length_151_cov_4.0000_k_63_flag_1	+	6-149	4.0000
+U_rufopilosa	MIT	ccmB	QGX42491.1-ccmB	1-45;47-106	prot	105	00	50.97	91.43	0.422	0.835	315	315	0	0		2	1	2	2	0	NODE_1235_length_172_cov_3.0000_k_63_flag_1;NODE_2153_length_185_cov_4.0000_k_63_flag_1	+;+	26-160;4-183	3.5000
+U_rufopilosa	MIT	nad1_exon_4_5	ACV96637.1-nad1_exon_4_5	21-53	prot	33	00	31.43	96.97	0.295	0.940	99	99	0	0		1	1	1	0	0	NODE_2596_length_191_cov_5.0000_k_63_flag_1	+	87-185	5.0000
