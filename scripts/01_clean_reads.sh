@@ -12,7 +12,6 @@ captus clean \
 -r './data/input/input_sequences' \
 -o './data/01_cleaned_reads' \
 --qc_program fastqc \
---threads 10 \
---overwrite
+--threads 10 
 
 conda deactivate

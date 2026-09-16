@@ -36,7 +36,7 @@ for ALN in $ALIGN/*_aligned.fasta; do
         --ufboot 1000 \
         --alrt 1000 \
         -pre "$OUT/$BASENAME" \
-        --prefix "trees/$name" 
+        --prefix "trees/$BASENAME" 
 done
 
 
