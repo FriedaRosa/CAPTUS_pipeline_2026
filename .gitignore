@@ -1,5 +1,4 @@
 *.fastq.gz
-*.qmd
 data/01_cleaned_reads/02_qc_stats_after/*.qc_stats.log
 data/01_cleaned_reads/01_qc_stats_before/*.qc_stats.log
 *.svg
@@ -38,3 +37,12 @@ refseq.bin
 *.mafft.log
 *.clipkit.log
 *.taper
+concat_mit.*
+concat_ptd.*
+data/05_phylogeny/concat*
+data/05_phylogeny/nuc_gene_trees/*
+
+
+
+# Keep all:
+!*.treefile
