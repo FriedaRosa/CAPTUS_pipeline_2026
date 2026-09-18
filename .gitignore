@@ -46,3 +46,13 @@ data/05_phylogeny/nuc_gene_trees/*
 
 # Keep all:
 !*.treefile
+*.fna.bionj
+*.fna.contree
+*.fna.iqtree
+*.fna.log
+*.fna.mldist
+*.fna.model.gz
+*.fna.ckp.gz
+*.fna.splits.nex
+
+data/05_phylogeny/nuc_gene_trees

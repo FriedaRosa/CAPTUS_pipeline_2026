@@ -3,7 +3,8 @@
 conda activate captus
 
 
-mkdir './data/05_phylogeny' && cd './data/05_phylogeny' || return
+mkdir "./data/05_phylogeny"
+cd "./data/05_phylogeny" || return
 
 ## 1. Concatenation species-tree using all loci and an edge-linked partition model (nuclear genes, mito genes, plastid genes)
 
@@ -49,7 +50,8 @@ for aln in "$ALIGN"/*.fna; do
         -m MFP \
         --ufboot 1000 \
         -pre "$OUT/nuc_gene_trees/$gene" \
-        -T AUTO
+        -T AUTO \
+        --undo
 done
 
 conda deactivate
