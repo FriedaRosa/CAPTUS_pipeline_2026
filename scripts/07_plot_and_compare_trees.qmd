@@ -1,0 +1,41 @@
+# Plot and compare trees from different data sources and processing steps
+
+- mitochondrial tree (from 05_phylogeny/mitochondrial_tree.nwk)
+- plastid tree (from 05_phylogeny/plastid_tree.nwk)
+- species tree from wASTRAL with collapsed nodes < 60 UFBoot
+- species tree from wASTRAL without collapsed nodes
+
+## Read in trees
+
+```{r}
+library(ape)
+library(dplyr)
+```
+```{r}
+mit_tree <- read.tree("data/05_phylogeny/concat_mit.treefile") %>%
+root(outgroup = "Spondianthus_preussii") %>%
+ladderize()
+plastid_tree <- read.tree("data/05_phylogeny/concat_ptd.treefile") %>%
+root(outgroup = "Spondianthus_preussii") %>%
+ladderize()
+species_tree_collapsed <- read.tree("data/05_phylogeny/species_tree_wASTRAL/wastral_species_tree_collapsed.nwk") %>%
+root(outgroup = "Spondianthus_preussii") %>%
+ladderize()
+species_tree_uncollapsed <- read.tree("data/05_phylogeny/species_tree_wASTRAL/wastral_species_tree.nwk") %>%
+root(outgroup = "Spondianthus_preussii") %>%
+ladderize()
+```
+
+
+```{r}
+par(mfrow = c(2, 2))
+plot(mit_tree, main="Mitochondrial Tree")
+nodelabels(mit_tree$node.label, cex=0.5)
+plot(plastid_tree, main="Plastid Tree")
+nodelabels(plastid_tree$node.label, cex=0.5)
+plot(species_tree_collapsed, main="Species Tree (Collapsed)")
+nodelabels(species_tree_collapsed$node.label, cex=0.5)
+plot(species_tree_uncollapsed, main="Species Tree (Uncollapsed)")
+nodelabels(species_tree_uncollapsed$node.label, cex=0.5)
+
+```
