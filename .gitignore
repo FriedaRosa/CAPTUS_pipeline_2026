@@ -39,8 +39,8 @@ refseq.bin
 *.taper
 concat_mit.*
 concat_ptd.*
-data/05_phylogeny/concat*
-data/05_phylogeny/nuc_gene_trees/*
+data/05_phylogeny*/concat*
+data/05_phylogeny*/nuc_gene_trees/*
 
 
 
@@ -55,4 +55,4 @@ data/05_phylogeny/nuc_gene_trees/*
 *.fna.ckp.gz
 *.fna.splits.nex
 
-data/05_phylogeny/nuc_gene_trees
+data/05_phylogeny*/
