@@ -1,5 +1,5 @@
 #Captus v1.6.6
-#Command: /home/frieda/miniconda3/envs/captus/bin/captus align -e ./data/03_extractions -o ./data/04_alignments -m ALL -f ALL --outgroup Spondianthus_preussii
+#Command: /home/frieda/miniconda3/envs/captus/bin/captus align -e ./data/03_extractions -o ./data/04_alignments -m ALL -f ALL --clipkit_method kpic-smart-gap --outgroup Spondianthus_preussii
 sample	stage_marker_format	locus	len_total	len_gapped	len_ungapped	ambigs	gc	gc_codon_p1	gc_codon_p2	gc_codon_p3	num_copies
 AALA__ref	02_untrimmed / 01_unfiltered_w_refs / 01_coding_NUC / 01_AA	5594	217	217	217	0	NA	NA	NA	NA	1
 AALA__ref	02_untrimmed / 01_unfiltered_w_refs / 01_coding_NUC / 01_AA	5802	90	90	90	0	NA	NA	NA	NA	1

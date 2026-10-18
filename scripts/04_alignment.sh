@@ -8,6 +8,7 @@ captus align \
 -o './data/04_alignments' \
 -m ALL \
 -f ALL \
+--clipkit_method kpic-smart-gap \
 --outgroup 'Spondianthus_preussii'
 
 

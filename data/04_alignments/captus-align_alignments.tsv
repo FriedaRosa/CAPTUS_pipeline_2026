@@ -1,5 +1,5 @@
 #Captus v1.6.6
-#Command: /home/frieda/miniconda3/envs/captus/bin/captus align -e ./data/03_extractions -o ./data/04_alignments -m ALL -f ALL --outgroup Spondianthus_preussii
+#Command: /home/frieda/miniconda3/envs/captus/bin/captus align -e ./data/03_extractions -o ./data/04_alignments -m ALL -f ALL --clipkit_method kpic-smart-gap --outgroup Spondianthus_preussii
 path	trimmed	paralog_filter	with_refs	marker_type	format	locus	seqs	samples	median_copies	mean_copies	sites	informative	informativeness	uninformative	constant	singleton	patterns	mean_pid	missingness	gc	gc_codon_p1	gc_codon_p2	gc_codon_p3
 /home/frieda/CAPTUS_pipeline_2026/data/04_alignments/02_untrimmed/01_unfiltered_w_refs/01_coding_NUC/01_AA/4471.faa	False	unfiltered	True	NUC	AA	4471	17	17	1	1.0	276	26	9.42	250	209	41	205	68.41	42.46	NA	NA	NA	NA
 /home/frieda/CAPTUS_pipeline_2026/data/04_alignments/02_untrimmed/01_unfiltered_w_refs/01_coding_NUC/01_AA/4527.faa	False	unfiltered	True	NUC	AA	4527	20	20	1.0	1.0	438	30	6.85	408	340	68	314	86.46	30.58	NA	NA	NA	NA

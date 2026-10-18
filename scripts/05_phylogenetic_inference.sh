@@ -9,7 +9,7 @@ cd "./data/05_phylogeny" || return
 ## 1. Concatenation species-tree using all loci and an edge-linked partition model (nuclear genes, mito genes, plastid genes)
 
 iqtree2 \
-    -p "../04_alignments/03_trimmed/06_informed/01_coding_NUC/02_NT/" \
+    -p "../04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/" \
     -m MFP+MERGE \
     --ufboot 1000 \
     -pre concat \
@@ -17,7 +17,7 @@ iqtree2 \
     --undo
 
 iqtree2 \
-    -p "../04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/" \
+    -p "../04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/" \
     -m MFP+MERGE \
     --ufboot 1000 \
     -pre concat_ptd \
@@ -25,7 +25,7 @@ iqtree2 \
     --undo
 
 iqtree2 \
-    -p "../04_alignments/03_trimmed/06_informed/03_coding_MIT/02_NT/" \
+    -p "../04_alignments/03_trimmed/06_informed/03_coding_MIT/04_genes_flanked/" \
     -m MFP+MERGE \
     --ufboot 1000 \
     -pre concat_mit \
@@ -35,8 +35,8 @@ iqtree2 \
 ## 2. Gene tree inference
 PROJ="$HOME/CAPTUS_pipeline_2026"
 
-ALIGN="$PROJ/data/04_alignments/03_trimmed/06_informed/01_coding_NUC/02_NT"
-OUT="$PROJ/data/05_phylogeny"
+ALIGN="$PROJ/data/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked"
+OUT="$PROJ/data/05_phylogeny_flanking"
 
 mkdir -p "$OUT/nuc_gene_trees"
 

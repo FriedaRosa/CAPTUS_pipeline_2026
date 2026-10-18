@@ -1,5 +1,5 @@
 #Captus v1.6.6
-#Command: /home/frieda/miniconda3/envs/captus/bin/captus align -e ./data/03_extractions -o ./data/04_alignments -m ALL -f ALL --outgroup Spondianthus_preussii
+#Command: /home/frieda/miniconda3/envs/captus/bin/captus align -e ./data/03_extractions -o ./data/04_alignments -m ALL -f ALL --clipkit_method kpic-smart-gap --outgroup Spondianthus_preussii
 marker_type	format_filtered	locus	ref	sample	hit	sequence	length	identity	paralog_score	accepted
 MIT	NT	atp1	QOX10099.1-atp1	U_acuminata	00	U_acuminata	1461	95.12874	0.88344	True
 MIT	NT	atp1	QOX10099.1-atp1	U_ambanjensis	00	U_ambanjensis	1404	87.18553	0.72745	True

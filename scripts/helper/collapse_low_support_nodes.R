@@ -1,8 +1,8 @@
 library(ape)
 
-trees <- read.tree("data/05_phylogeny/species_tree_wASTRAL/all_gene_trees.nwk")
+trees <- read.tree("data/05_phylogeny_flanking/species_tree_wASTRAL/all_gene_trees.nwk")
 
-collapse_support <- function(tr, threshold = 60) {
+collapse_support <- function(tr, threshold = 30) {
 
   # extract first support value
   sup <- sapply(strsplit(tr$node.label, "/"),
