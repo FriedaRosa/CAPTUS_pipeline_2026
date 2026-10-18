@@ -1,0 +1,89 @@
+
+```{bash}
+# 1. create symbolic links from SUNET drive to current working directory
+PROJ="$HOME/CAPTUS_pipeline_2026"
+RAW="$PROJ/data/input/input_sequences"
+mkdir -p "$RAW"
+
+src="/mnt/c/Users/frwo0304/Nextcloud_SU/2025_2030_PlantEvolutionaryBiogeography_473/01_projects/01_uapaca/sequence_data/"
+dst="$RAW"
+
+# create symbolic links for all .fastq.gz files in the source folder:
+for f in "$src"/*.fastq.gz; do
+    ln -s "$f" "$dst/$(basename "$f")"
+done
+```
+
+
+
+```{bash}
+# 2. Rename read files to match taxon names
+stab="$PROJ/data/input/old_names_new_names.txt"  # look up file with old and new names
+echo "INFO: Reading name mappings from: $stab"
+mapfile -t old_prefix < <(tail -n +2 "$stab" | cut -f1)
+mapfile -t new_name < <(tail -n +2 "$stab" | cut -f2)
+echo "INFO: Found ${#old_prefix[@]} sample name mappings"
+
+
+
+cd "$RAW"
+shopt -s nullglob
+for i in "${!old_prefix[@]}"; do
+  old="${old_prefix[$i]}"
+  new="${new_name[$i]}"
+  echo "INFO: Processing sample $((i+1))/${#old_prefix[@]}: $old -> $new"
+
+  # find paired-end files from the same sample:
+  for f in "${old}"_*.fastq.gz; do
+    suffix="${f#${old}}"
+    target="$(readlink -f "$f")" || \
+      { echo "WARNING: Failed to resolve target for $f" >&2; continue; }
+    ln -sf -- "$target" "${new}${suffix}" || \
+      { echo "WARNING: Failed to create symlink for $f" >&2; continue; }
+    rm -f -- "$f"
+  done
+done
+
+```
+
+## Change the read files to add "R" for the reads.
+```{bash}
+cd /home/frieda/CAPTUS_pipeline_2026/data/input/input_sequences
+
+for file in *_1.fastq.gz *_2.fastq.gz; do
+    [ -e "$file" ] || continue
+    new="${file/_1.fastq.gz/_R1.fastq.gz}"
+    new="${new/_2.fastq.gz/_R2.fastq.gz}"
+    mv -- "$file" "$new"
+done
+```
+
+
+## Get & Create target file from Mega353
+```{bash}
+#| eval: false
+
+# 3. set up target file from https://github.com/chrisjackson-pellicle/NewTargets
+conda create --name NewTargets python=3.7
+conda activate NewTargets
+conda install -c anaconda biopython=1.76
+conda install pandas
+
+TARGETS="$PROJ/data/input/mega353target"
+
+# Install repository
+cd "$TARGETS"
+git clone https://github.com/chrisjackson-pellicle/NewTargets.git
+unzip NewTargets/mega353.fasta.zip
+
+cat > select_file.txt <<'EOF'
+[Order]
+Malpighiales
+EOF
+
+python NewTargets/filter_mega353.py \
+"mega353.fasta" \
+"select_file.txt" \
+-filtered_target_file "mega353_filtered.fasta" \
+-report_filename "mega353_filter_report.txt" 
+```

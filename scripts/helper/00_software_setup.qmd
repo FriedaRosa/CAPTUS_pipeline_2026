@@ -1,0 +1,18 @@
+# Set up 
+
+## Install captus in a conda environment:
+```{bash}
+conda create -n captus -c bioconda -c conda-forge captus iqtree
+```
+
+## activate the conda environment:
+```{bash}
+conda activate captus
+
+conda install -c bioconda bbmap=39.52
+```
+
+## check if the installation was successful:
+```{bash}
+captus -h
+```
