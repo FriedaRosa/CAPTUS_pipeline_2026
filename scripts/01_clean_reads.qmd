@@ -1,0 +1,88 @@
+# Cleaning reads using captus clean command.
+it removes adapters, trims low-quality bases, and filters out reads with low average quality score.
+
+```
+Captus-assembly: Clean; remove adaptors and quality-filter reads with BBTools 
+
+Input:
+  -r, --reads READS [READS ...]
+                                 FASTQ files. Valid filename extensions are: .fq, .fastq, .fq.gz, and .fastq.gz. The names must include the string '_R1' (and '_R2' when pairs are
+                                 provided). Everything before the string '_R1' will be used as sample name. There are a few ways to provide the FASTQ files:
+                                   A directory = path to directory containing FASTQ files (e.g.: -r ./raw_reads)
+                                   A list = filenames separated by space (e.g.: -r A_R1.fq A_R2.fq B_R1.fq C_R1.fq)
+                                   A pattern = UNIX matching expression (e.g.: -r ./raw_reads/*.fastq.gz)
+
+Output:
+  -o, --out OUT
+                                 Output directory name (default: ./01_clean_reads)
+  --keep_all          Do not delete any intermediate files (default: False)
+  --overwrite         Overwrite previous results (default: False)
+
+Adaptor trimming:
+  --adaptor_set ADAPTOR_SET
+                                 Set of adaptors to remove
+                                   Illumina = Illumina adaptors included in BBTools
+                                   BGI = BGISEQ, DNBSEG, or MGISEQ adaptors
+                                   ALL = Illumina + BGI
+                                   Alternatively, you can provide a path to a FASTA file containing your own adaptors (default: ALL)
+  --rna               Trim ploy-A tails from RNA-Seq reads (default: False)
+
+Quality trimming and filtering:
+  --trimq TRIMQ
+                                 Leading and trailing read regions with mean PHRED quality score below this value will be trimmed (default: 13)
+  --maq MAQ
+                                 After quality trimming, reads with mean PHRED quality score below this value will be removed (default: 16)
+  --min_length MIN_LENGTH
+                                 Discard reads shorter than this length after trimming (default: 25)
+  --ftl FTL
+                                 Trim any base to the left of this position. For example, if you want to remove 4 bases from the left of the reads set this number to 5 (default: 0)
+  --ftr FTR
+                                 Trim any base to the right of this position. For example, if you want to truncate your reads length to 100 bp set this number to 100 (default: 0)
+
+QC Statistics:
+  --qc_program {fastqc,falco}
+                                 Which program to use to obtain the statistics from the raw and cleaned FASTQ files. Falco produces identical results to FastQC while being much faster
+                                 (default: fastqc)
+  --skip_qc_stats     Skip FastQC/Falco analysis on raw and cleaned reads (default: False)
+
+Other:
+  --bbduk_path BBDUK_PATH
+                                 Path to bbduk.sh (default: bbduk.sh)
+  --falco_path FALCO_PATH
+                                 Path to Falco (default: falco)
+  --fastqc_path FASTQC_PATH
+                                 Path to FastQC (default: fastqc)
+  --ram RAM
+                                 Maximum RAM in GB (e.g.: 4.5) dedicated to Captus, 'auto' uses 99% of available RAM (default: auto)
+  --threads THREADS
+                                 Maximum number of CPUs dedicated to Captus, 'auto' uses all available CPUs (default: auto)
+  --concurrent CONCURRENT
+                                 Captus will attempt to run FastQC concurrently on this many samples. If set to 'auto', Captus will run at most 4 instances of FastQC or as many CPU cores
+                                 are available, whatever number is lower (default: auto)
+  --debug             Enable debugging mode, parallelization is disabled so errors are logged to screen (default: False)
+  --show_less         Do not show individual sample information during the run, the information is still written to the log (default: False)
+
+Help:
+  -h, --help
+                                 Show this help message and exit
+  --version           Show Captus' version number
+```
+```{bash}
+cd $PROJ
+#!/usr/bin/env bash
+
+conda activate captus
+```
+
+```{bash}
+
+captus clean \
+-r './data/input/input_sequences' \
+-o './data/01_cleaned_reads' \
+--qc_program falco \
+--threads 10
+```
+
+```{bash}
+conda deactivate
+```
